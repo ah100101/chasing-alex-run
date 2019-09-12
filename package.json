@@ -1,0 +1,21 @@
+{
+  "name": "followalexrun",
+  "version": "1.0.0",
+  "description": "Alexs running blog",
+  "author": "ah100101",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "nuxt-buefy": "^0.3.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0"
+  }
+}
