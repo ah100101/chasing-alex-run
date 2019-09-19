@@ -46,51 +46,48 @@
 
     <div class="columns is-mobile">
       <div class="column">
-        <div class="container">
-          <section class="hero blog-content">
-            <div class="hero-body">
-              <!-- Main container -->
-              <div class="level">
-                <!-- Left side -->
-                <div class="level-left">
-                  <div class="level-item">
-                    <p class="subtitle is-5">
-                      <strong>123</strong> posts
-                    </p>
-                  </div>
-                  <div class="level-item">
-                    <div class="field has-addons">
-                      <p class="control">
-                        <input class="input" type="text" placeholder="Find a post">
-                      </p>
-                      <p class="control">
-                        <button class="button">
-                          Search
-                        </button>
-                      </p>
-                    </div>
-                  </div>
-                </div>
+        <div class="container content-tiles">
 
-                <!-- Right side -->
-                <div class="level-right">
-                  <p class="level-item"><strong>All</strong></p>
-                  <p class="level-item"><a>Published</a></p>
-                  <p class="level-item"><a>Drafts</a></p>
-                  <p class="level-item"><a>Deleted</a></p>
-                  <p class="level-item"><a class="button is-success">New</a></p>
-                </div>
-              </div>
-              <div class="container">
-                <h1 class="title">
-                  Primary title
-                </h1>
-                <h2 class="subtitle">
-                  Primary subtitle
-                </h2>
+          <div class="tile is-ancestor box dark">
+            <div class="tile is-4">
+              <div class="tile is-parent">
+                <article class="tile is-child notification">
+                  <p class="title">Left</p>
+                </article>
               </div>
             </div>
-          </section>
+            <div class="tile is-parent">
+              <div class="tile is-child notification">
+                <p class="title">Right</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tile is-ancestor box light">
+            <div class="tile is-parent">
+              <div class="tile is-child notification">
+                <p class="title">Left</p>
+              </div>
+            </div>
+            <div class="tile is-4">
+              <div class="tile">
+                <div class="tile is-parent">
+                  <article class="tile is-child notification">
+                    <p class="title">Right</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tile is-ancestor">
+            <div class="tile is-parent">
+              <div class="tile is-child notification">
+                <p class="title">Center</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -120,6 +117,40 @@ export default {
 
   .columns {
     background-color: $primary;
+  }
+
+  .content-tiles {
+
+    .is-ancestor.box {
+      margin-bottom: 2rem;
+    }
+
+    .box.dark {
+      background-color: $dark;
+
+      .notification {
+        background-color: $light;
+        color: $dark;
+      }
+    }
+
+    .box.light {
+      background-color: $light;
+
+      .notification {
+        background-color: $dark;
+        color: $light;
+      }
+    }
+
+    .box.accent {
+      background-color: $primary-accent;
+    }
+
+    .box.primary {
+      background-color: $primary;
+    }
+
   }
 }
 
