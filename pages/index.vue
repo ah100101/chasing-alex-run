@@ -48,17 +48,54 @@
       <div class="column">
         <div class="container content-tiles">
 
-          <div class="tile is-ancestor box dark">
+          <!-- 1 -->
+          <div class="tile is-ancestor box light">
             <div class="tile is-4">
               <div class="tile is-parent">
-                <article class="tile is-child notification">
-                  <p class="title">Left</p>
+                <article class="tile is-child notification image" style="background-image: url('/images/running-placeholder.jpg')">
                 </article>
               </div>
             </div>
             <div class="tile is-parent">
               <div class="tile is-child notification">
-                <p class="title">Right</p>
+                <div class="content is-small">
+                  <h1>Hello World</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
+                  <h2>Second level</h2>
+                  <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
+                  <ul>
+                    <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
+                    <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
+                    <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
+                    <li>Ut non enim metus.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="tile is-ancestor box light">
+            <div class="tile is-parent">
+              <div class="tile is-child notification">
+                <div class="content is-small">
+                  <h1>Hello World</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
+                  <h2>Second level</h2>
+                  <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
+                  <ul>
+                    <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
+                    <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
+                    <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
+                    <li>Ut non enim metus.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tile is-4">
+              <div class="tile is-parent">
+                <article class="tile is-child notification image" style="background-image: url('/images/running-placeholder.jpg')">
+                </article>
               </div>
             </div>
           </div>
@@ -130,6 +167,9 @@ export default {
 
       .notification {
         background-color: $light;
+      }
+
+      .content, h1, h2, h3 {
         color: $dark;
       }
     }
@@ -139,6 +179,9 @@ export default {
 
       .notification {
         background-color: $dark;
+      }
+
+      .content, h1, h2, h3 {
         color: $light;
       }
     }
@@ -149,6 +192,16 @@ export default {
 
     .box.primary {
       background-color: $primary;
+    }
+
+    .tile.image {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .is-child {
+      box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
     }
 
   }
