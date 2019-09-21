@@ -49,7 +49,7 @@
         <div class="container content-tiles">
 
           <!-- 1 -->
-          <div class="tile is-ancestor box light">
+          <div class="tile is-ancestor dark">
             <div class="tile is-4">
               <div class="tile is-parent">
                 <article class="tile is-child notification image" style="background-image: url('/images/running-placeholder.jpg')">
@@ -59,9 +59,7 @@
             <div class="tile is-parent">
               <div class="tile is-child notification">
                 <div class="content is-small">
-                  <h1>Hello World</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
-                  <h2>Second level</h2>
+                  <h2>Example Blog Title</h2>
                   <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
                   <ul>
                     <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
@@ -75,13 +73,11 @@
           </div>
 
           <!-- 2 -->
-          <div class="tile is-ancestor box light">
+          <div class="tile is-ancestor light">
             <div class="tile is-parent">
               <div class="tile is-child notification">
                 <div class="content is-small">
-                  <h1>Hello World</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
-                  <h2>Second level</h2>
+                  <h2>Example Blog Title</h2>
                   <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
                   <ul>
                     <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
@@ -100,7 +96,7 @@
             </div>
           </div>
 
-          <div class="tile is-ancestor box light">
+          <div class="tile is-ancestor light">
             <div class="tile is-parent">
               <div class="tile is-child notification">
                 <p class="title">Left</p>
@@ -156,54 +152,24 @@ export default {
     background-color: $primary;
   }
 
-  .content-tiles {
-
-    .is-ancestor.box {
-      margin-bottom: 2rem;
-    }
-
-    .box.dark {
+  .dark {
+    .notification {
       background-color: $dark;
-
-      .notification {
-        background-color: $light;
-      }
-
-      .content, h1, h2, h3 {
-        color: $dark;
-      }
-    }
-
-    .box.light {
-      background-color: $light;
-
-      .notification {
-        background-color: $dark;
-      }
 
       .content, h1, h2, h3 {
         color: $light;
       }
     }
+  }
 
-    .box.accent {
-      background-color: $primary-accent;
-    }
+  .tile.image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 
-    .box.primary {
-      background-color: $primary;
-    }
-
-    .tile.image {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-    }
-
-    .is-child {
-      box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
-    }
-
+  .is-child {
+    box-shadow: 0 2px 3px rgba(10,10,10,.3), 0 0 0 1px rgba(10,10,10,.3);
   }
 }
 
