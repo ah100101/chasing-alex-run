@@ -32,7 +32,7 @@
         </nav>
       </div>
       <!-- Hero content: will be in the middle -->
-      <div class="hero-body">
+      <div id='hero' class="hero-body centered-background">
         <div class="container has-text-centered">
           <h1 class="title">
             Title
@@ -52,7 +52,7 @@
           <div class="tile is-ancestor dark">
             <div class="tile is-4">
               <div class="tile is-parent">
-                <article class="tile is-child notification image" style="background-image: url('/images/running-placeholder.jpg')">
+                <article class="tile is-child notification centered-background" style="background-image: url('/images/running-placeholder.jpg')">
                 </article>
               </div>
             </div>
@@ -90,7 +90,7 @@
             </div>
             <div class="tile is-4">
               <div class="tile is-parent">
-                <article class="tile is-child notification image" style="background-image: url('/images/running-placeholder.jpg')">
+                <article class="tile is-child notification centered-background" style="background-image: url('/images/running-placeholder.jpg')">
                 </article>
               </div>
             </div>
@@ -144,6 +144,31 @@ export default {
 
 .home {
   
+  #hero {
+    background-image: 
+      linear-gradient(rgba(0,173,181, 0.6), rgba(0,173,181, 0.6)),
+      url('/images/hero-placeholder.jpg');
+  }
+
+  .centered-background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .hero-layer {
+    background-color: rgba(248, 247, 216, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero {
+    padding-bottom: 3rem;
+  }
+
   .blog-content {
     background-color: $light;
   }
