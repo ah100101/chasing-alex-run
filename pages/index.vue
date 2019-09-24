@@ -34,12 +34,12 @@
       <!-- Hero content: will be in the middle -->
       <div id='hero' class="hero-body centered-background">
         <div class="container has-text-centered">
-          <h1 class="title">
-            Title
-          </h1>
-          <h2 class="subtitle">
-            Subtitle
-          </h2>
+          <div class="title text-cutout">
+            Chasing Alex
+          </div>
+          <div>
+            <a class="button is-primary hero-cta">View All Posts</a>
+          </div>
         </div>
       </div>
     </section>
@@ -48,6 +48,8 @@
       <div class="column">
         <div class="container content-tiles">
 
+          <h3 class="subtitle is-3">Latest Posts</h3>
+          
           <!-- 1 -->
           <div class="tile is-ancestor dark">
             <div class="tile is-4">
@@ -58,6 +60,9 @@
             </div>
             <div class="tile is-parent">
               <div class="tile is-child notification">
+                <figure class="image mobile-image">
+                  <img src="/images/running-placeholder.jpg">
+                </figure>
                 <div class="content is-small">
                   <h2>Example Blog Title</h2>
                   <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
@@ -143,10 +148,14 @@ export default {
 @import '~/assets/followtheme.scss';
 
 .home {
-  
+
+  .subtitle {
+    color: $light;
+  }
+
   #hero {
     background-image: 
-      linear-gradient(rgba(0,173,181, 0.6), rgba(0,173,181, 0.6)),
+      linear-gradient(rgba(68, 86, 86, 0.6), rgba(68, 86, 86, 0.6)),
       url('/images/hero-placeholder.jpg');
   }
 
@@ -167,7 +176,23 @@ export default {
 
   .hero {
     padding-bottom: 3rem;
+
+    .hero-cta {
+      background-color: $primary-accent;
+    }
+
+    .text-cutout {
+      background-color: $light;
+      color: #000;
+      mix-blend-mode: lighten;
+      // margin-left: 6em;
+      // margin-right: 6em;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      // min-width: 5em;
+    }
   }
+
 
   .blog-content {
     background-color: $light;
@@ -195,6 +220,31 @@ export default {
 
   .is-child {
     box-shadow: 0 2px 3px rgba(10,10,10,.3), 0 0 0 1px rgba(10,10,10,.3);
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  @media only screen and (min-width: 769px) {
+    .text-cutout {
+      margin-left: 6em;
+      margin-right: 6em;
+    }
+  }
+
+  @media only screen and (max-width: 769px) {
+    .content {
+      margin-top: .5em;
+    }
+
+    .centered-background {
+      display: none;
+    }
+
+    .mobile-image {
+      display: block;
+    }
   }
 }
 
