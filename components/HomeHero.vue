@@ -98,7 +98,7 @@ $font-serif      : 'Playfair Display', serif;
   .hero-title {
     color: white;
     font-family: $font-serif;
-    font-size: 15vw; 
+    font-size: 14vw; 
     font-weight: 500;
     letter-spacing: 1px;
     line-height: 1.1;
@@ -107,7 +107,7 @@ $font-serif      : 'Playfair Display', serif;
     width: 85%;
     
     @media screen and (min-width:640px) {
-      font-size: 10vw;
+      font-size: 9vw;
     }
   }
 

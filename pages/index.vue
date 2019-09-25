@@ -6,7 +6,7 @@
         <nav class="navbar">
           <div class="container">
             <div class="navbar-brand">
-              <a class="navbar-item">
+              <a class="navbar-item logo">
                 <img src="/images/logo.png" alt="Logo">
               </a>
               <span class="navbar-burger burger" data-target="navbarMenuHeroA">
@@ -118,6 +118,11 @@ export default {
 @import '~/assets/followtheme.scss';
 
 .home {
+  .navbar-item {
+    img {
+      max-height: 2.5rem;
+    }
+  }
 
   .navbar-burger {
     color: $light;
