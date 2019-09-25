@@ -1,0 +1,174 @@
+<template>
+  <div class='home-hero'>
+    <section class="hero image-as-background" style="background-image: url('/images/hero-placeholder.jpg');">
+      <div class="hero-container">
+        <p class="animate fadeInLeft delay-400">Chasing Alex Run</p>
+        <h1 class="hero-title animate fadeInLeft delay-600">2019 Chicago Marathon Preview</h1>
+        <a href="#" class="hero-button animate fadeInLeft delay-800" title="Click to see more">Read</a>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+
+  },
+  data: function () {
+    return {
+
+    }
+  }
+}
+</script>
+
+<style lang='scss'>
+@import '~/assets/followtheme.scss';
+
+// vars
+$font-sans-serif : 'Roboto Condensed', sans-serif;
+$font-serif      : 'Playfair Display', serif;
+.home-hero {
+  
+  .hero {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // needed to prevent janky scrolling in Safari
+    backface-visibility: hidden;
+    //100% height of the viewport minus the header
+    height: calc(100vh - 3em);
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    
+    @media screen and (min-width:640px) {
+      background-position: 50% 0;
+    }
+
+    // overlay
+    &:after {
+      background-color: rgba(57,62,70,.8);
+      bottom: 0;
+      content: '';
+      left: -2000%;
+      position: absolute;
+      right: -2000%;
+      top: 0;
+      z-index: 1;
+    }
+  }
+
+  .hero-container {
+    box-sizing: border-box;
+    height: auto;
+    padding: 30px 50px;
+    position: relative;
+    z-index: 2;
+    
+    @media screen and (min-width:640px) {
+      height: 100%;
+    }
+
+    p {
+      color: $primary-accent;
+      font-family: $font-sans-serif;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 6px;
+      opacity: 0.8;
+      text-transform: uppercase;
+      text-align: left;
+    }
+  }
+
+  .hero-button {
+    background: rgba(0,173,181,0.8);
+    color: $light;
+    font-size: 1em;
+    float: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    padding: 15px 80px;
+    text-decoration: none;
+  }
+
+  .hero-title {
+    color: white;
+    font-family: $font-serif;
+    font-size: 15vw; 
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    margin: 5px 0;
+    text-align: left;
+    width: 85%;
+    
+    @media screen and (min-width:640px) {
+      font-size: 10vw;
+    }
+  }
+
+  .main-content {
+    height: auto;
+    padding: 30px 50px;
+    position: relative;
+    width: 60%;
+  }
+
+  // Start Animation Tweaks
+  // Need to refactory and Sassify–just proof-of-concept and testing right now
+  // Basically tweaking transform, translates inside keyframes and adding delays
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-12px, 0, 0);
+      transform: translate3d(-12px, 0, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+  }
+
+  .animate {
+      animation-duration: 0.75s;
+      animation-fill-mode: both;
+      animation-timing-function: cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  }
+
+  .delay {
+    animation-delay: 1s;
+  }
+
+  .delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  .delay-500 {
+    animation-delay: 0.5s;
+  }
+
+  .delay-600 {
+    animation-delay: 0.6s;
+  }
+
+  .delay-700 {
+    animation-delay: 0.7s;
+  }
+
+  .delay-800 {
+    animation-delay: 0.8s;
+  }
+}
+</style>

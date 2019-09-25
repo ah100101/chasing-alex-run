@@ -7,7 +7,7 @@
           <div class="container">
             <div class="navbar-brand">
               <a class="navbar-item">
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+                <img src="/images/logo.png" alt="Logo">
               </a>
               <span class="navbar-burger burger" data-target="navbarMenuHeroA">
                 <span></span>
@@ -31,17 +31,10 @@
           </div>
         </nav>
       </div>
+
       <!-- Hero content: will be in the middle -->
-      <div id='hero' class="hero-body centered-background">
-        <div class="container has-text-centered">
-          <div class="title text-cutout">
-            Chasing Alex
-          </div>
-          <div>
-            <a class="button is-primary hero-cta">View All Posts</a>
-          </div>
-        </div>
-      </div>
+      <HomeHero/>
+    
     </section>
 
     <div class="columns is-mobile">
@@ -101,31 +94,6 @@
             </div>
           </div>
 
-          <div class="tile is-ancestor light">
-            <div class="tile is-parent">
-              <div class="tile is-child notification">
-                <p class="title">Left</p>
-              </div>
-            </div>
-            <div class="tile is-4">
-              <div class="tile">
-                <div class="tile is-parent">
-                  <article class="tile is-child notification">
-                    <p class="title">Right</p>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="tile is-ancestor">
-            <div class="tile is-parent">
-              <div class="tile is-child notification">
-                <p class="title">Center</p>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
@@ -134,12 +102,14 @@
 
 <script>
 import Card from '~/components/Card'
+import HomeHero from '~/components/HomeHero'
 
 export default {
   layout: 'home',
   name: 'HomePage',
   components: {
-    Card
+    Card,
+    HomeHero
   }
 }
 </script>
@@ -148,6 +118,10 @@ export default {
 @import '~/assets/followtheme.scss';
 
 .home {
+
+  .navbar-burger {
+    color: $light;
+  }
 
   .subtitle {
     color: $light;
