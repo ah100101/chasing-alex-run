@@ -87,7 +87,8 @@ export default {
 
     float: left;
     padding: 0 1.75rem;
-    width: 50%;
+    width: 100%;
+    max-width: 30rem;
     
     .wrapper {
       background-color: $white;
