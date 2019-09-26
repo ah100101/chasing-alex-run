@@ -89,6 +89,7 @@ export default {
     padding: 0 1.75rem;
     width: 100%;
     max-width: 30rem;
+    margin: auto;
     
     .wrapper {
       background-color: $white;
