@@ -5,8 +5,12 @@ $primary: #393e46;
 $dark: #222831;
 $light: #eeeeee;
 $primary-accent: #00adb5;
-// Set your colors
 $primary-invert: findColorInvert($primary);
+
+$white: #fff;
+$black: #000;
+$open-sans: 'Open Sans',
+sans-serif;
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: (

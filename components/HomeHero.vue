@@ -1,8 +1,8 @@
 <template>
   <div class='home-hero'>
-    <section class="hero image-as-background" style="background-image: url('/images/hero-placeholder.jpg');">
+    <section class="hero image-as-background" style="background-image: url('https://images.unsplash.com/photo-1473873446975-123c5143248b');">
       <div class="hero-container">
-        <p class="animate fadeInLeft delay-400">Chasing Alex Run</p>
+        <p class="animate fadeInLeft delay-400">October 9th 2019</p>
         <h1 class="hero-title animate fadeInLeft delay-600">2019 Chicago Marathon Preview</h1>
         <a href="#" class="hero-button animate fadeInLeft delay-800" title="Click to see more">Read</a>
       </div>
@@ -28,7 +28,7 @@ export default {
 
 // vars
 $font-sans-serif : 'Roboto Condensed', sans-serif;
-$font-serif      : 'Playfair Display', serif;
+$font-serif      : 'Open Sans', sans-serif;
 .home-hero {
   
   .hero {
@@ -49,7 +49,7 @@ $font-serif      : 'Playfair Display', serif;
 
     // overlay
     &:after {
-      background-color: rgba(57,62,70,.8);
+      background-color: rgba(57,62,70,.7);
       bottom: 0;
       content: '';
       left: -2000%;
@@ -69,6 +69,12 @@ $font-serif      : 'Playfair Display', serif;
     
     @media screen and (min-width:640px) {
       height: 100%;
+    }
+
+    @media screen and (min-width:1344px) {
+      max-width: 1344px;
+      margin: 0 auto;
+      padding: 30px 0;
     }
 
     p {
@@ -99,7 +105,7 @@ $font-serif      : 'Playfair Display', serif;
     color: white;
     font-family: $font-serif;
     font-size: 14vw; 
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.1;
     margin: 5px 0;
@@ -117,10 +123,6 @@ $font-serif      : 'Playfair Display', serif;
     position: relative;
     width: 60%;
   }
-
-  // Start Animation Tweaks
-  // Need to refactory and Sassify–just proof-of-concept and testing right now
-  // Basically tweaking transform, translates inside keyframes and adding delays
 
   @keyframes fadeInLeft {
     from {
