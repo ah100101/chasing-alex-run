@@ -82,34 +82,22 @@ export default {
     font-weight: 300;
   }
 
-  // Base styles
   .card-item {
 
     float: left;
-    padding: 0 1.75rem;
     width: 100%;
-    max-width: 30rem;
-    margin: auto;
     
     .wrapper {
       background-color: $white;
       min-height: 540px;
       position: relative;
-      overflow: hidden;
       box-shadow: 0 19px 38px rgba($black, 0.3), 0 15px 12px rgba($black, 0.2);
-      &:hover {
-        .preview-text {
-          transform: translateY(0);
-        }
-      }
     }
 
     .preview-text {
       position: absolute;
       bottom: 0;
       width: 100%;
-      transform: translateY(calc(70px + 1em));
-      transition: transform 0.3s;
 
       .card-content {
         padding: 1em;
@@ -168,7 +156,7 @@ export default {
       width: 100px;
       margin: 2em auto 1em;
       text-align: center;
-      font-size: 12px;
+      font-size: 1rem;
       line-height: 1;
       position: relative;
       font-weight: 700;
@@ -190,7 +178,6 @@ export default {
     }
   }
 
-  // First example styles
   .opaque {
     .wrapper {
       background: linear-gradient(0deg,rgba(37, 41, 46, 0.3),rgba(37, 41, 46, 0.3)),url(https://images.unsplash.com/photo-1452626038306-9aae5e071dd3) 20% 1% / cover no-repeat;
@@ -224,6 +211,24 @@ export default {
     }
     .card-button {
       color: $white;
+    }
+  }
+
+  @media screen and (min-width:1023px) {
+    .card-item.card-item {
+      .wrapper {
+        overflow: hidden;
+        &:hover {
+          .preview-text {
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+
+    .preview-text {
+      transform: translateY(calc(70px + 1em));
+      transition: transform 0.3s;
     }
   }
 }

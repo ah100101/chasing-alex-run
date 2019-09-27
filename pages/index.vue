@@ -41,25 +41,53 @@
       <div class="column">
         <div class="container content-tiles">
 
-          <h3 class="subtitle is-3">Latest Posts</h3>
-          
-          <div class="columns">
-            <div class="column">
+          <div class="tile is-ancestor">
+            <div class="tile is-parent is-6">
+              <article class="tile is-child">
                 <PostCard 
-                v-for='card in cards'
-                v-bind:key='card.title' 
-                v-bind:card='card' />
+                      v-bind:card='cards[0]' />
+              </article>
+            </div>
+            <div class="tile is-parent is-6">
+              <article class="tile is-child">
+                <PostCard 
+                      v-bind:card='cards[1]' />
+              </article>
             </div>
           </div>
 
-          <!-- <PostCard 
-            title='Speed Work: You can only run faster by running faster' 
-            description='Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.' 
-            transparent=true
-            type='Preview'
-            day='12'
-            month='Sep'
-            year='2019' /> -->
+          <div class="tile is-ancestor">
+            <div class="tile is-parent is-12">
+              <article class="tile is-child">
+                <PostCard 
+                      v-bind:card='cards[2]' />
+              </article>
+            </div>
+          </div>
+
+          <div class="tile is-ancestor">
+            <div class="tile is-parent is-6">
+              <article class="tile is-child">
+                <PostCard 
+                      v-bind:card='cards[3]' />
+              </article>
+            </div>
+            <div class="tile is-parent is-6">
+              <article class="tile is-child">
+                <PostCard 
+                      v-bind:card='cards[4]' />
+              </article>
+            </div>
+          </div>
+
+          <div class="tile is-ancestor">
+            <div class="tile is-parent is-12">
+              <article class="tile is-child">
+                <PostCard 
+                      v-bind:card='cards[5]' />
+              </article>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -86,7 +114,7 @@ export default {
           description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
           transparent:true,
           type:'Preview',
-          day:'12',
+          day:'0',
           month:'Sep',
           year:'2019',
           image: 'https://images.unsplash.com/photo-1452626038306-9aae5e071dd3'
@@ -96,7 +124,7 @@ export default {
           description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
           transparent:false,
           type:'Preview',
-          day:'12',
+          day:'1',
           month:'Sep',
           year:'2019',
           image: 'https://images.unsplash.com/photo-1452626038306-9aae5e071dd3'
@@ -106,7 +134,37 @@ export default {
           description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
           transparent:false,
           type:'Preview',
-          day:'12',
+          day:'2',
+          month:'Sep',
+          year:'2019',
+          image: 'https://images.unsplash.com/photo-1485388276992-0ce5ce2d6981'
+        },
+        {
+          title:'Lorem Ipsum Delor Sedet Verberat Baculo 3',
+          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
+          transparent:false,
+          type:'Preview',
+          day:'3',
+          month:'Sep',
+          year:'2019',
+          image: 'https://images.unsplash.com/photo-1485388276992-0ce5ce2d6981'
+        },
+        {
+          title:'Lorem Ipsum Delor Sedet Verberat Baculo 4',
+          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
+          transparent:false,
+          type:'Preview',
+          day:'4',
+          month:'Sep',
+          year:'2019',
+          image: 'https://images.unsplash.com/photo-1485388276992-0ce5ce2d6981'
+        },
+        {
+          title:'Lorem Ipsum Delor Sedet Verberat Baculo 4',
+          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
+          transparent:false,
+          type:'Preview',
+          day:'6',
           month:'Sep',
           year:'2019',
           image: 'https://images.unsplash.com/photo-1485388276992-0ce5ce2d6981'
@@ -137,6 +195,7 @@ export default {
 
   .columns {
     background-color: $primary;
+    padding-top: 2rem;
   }
 
 }
