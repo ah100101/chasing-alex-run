@@ -37,7 +37,7 @@
     
     </section>
 
-    <div class="columns is-mobile">
+    <div>
       <div class="column">
         <div class="container content-tiles">
 
