@@ -193,7 +193,7 @@ export default {
     color: $light;
   }
 
-  .columns {
+  .column {
     background-color: $primary;
     padding-top: 2rem;
   }
