@@ -1,39 +1,14 @@
 <template>
   <div>
-    <nav
-      class="navbar header is-primary"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div class="navbar-brand">
-        <a
-          class="navbar-item"
-          href="/"
-        >
-          <img
-            src="~assets/buefy.png"
-            alt="Buefy"
-            height="28"
-          >
-        </a>
-
-        <div class="navbar-burger">
-          <span />
-          <span />
-          <span />
-        </div>
-      </div>
-    </nav>
-
     <section class="main-content">
         <nuxt />
     </section>
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          <strong>Bulma</strong> by Jeremy Thomas. The source code is licensed
+          MIT. The website content
+          is licensed CC BY NC SA 4.0.
         </p>
       </div>
     </footer>
@@ -55,6 +30,15 @@ export default {
 
 html {
   background-color: $primary;
+  
+  .footer {
+    background-color: $primary;
+
+    p, strong {
+      color: $light;
+    }
+  }
 }
+
 
 </style>
