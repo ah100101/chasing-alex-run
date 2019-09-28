@@ -34,12 +34,14 @@
 
       <!-- Hero content: will be in the middle -->
       <HomeHero/>
-    
     </section>
+
 
     <div>
       <div class="column">
         <div class="container content-tiles">
+        
+          <h3 class="subtitle is-3">Latest Posts</h3>
 
           <div class="tile is-ancestor">
             <div class="tile is-parent is-6">

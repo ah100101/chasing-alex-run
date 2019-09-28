@@ -1,5 +1,5 @@
 <template>
-  <div class='home'>
+  <div class='detail'>
     <section class="hero is-primary is-medium">
       <!-- Hero head: will stick at the top -->
       <div class="hero-head">
@@ -32,45 +32,15 @@
         </nav>
       </div>
 
-      <!-- Hero content: will be in the middle -->
-      <ListingHero/>
-    
+      <DetailHero/>
+
     </section>
 
-    <div class="columns is-mobile">
+
+    <div>
       <div class="column">
-        <div class="container content-tiles">
-
-          <div class="tile is-ancestor">
-            <div class="tile is-parent is-6">
-              <article class="tile is-child">
-                <PostCard 
-                      v-bind:card='cards[0]' />
-              </article>
-            </div>
-            <div class="tile is-parent is-6">
-              <article class="tile is-child">
-                <PostCard 
-                      v-bind:card='cards[1]' />
-              </article>
-            </div>
-          </div>
-
-          <div class="tile is-ancestor">
-            <div class="tile is-parent is-6">
-              <article class="tile is-child">
-                <PostCard 
-                      v-bind:card='cards[3]' />
-              </article>
-            </div>
-            <div class="tile is-parent is-6">
-              <article class="tile is-child">
-                <PostCard 
-                      v-bind:card='cards[4]' />
-              </article>
-            </div>
-          </div>
-
+        <div class="container">
+        
         </div>
       </div>
     </div>
@@ -78,15 +48,13 @@
 </template>
 
 <script>
-import ListingHero from '~/components/ListingHero'
-import PostCard from '~/components/PostCard'
+import DetailHero from '~/components/DetailHero'
 
 export default {
-  layout: 'home',
-  name: 'HomePage',
+  layout: 'default',
+  name: 'Detail',
   components: {
-    ListingHero,
-    PostCard
+    DetailHero
   },
   data: function () {
     return {
@@ -160,7 +128,7 @@ export default {
 <style lang="scss">
 @import '~/assets/followtheme.scss';
 
-.home {
+.detail {
   .navbar-item {
     img {
       max-height: 2.5rem;
@@ -175,7 +143,7 @@ export default {
     color: $light;
   }
 
-  .columns {
+  .column {
     background-color: $primary;
     padding-top: 2rem;
   }

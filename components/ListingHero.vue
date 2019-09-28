@@ -2,9 +2,7 @@
   <div class='home-hero'>
     <section class="hero image-as-background" style="background-image: url('https://images.unsplash.com/photo-1473873446975-123c5143248b');">
       <div class="hero-container">
-        <p class="animate fadeInLeft delay-400">October 9th 2019</p>
-        <h1 class="hero-title animate fadeInLeft delay-600">2019 Chicago Marathon Preview</h1>
-        <a href="#" class="hero-button animate fadeInLeft delay-800" title="Click to see more">Read</a>
+        <h1 class="hero-title animate fadeInLeft delay-600">Posts</h1>
       </div>
     </section>
   </div>
@@ -26,7 +24,6 @@ export default {
 <style lang='scss'>
 @import '~/assets/followtheme.scss';
 
-// vars
 $font-sans-serif : 'Roboto Condensed', sans-serif;
 $font-serif      : 'Open Sans', sans-serif;
 .home-hero {
@@ -38,7 +35,7 @@ $font-serif      : 'Open Sans', sans-serif;
     // needed to prevent janky scrolling in Safari
     backface-visibility: hidden;
     //100% height of the viewport minus the header
-    height: calc(75vh - 3em);
+    height: 20vw;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -63,9 +60,11 @@ $font-serif      : 'Open Sans', sans-serif;
   .hero-container {
     box-sizing: border-box;
     height: auto;
-    padding: 30px 50px;
+    padding: 25px 50px;
     position: relative;
     z-index: 2;
+    // margin: 0 auto;
+    left: 0;
     
     @media screen and (min-width:640px) {
       height: 100%;
@@ -73,53 +72,20 @@ $font-serif      : 'Open Sans', sans-serif;
 
     @media screen and (min-width:1344px) {
       max-width: 1344px;
-      margin: 0 auto;
       padding: 30px 0;
-    }
-
-    p {
-      color: $primary-accent;
-      font-family: $font-sans-serif;
-      font-size: 13px;
-      font-weight: bold;
-      letter-spacing: 6px;
-      opacity: 0.8;
-      text-transform: uppercase;
-      text-align: left;
-    }
-  }
-
-  .hero-button {
-    background: rgba(0,173,181,0.8);
-    color: $light;
-    font-size: 1em;
-    float: left;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 30px;
-    padding: 15px 80px;
-    text-decoration: none;
-
-    @media screen and (max-width:640px) {
-      padding: 10px 60px;
-      font-size: .8em;
+      left: 0;
     }
   }
 
   .hero-title {
-    color: white;
+    color:rgba(255,255,255,.3);
     font-family: $font-serif;
-    font-size: 8vw; 
-    font-weight: 400;
+    font-size: 22vw; 
+    font-weight: 600;
     letter-spacing: 1px;
-    line-height: 1.1;
-    margin: 5px 0;
+    line-height: .8;
     text-align: left;
     width: 85%;
-    
-    @media screen and (max-width:640px) {
-      font-size: 7vw;
-    }
   }
 
   .main-content {
