@@ -63,7 +63,6 @@ $font-serif      : 'Open Sans', sans-serif;
     padding: 25px 50px;
     position: relative;
     z-index: 2;
-    // margin: 0 auto;
     left: 0;
     
     @media screen and (min-width:640px) {
@@ -78,7 +77,7 @@ $font-serif      : 'Open Sans', sans-serif;
   }
 
   .hero-title {
-    color:rgba(255,255,255,.3);
+    color: $white;
     font-family: $font-serif;
     font-size: 22vw; 
     font-weight: 600;

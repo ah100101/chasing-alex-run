@@ -1,9 +1,9 @@
 <template>
   <div class='detail-hero'>
-    <section class="hero image-as-background" style="background-image: url('https://images.unsplash.com/photo-1473873446975-123c5143248b');">
+    <section class="hero image-as-background" style="background-image: url('/images/hero-placeholder.jpg');">
       <div class="hero-container">
         <div class="title-container">
-          <h1 class="hero-title animate fadeInLeft delay-600">2019 Chicago <br/> Marathon Preview</h1>
+          <h1 class="hero-title animate fadeInLeft delay-600">2019 Chicago Marathon Preview</h1>
           <p class="animate fadeInLeft delay-400">October 9th 2019</p>
         </div>
       </div>
@@ -30,20 +30,20 @@ export default {
 // vars
 $font-sans-serif : 'Roboto Condensed', sans-serif;
 $font-serif      : 'Open Sans', sans-serif;
+
 .detail-hero {
   
   .hero {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    // needed to prevent janky scrolling in Safari
     backface-visibility: hidden;
-    //100% height of the viewport minus the header
-    // height: calc(50vh - 3em);
     overflow: hidden;
     position: relative;
     width: 100%;
-    
+    // height: 50vh;
+    box-shadow: 0 19px 38px rgba($black, 0.1), 0 15px 12px rgba($black, 0.1);
+
     @media screen and (min-width:640px) {
       background-position: 50% 0;
     }
@@ -81,7 +81,7 @@ $font-serif      : 'Open Sans', sans-serif;
     p {
       color: $white;
       font-family: $font-sans-serif;
-      font-size: .75em;
+      font-size: 1em;
       font-weight: bold;
       letter-spacing: 6px;
       opacity: 0.8;
@@ -90,27 +90,40 @@ $font-serif      : 'Open Sans', sans-serif;
       width: fit-content;
       padding: 1em 1em;
       position: absolute;
-      margin-left: 2em;
-      margin-top: -.3em;
+      margin-left: 3em;
+      margin-top: .5em;
       background-color: rgba(0, 173, 181, .8);
+
+      @media screen and (max-width:640px) {
+        font-size: .75em;
+      }  
     }
   }
 
   .hero-title {
     color: white;
     font-family: $font-serif;
-    font-size: 6vw; 
+    font-size: 4em; 
     font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.1;
     margin: 5px 0;
     text-align: left;
+
+    @media screen and (max-width:640px) {
+      font-size: 2em;
+    }
   }
 
   .title-container {
     background-color: rgba(34, 40, 49, .9);
-    padding: .5em .5em;
-    width: 85%;
+    padding: 2em;
+    width: fit-content;
+    margin: 2em 0;
+
+    @media screen and (max-width:640px) {
+      padding: 1em;
+    }
   }
 
   .main-content {

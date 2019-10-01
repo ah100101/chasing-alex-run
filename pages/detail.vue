@@ -36,12 +36,26 @@
 
     </section>
 
-
-    <div>
-      <div class="column">
-        <div class="container">
-        
-        </div>
+    <div 
+      class="column"
+      v-bind:class="{ 'dark-mode': darkModeOn }">
+      <div class="field">
+        <b-switch v-model="darkModeOn">Dark Mode</b-switch>
+      </div>
+      <div class="container content">
+        <h1>Title Here</h1>
+        <ol>
+          <li>
+            Item one
+          </li>
+          <li>
+            Item two
+          </li>
+          <li>
+            Item three
+          </li>
+        </ol>
+        <p>Example demo <strong>content</strong> here for review</p>
       </div>
     </div>
   </div>
@@ -58,68 +72,7 @@ export default {
   },
   data: function () {
     return {
-      cards: [
-        {
-          title:'Speed Work: You can only run faster by running faster',
-          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
-          transparent:true,
-          type:'Preview',
-          day:'0',
-          month:'Sep',
-          year:'2019',
-          image: 'https://images.unsplash.com/photo-1452626038306-9aae5e071dd3'
-        },
-        {
-          title:'Lorem Ipsum Delor Sedet Verberat Baculo',
-          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
-          transparent:false,
-          type:'Preview',
-          day:'1',
-          month:'Sep',
-          year:'2019',
-          image: 'https://images.unsplash.com/photo-1452626038306-9aae5e071dd3'
-        },
-        {
-          title:'Lorem Ipsum Delor Sedet Verberat Baculo 2',
-          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
-          transparent:false,
-          type:'Preview',
-          day:'2',
-          month:'Sep',
-          year:'2019',
-          image: 'https://images.unsplash.com/photo-1485388276992-0ce5ce2d6981'
-        },
-        {
-          title:'Lorem Ipsum Delor Sedet Verberat Baculo 3',
-          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
-          transparent:false,
-          type:'Preview',
-          day:'3',
-          month:'Sep',
-          year:'2019',
-          image: 'https://images.unsplash.com/photo-1485388276992-0ce5ce2d6981'
-        },
-        {
-          title:'Lorem Ipsum Delor Sedet Verberat Baculo 4',
-          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
-          transparent:false,
-          type:'Preview',
-          day:'4',
-          month:'Sep',
-          year:'2019',
-          image: 'https://images.unsplash.com/photo-1485388276992-0ce5ce2d6981'
-        },
-        {
-          title:'Lorem Ipsum Delor Sedet Verberat Baculo 4',
-          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
-          transparent:false,
-          type:'Preview',
-          day:'6',
-          month:'Sep',
-          year:'2019',
-          image: 'https://images.unsplash.com/photo-1485388276992-0ce5ce2d6981'
-        }
-      ]
+      darkModeOn: false
     }
   }
 }
@@ -144,8 +97,22 @@ export default {
   }
 
   .column {
-    background-color: $primary;
+    background-color: $light;
     padding-top: 2rem;
+  }
+
+  .column.dark-mode {
+    background-color: $primary;
+    color: $light; 
+  }
+
+  .switch {
+    float: right;
+
+    input.checkbox {
+      width: 100%;
+      height: 100%;
+    }
   }
 
 }
