@@ -6,7 +6,7 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          <strong>Bulma</strong> by Jeremy Thomas. The source code is licensed
+          <strong>Chasing Alex Run</strong> by Alex Hawley. The source code is licensed
           MIT. The website content
           is licensed CC BY NC SA 4.0.
         </p>

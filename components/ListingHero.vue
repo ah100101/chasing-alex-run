@@ -1,6 +1,6 @@
 <template>
   <div class='home-hero'>
-    <section class="hero image-as-background" style="background-image: url('https://images.unsplash.com/photo-1473873446975-123c5143248b');">
+    <section class="hero image-as-background" style="background-image: url('./images/hero-placeholder.jpg');">
       <div class="hero-container">
         <h1 class="hero-title animate fadeInLeft delay-600">Posts</h1>
       </div>

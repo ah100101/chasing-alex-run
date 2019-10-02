@@ -15,13 +15,13 @@
           </div>
           <div class="navbar-menu">
             <div class="navbar-end">
-              <a class="navbar-item is-active">
+              <a href="/" class="navbar-item is-active">
                 Home
               </a>
-              <a class="navbar-item">
+              <a href="/posts" class="navbar-item">
                 Posts
               </a>
-              <a class="navbar-item">
+              <a href="/about" class="navbar-item">
                 About
               </a>
             </div>
