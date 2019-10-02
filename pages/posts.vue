@@ -2,7 +2,9 @@
   <div class='home'>
     <section class="hero is-primary is-medium">
       <Navigation />
-      <ListingHero/>
+      <InteriorHero
+        title="Posts"
+        backgroundImage="./images/hero-placeholder.jpg" />
     </section>
 
     <div class="columns is-mobile">
@@ -14,7 +16,7 @@
 </template>
 
 <script>
-import ListingHero from '~/components/ListingHero'
+import InteriorHero from '~/components/InteriorHero'
 import PostCard from '~/components/PostCard'
 import Navigation from '~/components/Navigation'
 import TwoColumnListing from '~/components/TwoColumnListing'
@@ -23,7 +25,7 @@ export default {
   layout: 'home',
   name: 'HomePage',
   components: {
-    ListingHero,
+    InteriorHero,
     PostCard,
     Navigation,
     TwoColumnListing

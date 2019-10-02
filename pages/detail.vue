@@ -1,39 +1,11 @@
 <template>
   <div class='detail'>
     <section class="hero is-primary is-medium">
-      <!-- Hero head: will stick at the top -->
-      <div class="hero-head">
-        <nav class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
-              <a class="navbar-item logo">
-                <img src="/images/logo.png" alt="Logo">
-              </a>
-              <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </div>
-            <div id="navbarMenuHeroA" class="navbar-menu">
-              <div class="navbar-end">
-                <a href='/' class="navbar-item">
-                  Home
-                </a>
-                <a href="/listing" class="navbar-item">
-                  Posts
-                </a>
-                <a href="/about" class="navbar-item">
-                  About
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-
-      <DetailHero/>
-
+      <Navigation />
+      <DetailHero
+        title="2019 Chicago Marathon Preview"
+        date="October 9th 2019" 
+        backgroundImage="./images/hero-placeholder.jpg" />
     </section>
 
     <div 
@@ -63,12 +35,12 @@
 
 <script>
 import DetailHero from '~/components/DetailHero'
+import Navigation from '~/components/Navigation'
 
 export default {
-  layout: 'default',
-  name: 'Detail',
   components: {
-    DetailHero
+    DetailHero,
+    Navigation
   },
   data: function () {
     return {
@@ -124,6 +96,10 @@ export default {
     }
   }
 
+  .content {
+    max-width: 800px;
+  }
+
   .dark-mode {
     .switch input[type=checkbox] + .check {
       background-color: #ffcd94;
@@ -132,10 +108,6 @@ export default {
 
   .switch {
     float: right;
-    
-    .check {
-      // background-color: red;
-    }
 
     input.checkbox {
       width: 100%;

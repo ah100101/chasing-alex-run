@@ -1,10 +1,10 @@
 <template>
   <div class='detail-hero'>
-    <section class="hero image-as-background" style="background-image: url('/images/hero-placeholder.jpg');">
+    <section class="hero image-as-background" v-bind:style="backgroundImageStyle">
       <div class="hero-container">
         <div class="title-container">
-          <h1 class="hero-title animate fadeInLeft delay-600">2019 Chicago Marathon Preview</h1>
-          <p class="animate fadeInLeft delay-400">October 9th 2019</p>
+          <h1 class="hero-title animate fadeInLeft delay-600">{{ title }}</h1>
+          <p class="animate fadeInLeft delay-400">{{ date }}</p>
         </div>
       </div>
     </section>
@@ -14,11 +14,26 @@
 <script>
 export default {
   props: {
-
+    backgroundImage: {
+      type: String,
+      required: true
+    },
+    title: {
+      type: String,
+      required: true
+    },
+    date: {
+      type: String
+    }
   },
   data: function () {
     return {
 
+    }
+  },
+  computed: {
+    backgroundImageStyle: function () {
+      return `background-image: url('${this.backgroundImage}');`
     }
   }
 }
@@ -27,7 +42,6 @@ export default {
 <style lang='scss'>
 @import '~/assets/followtheme.scss';
 
-// vars
 $font-sans-serif : 'Roboto Condensed', sans-serif;
 $font-serif      : 'Open Sans', sans-serif;
 
@@ -41,7 +55,6 @@ $font-serif      : 'Open Sans', sans-serif;
     overflow: hidden;
     position: relative;
     width: 100%;
-    // height: 50vh;
     box-shadow: 0 19px 38px rgba($black, 0.1), 0 15px 12px rgba($black, 0.1);
 
     @media screen and (min-width:640px) {

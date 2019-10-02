@@ -1,8 +1,8 @@
 <template>
   <div class='home-hero'>
-    <section class="hero image-as-background" style="background-image: url('./images/hero-placeholder.jpg');">
+    <section class="hero image-as-background" v-bind:style="backgroundImageStyle">
       <div class="hero-container">
-        <h1 class="hero-title animate fadeInLeft delay-600">Posts</h1>
+        <h1 class="hero-title animate fadeInLeft delay-600">{{ title }}</h1>
       </div>
     </section>
   </div>
@@ -11,11 +11,23 @@
 <script>
 export default {
   props: {
-
+    backgroundImage: {
+      type: String,
+      required: true
+    },
+    title: {
+      type: String,
+      required: true
+    }
   },
   data: function () {
     return {
 
+    }
+  },
+  computed: {
+    backgroundImageStyle: function () {
+      return `background-image: url('${this.backgroundImage}');`
     }
   }
 }
