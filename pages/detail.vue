@@ -17,14 +17,14 @@
             </div>
             <div id="navbarMenuHeroA" class="navbar-menu">
               <div class="navbar-end">
-                <a class="navbar-item is-active">
+                <a href='/' class="navbar-item">
                   Home
                 </a>
-                <a class="navbar-item">
-                  Examples
+                <a href="/listing" class="navbar-item">
+                  Posts
                 </a>
-                <a class="navbar-item">
-                  Documentation
+                <a href="/about" class="navbar-item">
+                  About
                 </a>
               </div>
             </div>
@@ -38,9 +38,9 @@
 
     <div 
       class="column"
-      v-bind:class="{ 'dark-mode': darkModeOn }">
+      v-bind:class="{ 'dark-mode': darkModeOn, 'light-mode': !darkModeOn }">
       <div class="field">
-        <b-switch v-model="darkModeOn">Dark Mode</b-switch>
+        <b-switch v-model="darkModeOn">{{ darkModeText }}</b-switch>
       </div>
       <div class="container content">
         <h1>Title Here</h1>
@@ -72,7 +72,15 @@ export default {
   },
   data: function () {
     return {
-      darkModeOn: false
+      darkModeOn: false,
+    }
+  },
+  computed: {
+    darkModeText: function () {
+      if (this.darkModeOn) {
+        return "Light Mode"
+      }
+      return "Dark Mode"
     }
   }
 }
@@ -103,16 +111,38 @@ export default {
 
   .column.dark-mode {
     background-color: $primary;
-    color: $light; 
+    color: $light;
+
+    h1, h2, h3, strong {
+      color: $light;
+    }
+  }
+
+  .light-mode {
+    .switch input[type=checkbox] + .check {
+      background-color: $primary;
+    }
+  }
+
+  .dark-mode {
+    .switch input[type=checkbox] + .check {
+      background-color: #ffcd94;
+    }
   }
 
   .switch {
     float: right;
+    
+    .check {
+      // background-color: red;
+    }
 
     input.checkbox {
       width: 100%;
       height: 100%;
     }
+
+
   }
 
 }
