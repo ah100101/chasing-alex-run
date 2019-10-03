@@ -1,5 +1,5 @@
 <template>
-  <li class="timeline-item">
+  <li class="timeline-item" style="background: linear-gradient(0deg, rgb(37, 41, 46, 0.8), rgba(37, 41, 46, 0.8)), url('./images/running-placeholder.jpg') center center / cover no-repeat;">
       <div class="timeline-info">
           <span>March 12, 2016</span>
       </div>
@@ -39,13 +39,14 @@ $primary-color: $primary-accent;
 $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 
 .timeline-item {    
-  padding-left: 40px;
+  // padding-left: 40px;
   padding-bottom: 3em;
   position: relative;
+  padding: 2em !important;
+
   &:last-child {
       padding-bottom: 0;
   }
-
 
   .timeline-info {
       color: $primary-accent;
@@ -73,19 +74,20 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
         display: block;
         height: 15px;
         position: absolute;
-        top: 4px; left: 0;
+        top: 36px; left: 0;
         width: 15px;
         transition: background 0.3s ease-in-out,
                 border 0.3s ease-in-out;
+        z-index: 1;
     }
     
     &:after {
         content: "";
-        width: 2px;
+        width: 4px;
         background: $light;
         display: block;
         position: absolute;
-        top: 24px; bottom: 0; left: 6px;
+        top: 0px; bottom: 0; left: 5px;
     }
 
     .timeline-item:last-child &:after {

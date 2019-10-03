@@ -47,7 +47,7 @@ $font-serif      : 'Open Sans', sans-serif;
     // needed to prevent janky scrolling in Safari
     backface-visibility: hidden;
     //100% height of the viewport minus the header
-    height: 20vw;
+    height: 15vw;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -72,7 +72,7 @@ $font-serif      : 'Open Sans', sans-serif;
   .hero-container {
     box-sizing: border-box;
     height: auto;
-    padding: 25px 50px;
+    padding: 15px 50px;
     position: relative;
     z-index: 2;
     left: 0;
@@ -91,7 +91,7 @@ $font-serif      : 'Open Sans', sans-serif;
   .hero-title {
     color: $white;
     font-family: $font-serif;
-    font-size: 22vw; 
+    font-size: 12vw; 
     font-weight: 600;
     letter-spacing: 1px;
     line-height: .8;

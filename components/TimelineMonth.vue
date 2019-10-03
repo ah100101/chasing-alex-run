@@ -65,6 +65,15 @@ export default {
 
     .timeline-title {
         margin: 0;
+        // padding-bottom: 1em;
+        line-height: 1em !important;
+    }
+
+    @media (min-width: 992px) {
+      .timeline-title {
+        padding-bottom: 1em;
+        line-height: inherit;
+      }
     }
 }
 </style>
