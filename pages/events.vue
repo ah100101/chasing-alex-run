@@ -4,7 +4,7 @@
       <Navigation />
       <InteriorHero
         title="Events"
-        backgroundImage="./images/hero-placeholder.jpg" />
+        backgroundImage="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3" />
     </section>
 
     <div class="columns is-mobile">
