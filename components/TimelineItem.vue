@@ -39,7 +39,6 @@ $primary-color: $primary-accent;
 $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 
 .timeline-item {    
-  // padding-left: 40px;
   padding-bottom: 3em;
   position: relative;
   padding: 2em !important;
@@ -65,6 +64,7 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
     position: absolute;
     top: 0; bottom: 0; left: 0;
     width: 15px;
+    margin-left: 5px;
     
     &:before {
         background: $primary-color;

@@ -47,25 +47,24 @@ export default {
             border: none;
             border-radius: 0;
             top: 0;
-            bottom: 30px;
+            bottom: 0px;
             position: absolute;
-            border-top: 3px solid #CCD5DB;
-            border-bottom: 3px solid #CCD5DB;
+            border-top: 3px solid $light;
+            border-bottom: 3px solid $light;
         }
         &:after {
             content: "";
-            height: 32px;
+            height: 0px;
             top: auto;
         }
     }
     
     .timeline-content {
-        padding: 40px 0 70px;
+        padding: 0;
     }
 
     .timeline-title {
         margin: 0;
-        // padding-bottom: 1em;
         line-height: 1em !important;
     }
 

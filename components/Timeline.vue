@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid event-timeline">
-    <h3 class="subtitle is-3">All Previous and Upcoming Events</h3>
+    <h3 class="subtitle is-3"></h3>
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
             <ul class="timeline timeline-centered">
@@ -77,7 +77,7 @@ export default {
     }
 
     .timeline {
-
+        background: $dark;
         line-height: 1.4em;
         list-style: none;
         margin: 0;
@@ -94,6 +94,12 @@ export default {
         .timeline-item:first-child {
             .timeline-marker::after {
                 top: 37px !important;
+            }
+        }
+
+        .timeline-item:last-child {
+            .timeline-marker::after {
+                height: 37px;
             }
         }
 
@@ -166,13 +172,14 @@ export default {
             }
             
             .period .timeline-marker:after {
-                height: 30px;
+                height: 0px;
                 bottom: 0;
                 top: auto;
             }
 
             .period .timeline-title {
                 left: auto;
+                padding-bottom: 0;
             }
 
         }
