@@ -24,6 +24,7 @@
                                 <h5 class="timeline-title subtitle is-5">Event Title</h5>
                                 <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
                                     eu pede mollis pretium. Pellentesque ut neque.</p>
+                                <a href="#" title="Read" class="event-read-button">Read</a>
                             </div>
                         </li>
                         <li class="timeline-item">
@@ -35,6 +36,7 @@
                                 <h5 class="timeline-title subtitle is-5">Event Title</h5>
                                 <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
                                     eu pede mollis pretium. Pellentesque ut neque. </p>
+                                <a href="#" title="Read" class="event-read-button">Read</a>
                             </div>
                         </li>
                         <li class="timeline-item period">
@@ -53,6 +55,7 @@
                                 <h5 class="timeline-title subtitle is-5">Event Title</h5>
                                 <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
                                     eu pede mollis pretium. Pellentesque ut neque. </p>
+                                <a href="#" title="Read" class="event-read-button">Read</a>
                             </div>
                         </li>
                         <li class="timeline-item">
@@ -63,7 +66,9 @@
                             <div class="timeline-content">
                                 <h5 class="timeline-title subtitle is-5">Event Title</h5>
                                 <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                                    eu pede mollis pretium. Pellentesque ut neque. </p>
+                                    eu pede mollis pretium. Pellentesque ut neque. 
+                                </p>
+                                <a href="#" title="Read" class="event-read-button">Read</a>
                             </div>
                         </li>
                     </ul>
@@ -133,14 +138,24 @@ export default {
     }
 
     .container-fluid {
+      .row {
+          padding: 0 0 4em 0;
+          &:nth-child(even) {
+              background: $primary;
+          }
+      }
+    }
 
-        .row {
-            padding: 0 0 4em 0;
-            &:nth-child(even) {
-                background: $primary;
-            }
-        }
-
+    .event-read-button {
+      background: rgba(0, 173, 181, 0.8);
+      color: #eeeeee;
+      font-size: .8em;
+      float: left;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 30px;
+      padding: 8px 30px;
+      text-decoration: none;
     }
 
     /*==================================
@@ -335,6 +350,10 @@ export default {
                 float: left;
                 text-align: right;
                 padding-right: 30px;
+            }
+
+            > .timeline-item:nth-child(even) .event-read-button {
+                float: right;
             }
 
             > .timeline-item.period .timeline-content {
