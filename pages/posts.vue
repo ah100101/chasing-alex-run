@@ -1,5 +1,5 @@
 <template>
-  <div class='home'>
+  <div class='posts'>
     <section class="hero is-primary is-medium">
       <Navigation />
       <InteriorHero
@@ -22,8 +22,7 @@ import Navigation from '~/components/Navigation'
 import TwoColumnListing from '~/components/TwoColumnListing'
 
 export default {
-  layout: 'home',
-  name: 'HomePage',
+  name: 'Posts',
   components: {
     InteriorHero,
     PostCard,
@@ -108,26 +107,11 @@ export default {
 <style lang="scss">
 @import '~/assets/followtheme.scss';
 
-.home {
-  .navbar-item {
-    img {
-      max-height: 2.5rem;
-    }
-  }
-
-  .navbar-burger {
-    color: $light;
-  }
-
-  .subtitle {
-    color: $light;
-  }
-
+.posts {
   .columns {
     background-color: $primary;
     padding-top: 2rem;
   }
-
 }
 
 </style>
