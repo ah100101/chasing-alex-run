@@ -118,7 +118,7 @@ $font-serif      : 'Open Sans', sans-serif;
     width: 85%;
     
     @media screen and (max-width:640px) {
-      font-size: 7vw;
+      font-size: 12vw;
     }
   }
 
