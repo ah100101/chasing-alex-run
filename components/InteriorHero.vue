@@ -40,6 +40,8 @@ $font-sans-serif : 'Roboto Condensed', sans-serif;
 $font-serif      : 'Open Sans', sans-serif;
 .home-hero {
   
+  box-shadow: 0 19px 38px rgba($black, 0.1), 0 15px 12px rgba($black, 0.1);
+
   .hero {
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -82,7 +84,6 @@ $font-serif      : 'Open Sans', sans-serif;
     }
 
     @media screen and (min-width:1344px) {
-      max-width: 1344px;
       padding: 30px 0;
       left: 0;
     }
@@ -95,8 +96,7 @@ $font-serif      : 'Open Sans', sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
     line-height: .8;
-    text-align: left;
-    width: 85%;
+    text-align: center;
   }
 
   .main-content {

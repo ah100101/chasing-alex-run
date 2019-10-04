@@ -64,7 +64,7 @@ export default {
 .detail {
   .navbar-item {
     img {
-      max-height: 2.5rem;
+      max-height: 4.5rem;
     }
   }
 

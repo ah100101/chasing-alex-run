@@ -1,5 +1,5 @@
 <template>
-  <li class="timeline-item" style="background: linear-gradient(0deg, rgba(37, 41, 46, 1), rgba(37, 41, 46, 0.6),rgba(37, 41, 46, 1)), url('https://images.unsplash.com/photo-1452626038306-9aae5e071dd3') center center / cover no-repeat;">
+  <li class="timeline-item" style="background: linear-gradient(0deg, rgba(37, 41, 46), rgba(37, 41, 46, 0.6),rgba(37, 41, 46)), url('https://images.unsplash.com/photo-1452626038306-9aae5e071dd3') center center / cover no-repeat;">
       <div class="timeline-info">
           <span>March 12, 2016</span>
       </div>
@@ -42,6 +42,8 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
   padding-bottom: 3em;
   position: relative;
   padding: 2em !important;
+
+  transition: all 0.5s ease-in-out;
 
   &:last-child {
       padding-bottom: 0;
@@ -119,6 +121,13 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
     padding: 8px 30px;
     text-decoration: none;
   }
+}
+
+.timeline-item:hover {
+  box-shadow: 0px 0px 40px #000000;
+  z-index: 2;
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
 }
 
 </style>
