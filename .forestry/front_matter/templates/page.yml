@@ -35,6 +35,3 @@ fields:
     schema:
       format: markdown
   label: Body
-pages:
-- content/pages/posts.md
-- content/pages/home.md
