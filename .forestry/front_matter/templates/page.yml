@@ -36,6 +36,7 @@ fields:
       format: markdown
   label: Body
 pages:
+- content/pages/contributing.md
 - content/pages/events.md
 - content/pages/about.md
 - content/pages/home.md
