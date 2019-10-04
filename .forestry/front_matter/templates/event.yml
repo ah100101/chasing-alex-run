@@ -38,3 +38,5 @@ fields:
 - name: is_time_period
   type: boolean
   label: Is Time Period
+pages:
+- content/events/planet-adventure-winter-trail-marathon.md
