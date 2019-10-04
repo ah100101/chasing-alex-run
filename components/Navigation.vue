@@ -49,12 +49,17 @@ export default {
 .main-nav {
   .navbar-item {
     img {
-      max-height: 2.5rem;
+      max-height: 4.5rem;
     }
+  }
+  
+  .navbar-item.logo {
+    padding: 0;
   }
 
   .navbar-burger {
     color: $light;
+    height: 4.5rem;
   }
 
   .subtitle {
