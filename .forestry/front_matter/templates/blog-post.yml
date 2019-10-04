@@ -59,4 +59,5 @@ fields:
   default: []
   label: Tags
 pages:
+- content/posts/2019-chicago-marathon.md
 - content/posts/2019-chicago-marathon-preview.md
