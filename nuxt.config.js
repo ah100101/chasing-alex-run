@@ -1,3 +1,5 @@
+import { pathToFileURL } from "url";
+import path from 'path'
 
 export default {
   mode: 'spa',
@@ -52,6 +54,13 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      config.module.rules.push(
+        {
+          test: /\.md$/,
+          include: path.resolve(__dirname, 'content'),
+          loader: 'frontmatter-markdown-loader'
+        }
+      )
     }
   }
 }

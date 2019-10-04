@@ -1,0 +1,125 @@
+<template>
+  <div class='posts'>
+    <section class="hero is-primary is-medium">
+      <Navigation />
+      <InteriorHero
+        title="Posts"
+        backgroundImage="./images/hero-placeholder.jpg" />
+    </section>
+
+    <div class="columns is-mobile">
+      <div class="column">
+        <TwoColumnListing v-bind:cards="cards" />
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import InteriorHero from '~/components/InteriorHero'
+import PostCard from '~/components/PostCard'
+import Navigation from '~/components/Navigation'
+import TwoColumnListing from '~/components/TwoColumnListing'
+
+export default {
+  name: 'Posts',
+  components: {
+    InteriorHero,
+    PostCard,
+    Navigation,
+    TwoColumnListing
+  },
+  mounted: function () {
+    const resolve = require.context('~/content/posts/', true, /\.md$/)
+    this.posts = resolve.keys().map((key) => {
+      const [, name] = key.match(/\/(.+)\.md$/)
+      return resolve(key)
+    })
+  },
+  data: function () {
+    return {
+      posts: [],
+      cards: [
+        {
+          title:'Speed Work: You can only run faster by running faster',
+          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
+          transparent:true,
+          type:'Race Preview',
+          day:'0',
+          month:'Sep',
+          year:'2019',
+          image: './images/running-placeholder.jpg',
+          slug: '/detail/speed-work'
+        },
+        {
+          title:'Lorem Ipsum Delor Sedet Verberat Baculo',
+          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
+          transparent:false,
+          type:'Race Preview',
+          day:'1',
+          month:'Sep',
+          year:'2019',
+          image: './images/running-placeholder.jpg',
+          slug: '/detail/speed-work'
+        },
+        {
+          title:'Lorem Ipsum Delor Sedet Verberat Baculo 2',
+          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
+          transparent:false,
+          type:'Race Preview',
+          day:'2',
+          month:'Sep',
+          year:'2019',
+          image: './images/running-placeholder.jpg',
+          slug: '/detail/speed-work'
+        },
+        {
+          title:'Lorem Ipsum Delor Sedet Verberat Baculo 3',
+          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
+          transparent:false,
+          type:'Race Preview',
+          day:'3',
+          month:'Sep',
+          year:'2019',
+          image: './images/running-placeholder.jpg',
+          slug: '/detail/speed-work'
+        },
+        {
+          title:'Lorem Ipsum Delor Sedet Verberat Baculo 4',
+          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
+          transparent:false,
+          type:'Race Preview',
+          day:'4',
+          month:'Sep',
+          year:'2019',
+          image: './images/running-placeholder.jpg',
+          slug: '/detail/speed-work'
+        },
+        {
+          title:'Lorem Ipsum Delor Sedet Verberat Baculo 4',
+          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
+          transparent:false,
+          type:'Race Preview',
+          day:'6',
+          month:'Sep',
+          year:'2019',
+          image: './images/running-placeholder.jpg',
+          slug: '/detail/speed-work'
+        }
+      ]
+    }
+  }
+}
+</script>
+
+<style lang="scss">
+@import '~/assets/followtheme.scss';
+
+.posts {
+  .columns {
+    background-color: $primary;
+    padding-top: 2rem;
+  }
+}
+
+</style>
