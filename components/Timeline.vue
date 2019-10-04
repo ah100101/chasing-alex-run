@@ -4,11 +4,11 @@
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
             <ul class="timeline timeline-centered">
-                <TimelineItem />
-                <TimelineItem />
-                <TimelineMonth text="September 2019" />
-                <TimelineItem />
-                <TimelineItem />
+                <TimelineItem
+                    v-for="event in this.events"
+                    v-bind:key="event.title"
+                    v-bind:item="event" 
+                    />
             </ul>
         </div>
     </div>
@@ -19,12 +19,16 @@
 import InteriorHero from '~/components/InteriorHero'
 import Navigation from '~/components/Navigation'
 import TimelineItem from '~/components/TimelineItem'
-import TimelineMonth from '~/components/TimelineMonth'
 
 export default {
   components: {
-    TimelineItem,
-    TimelineMonth
+    TimelineItem
+  },
+  props: {
+      events: {
+          type: Array,
+          required: true
+      }
   },
   data: function () {
     return {

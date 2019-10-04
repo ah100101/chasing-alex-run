@@ -1,24 +1,41 @@
 <template>
-  <li class="timeline-item event-hover" style="background: linear-gradient(0deg, rgba(37, 41, 46), rgba(37, 41, 46, 0.6),rgba(37, 41, 46)), url('https://images.unsplash.com/photo-1452626038306-9aae5e071dd3') center center / cover no-repeat;">
-      <div class="timeline-info">
-          <span>March 12, 2016</span>
-      </div>
-      <div class="timeline-marker"></div>
-      <div class="timeline-content">
-          <h5 class="timeline-title subtitle is-5">Event Title</h5>
-          <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-              eu pede mollis pretium. Pellentesque ut neque.</p>
-          <a href="#" title="Read" class="event-read-button">Read</a>
-      </div>
-  </li>
+    <li 
+      class="timeline-item"
+      v-bind:style="this.backgroundImageStyle"
+      v-bind:class="{ 'event-hover event-card': !item.isTimePeriod, 'period': item.isTimePeriod }">
+        <div class="timeline-info">
+            <span 
+              v-if="!item.isTimePeriod">{{ item.date }}</span>
+        </div>
+        <div 
+          class="timeline-marker"></div>
+        <div class="timeline-content">
+            <h5 
+              class="timeline-title subtitle is-5"
+              v-if="!item.isTimePeriod">{{ item.title }}</h5>
+            <h3
+              v-else 
+              class="timeline-title subtitle is-3">{{ item.title }}</h3>
+            <p 
+              v-if="!item.isTimePeriod">{{ item.description }}</p>
+            <a 
+              v-if="!item.isTimePeriod"
+              v-bind:href="item.url" 
+              title="Read" 
+              class="event-read-button">Read</a>
+        </div>
+    </li>
 </template>
 
 <script>
 export default {
+  components: {
+
+  },
   props: {
     item: {
       type: Object,
-      // required: true
+      required: true
     }
   },
   data: function () {
@@ -27,7 +44,13 @@ export default {
     }
   },
   computed: {
-    
+    backgroundImageStyle: function () {
+      if (this.item.isTimePeriod) {
+        return ""
+      }
+
+      return `background: linear-gradient(0deg, rgba(37, 41, 46), rgba(37, 41, 46, 0.6),rgba(37, 41, 46)), url('${this.item.backgroundImage}') center center / cover no-repeat;`
+    }
   }
 }
 </script>
@@ -130,6 +153,52 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
   z-index: 2;
   transform: scale(1.05);
   transition: all 0.5s ease-in-out;
+}
+
+.period {
+
+    padding: 0;
+    
+    .timeline-info {
+        display: none;
+    }
+    
+    .timeline-marker {
+        &:before {
+            background: transparent;
+            content: "";
+            width: 15px;
+            height: auto;
+            border: none;
+            border-radius: 0;
+            top: 0;
+            bottom: 0px;
+            position: absolute;
+            border-top: 3px solid $light;
+            border-bottom: 3px solid $light;
+        }
+        &:after {
+            content: "";
+            height: 0px;
+            top: auto;
+        }
+    }
+    
+    .timeline-content {
+        padding: 0;
+    }
+
+    .timeline-title {
+        margin: 0;
+        line-height: 1em !important;
+    }
+
+    @media (min-width: 992px) {
+      .timeline-title {
+        padding-bottom: 1em;
+        line-height: inherit;
+      }
+    }
 }
 
 </style>
