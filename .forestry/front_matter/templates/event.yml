@@ -1,4 +1,40 @@
 ---
 label: Event
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: url
+  type: text
+  config:
+    required: false
+  label: URL
+- name: background_image
+  type: file
+  config:
+    maxSize: 250
+  label: Background Image
+- name: is_time_period
+  type: boolean
+  label: Is Time Period
