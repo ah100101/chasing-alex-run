@@ -1,5 +1,5 @@
 <template>
-  <li class="timeline-item" style="background: linear-gradient(0deg, rgba(37, 41, 46, 1), rgba(37, 41, 46, 0.6),rgba(37, 41, 46, 1)), url("https://images.unsplash.com/photo-1452626038306-9aae5e071dd3") center center / cover no-repeat;">
+  <li class="timeline-item" style="background: linear-gradient(0deg, rgba(37, 41, 46, 1), rgba(37, 41, 46, 0.6),rgba(37, 41, 46, 1)), url('https://images.unsplash.com/photo-1452626038306-9aae5e071dd3') center center / cover no-repeat;">
       <div class="timeline-info">
           <span>March 12, 2016</span>
       </div>
