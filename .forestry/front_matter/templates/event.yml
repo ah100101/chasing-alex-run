@@ -54,6 +54,7 @@ fields:
     required: false
   label: Placement
 pages:
+- content/events/chicago-half-marathon.md
 - content/events/illinois-marathon-2011.md
 - content/events/bank-of-america-chicago-marathon-2011.md
 - content/events/2018.md
