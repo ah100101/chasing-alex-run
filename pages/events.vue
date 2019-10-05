@@ -50,7 +50,8 @@ export default {
           url: obj.attributes['url'],
           placement: obj.attributes['placement'],
           finishTime: obj.attributes['finish_time'],
-          avgPace: obj.attributes['average_pace']
+          avgPace: obj.attributes['average_pace'],
+          loadingImage: !!obj.attributes['loading_image'] ? obj.attributes['loading_image'] : ''
         }
       })
   },

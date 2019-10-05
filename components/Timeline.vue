@@ -7,7 +7,10 @@
                 <TimelineItem
                     v-for="event in this.events"
                     v-bind:key="event.title"
-                    v-bind:item="event" 
+                    v-bind:item="event"
+                    v-bind:imageSource="event.backgroundImage"
+                    v-bind:loadingImage="event.loadingImage"
+                    v-bind:errorImage="event.loadingImage"
                     />
             </ul>
         </div>

@@ -41,21 +41,67 @@ export default {
     item: {
       type: Object,
       required: true
+    },
+    imageSource: {
+      type: String,
+      required: true
+    },
+    loadingImage: {
+      type: String,
+      required: true
+    },
+    errorImage: {
+      type: String,
+      required: true
     }
   },
   data: function () {
     return {
-
+      imageState: 'loading',
+      asyncImage: new Image()
+    }
+  },
+  mounted() {
+    if (this.loadingImage) {
+      this.$nextTick(() => {
+          this.fetchImage()
+      })
+    }
+  },
+  methods: {
+    fetchImage() {
+      this.asyncImage.onload = this.imageOnLoad
+      this.asyncImage.onerror = this.imageOnError
+      this.imageState = 'loading'
+      this.asyncImage.src = this.imageSource
+    },
+    imageOnLoad(success) {
+      this.imageState = 'loaded'
+    },
+    imageOnError(error) {
+      this.imageState = 'error'
     }
   },
   computed: {
     backgroundImageStyle: function () {
       if (this.item.isTimePeriod) {
-        return ""
+        return ''
       }
 
-      return `background: linear-gradient(0deg, rgba(37, 41, 46), rgba(37, 41, 46, 0.6),rgba(37, 41, 46)), url('${this.item.backgroundImage}') center center / cover no-repeat;`
-    }
+      // return `background: linear-gradient(0deg, rgba(37, 41, 46), rgba(37, 41, 46, 0.6),rgba(37, 41, 46)), url('${this.item.backgroundImage}') center center / cover no-repeat;`
+
+      if (this.imageState === 'loading') {
+        return `background: linear-gradient(0deg, rgba(37, 41, 46), rgba(37, 41, 46, 0.6),rgba(37, 41, 46)), url('${this.loadingImage}') center center / cover no-repeat;`
+      }
+      if (this.imageState === 'error') {
+        return `background: linear-gradient(0deg, rgba(37, 41, 46), rgba(37, 41, 46, 0.6),rgba(37, 41, 46)), url('${this.errorImage}') center center / cover no-repeat;`
+      }
+      if (this.imageState === 'loaded') {
+        return `background: linear-gradient(0deg, rgba(37, 41, 46), rgba(37, 41, 46, 0.6),rgba(37, 41, 46)), url('${this.asyncImage.src}') center center / cover no-repeat;`
+      }
+
+      return ''
+    },
   }
 }
 </script>
