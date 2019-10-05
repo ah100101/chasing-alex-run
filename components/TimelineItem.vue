@@ -19,9 +19,9 @@
             <p 
               v-if="!item.isTimePeriod && item.description">{{ item.description }}</p>
             <div v-if="!item.isTimePeriod && !item.description">
-              <h6 class="subtitle is-6">Finish Time: 5:15:00</h6>
-              <h6 class="subtitle is-6">Average Pace: 5:15:00</h6>
-              <h6 class="subtitle is-6">Overall Placement: 5:15:00</h6>
+              <h6 class="subtitle is-6">Finish Time: {{ item.finishTime }}</h6>
+              <h6 class="subtitle is-6">Pace: {{ item.avgPace }}</h6>
+              <h6 class="subtitle is-6">Overall Placement: {{ item.placement }}</h6>
             </div>
             <a 
               v-if="!item.isTimePeriod && item.url"

@@ -47,7 +47,10 @@ export default {
           date: dateFormat(new Date(obj.attributes['date']), 'dddd, mmmm d, yyyy'),
           description: obj.attributes['description'],
           isTimePeriod: obj.attributes['is_time_period'],
-          url: obj.attributes['url']
+          url: obj.attributes['url'],
+          placement: obj.attributes['placement'],
+          finishTime: obj.attributes['finish_time'],
+          avgPace: obj.attributes['average_pace']
         }
       })
   },
