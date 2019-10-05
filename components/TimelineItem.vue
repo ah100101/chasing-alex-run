@@ -197,11 +197,11 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 
 .timeline-item.event-hover {
   transition: all 0.5s ease-in-out;
+  z-index: 2;
 }
 
 .timeline-item.event-hover:hover {
   box-shadow: 0px 0px 40px #000000;
-  z-index: 2;
   transform: scale(1.05);
   transition: all 0.5s ease-in-out;
 }
