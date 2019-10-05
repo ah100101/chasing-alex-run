@@ -59,6 +59,7 @@ fields:
     required: false
   label: Placement
 pages:
+- content/events/chicago-half-marathon.md
 - content/events/chicago-half-marathon-2012.md
 - content/events/lake-geneva-marathon.md
 - content/events/christie-clinic-illinois-marathon-2012.md
@@ -68,7 +69,6 @@ pages:
 - content/events/2009-chicago-marathon.md
 - content/events/bank-of-america-chicago-marathon-2011.md
 - content/events/illinois-marathon-2011.md
-- content/events/chicago-half-marathon.md
 - content/events/indianapolis-monumental-marathon.md
 - content/events/2018.md
 - content/events/2017.md
