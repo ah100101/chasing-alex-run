@@ -19,6 +19,7 @@
 </template>
 
 <script>
+import dateFormat from 'dateformat'
 import InteriorHero from '~/components/InteriorHero'
 import Navigation from '~/components/Navigation'
 import Timeline from '~/components/Timeline'
@@ -43,7 +44,7 @@ export default {
         return {
           title: obj.attributes['title'],
           backgroundImage: obj.attributes['background_image'],
-          date: obj.attributes['date'],
+          date: dateFormat(new Date(obj.attributes['date']), 'dddd, mmmm d, yyyy'),
           description: obj.attributes['description'],
           isTimePeriod: obj.attributes['is_time_period'],
           url: obj.attributes['url']

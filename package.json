@@ -8,13 +8,15 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "optimize-images": "imagemin static/full-images --out-dir=static/images --plugin=jpegtran"
   },
   "dependencies": {
     "nuxt": "^2.0.0",
     "nuxt-buefy": "^0.3.2"
   },
   "devDependencies": {
+    "dateformat": "^3.0.3",
     "frontmatter-markdown-loader": "^2.1.0",
     "node-sass": "^4.12.0",
     "path": "^0.12.7",

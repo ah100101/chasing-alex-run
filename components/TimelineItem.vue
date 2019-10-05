@@ -17,9 +17,14 @@
               v-else 
               class="timeline-title subtitle is-3">{{ item.title }}</h3>
             <p 
-              v-if="!item.isTimePeriod">{{ item.description }}</p>
+              v-if="!item.isTimePeriod && item.description">{{ item.description }}</p>
+            <div v-if="!item.isTimePeriod && !item.description">
+              <h6 class="subtitle is-6">Finish Time: 5:15:00</h6>
+              <h6 class="subtitle is-6">Average Pace: 5:15:00</h6>
+              <h6 class="subtitle is-6">Overall Placement: 5:15:00</h6>
+            </div>
             <a 
-              v-if="!item.isTimePeriod"
+              v-if="!item.isTimePeriod && item.url"
               v-bind:href="item.url" 
               title="Read" 
               class="event-read-button">Read</a>
