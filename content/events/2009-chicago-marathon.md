@@ -6,7 +6,7 @@ url: ''
 background_image: "/images/2009-marathon.jpg"
 is_time_period: false
 finish_time: '4:57:55'
-placement: '24,824'
+placement: 24,824th
 average_pace: 11:21 min / mile
 
 ---
