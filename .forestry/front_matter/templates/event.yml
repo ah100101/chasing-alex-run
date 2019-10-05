@@ -54,6 +54,7 @@ fields:
     required: false
   label: Placement
 pages:
+- content/events/2011.md
 - content/events/2010-1.md
 - content/events/2010.md
 - content/events/2009-chicago-marathon.md
