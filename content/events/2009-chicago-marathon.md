@@ -1,5 +1,5 @@
 ---
-title: 2009 Chicago Marathon
+title: Bank of America Chicago Marathon 2009
 date: 2009-10-11T05:00:00.000+00:00
 description: ''
 url: ''
