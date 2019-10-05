@@ -59,6 +59,7 @@ fields:
     required: false
   label: Placement
 pages:
+- content/events/bank-of-america-chicago-marathon-2010.md
 - content/events/2009-chicago-marathon.md
 - content/events/bank-of-america-chicago-marathon-2011.md
 - content/events/illinois-marathon-2011.md
@@ -73,7 +74,6 @@ pages:
 - content/events/2011.md
 - content/events/2010-1.md
 - content/events/2010.md
-- content/events/bank-of-america-chicago-marathon-2010.md
 - content/events/maple-leaf-indoor-marathon.md
 - content/events/planet-adventure-winter-trail-marathon.md
 - content/events/2013.md

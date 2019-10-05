@@ -8,5 +8,6 @@ is_time_period: false
 finish_time: '4:49:27'
 average_pace: 11:02 min / mile
 placement: 20,166th
+loading_image: "/images/2009-marathon-loading-5.jpg"
 
 ---
