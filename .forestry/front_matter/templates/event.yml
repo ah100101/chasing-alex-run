@@ -54,6 +54,7 @@ fields:
     required: false
   label: Placement
 pages:
+- content/events/bank-of-america-chicago-marathon-2011.md
 - content/events/2018.md
 - content/events/2017.md
 - content/events/2016.md
