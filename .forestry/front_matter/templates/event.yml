@@ -54,6 +54,7 @@ fields:
     required: false
   label: Placement
 pages:
+- content/events/2014.md
 - content/events/2012.md
 - content/events/2011.md
 - content/events/2010-1.md
