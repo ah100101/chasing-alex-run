@@ -39,5 +39,6 @@ fields:
   type: boolean
   label: Is Time Period
 pages:
+- content/events/2013.md
 - content/events/maple-leaf-indoor-marathon.md
 - content/events/planet-adventure-winter-trail-marathon.md
