@@ -1,9 +1,12 @@
 ---
 title: Maple Leaf Indoor Marathon
-date: 2013-02-23T00:00:00-06:00
-description: 204 laps around a track
+date: 2013-02-23T06:00:00.000+00:00
+description: ''
 url: ''
 background_image: "/images/indoor-marathon-track.jpg"
 is_time_period: false
+finish_time: '4:09:41'
+average_pace: 9:31 min / mile
+placement: 15th
 
 ---
