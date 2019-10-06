@@ -8,7 +8,7 @@ loading_image: "/images/devils-lake-marathon-loading.jpg"
 is_time_period: false
 location: Baraboo, WI
 finish_time: '5:20:41'
-average_pace: '12:14'
+average_pace: 12:14 min/mile
 placement: 45th
 
 ---
