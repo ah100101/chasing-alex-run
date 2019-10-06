@@ -8,7 +8,7 @@ loading_image: "/images/manitowoc-marathon-loading-1.jpg"
 is_time_period: false
 location: Manitowoc, WI
 finish_time: '3:58:24'
-average_pace: '9:05'
+average_pace: 9:05 min/mile
 placement: 94th
 
 ---
