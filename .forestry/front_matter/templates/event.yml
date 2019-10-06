@@ -59,6 +59,7 @@ fields:
     required: false
   label: Placement
 pages:
+- content/events/air-force-marathon-2012.md
 - content/events/chicago-half-marathon.md
 - content/events/chicago-half-marathon-2012.md
 - content/events/lake-geneva-marathon.md
