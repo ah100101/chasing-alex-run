@@ -7,7 +7,8 @@ background_image: "/images/illinois-marathon-2012.jpg"
 loading_image: "/images/illinois-marathon-2012-loading.jpg"
 is_time_period: false
 finish_time: '3:42:29'
-average_pace: '8:29'
+average_pace: 8:29 min/mile
 placement: 408th
+location: Champaign-Urbana, IL
 
 ---
