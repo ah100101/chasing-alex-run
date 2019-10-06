@@ -64,6 +64,7 @@ fields:
     required: false
   label: Placement
 pages:
+- content/events/bank-of-america-chicago-marathon-2014.md
 - content/events/veterans-marathon.md
 - content/events/bank-of-america-chicago-marathon-2013.md
 - content/events/advocate-dreyer-fox-valley-marathon.md
