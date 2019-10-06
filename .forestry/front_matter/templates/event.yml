@@ -64,6 +64,7 @@ fields:
     required: false
   label: Placement
 pages:
+- content/events/2016.md
 - content/events/2015.md
 - content/events/2014.md
 - content/events/2012.md
@@ -104,4 +105,3 @@ pages:
 - content/events/advocate-dreyer-fox-valley-marathon.md
 - content/events/2018.md
 - content/events/2017.md
-- content/events/2016.md
