@@ -64,6 +64,7 @@ fields:
     required: false
   label: Placement
 pages:
+- content/events/eagle-creek-trail-marathon.md
 - content/events/chicago-half-marathon-1.md
 - content/events/chicago-half-marathon-2019.md
 - content/events/chicago-marathon-2018.md
@@ -75,7 +76,6 @@ pages:
 - content/events/veterans-marathon.md
 - content/events/bank-of-america-chicago-marathon-2013.md
 - content/events/advocate-dreyer-fox-valley-marathon.md
-- content/events/eagle-creek-trail-marathon.md
 - content/events/dances-with-dirt-devil-s-lake-marathon.md
 - content/events/holy-family-memorial-maritime-marathon.md
 - content/events/ann-arbor-marathon.md

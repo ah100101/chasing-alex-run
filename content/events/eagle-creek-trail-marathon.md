@@ -8,7 +8,7 @@ loading_image: "/images/eagles-creek-marathon-loading.jpg"
 is_time_period: false
 location: Indianapolis, IN
 finish_time: '5:04:43'
-average_pace: '11:38'
+average_pace: 11:38 min/mile
 placement: 59th
 
 ---
