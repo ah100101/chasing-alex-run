@@ -64,6 +64,7 @@ fields:
     required: false
   label: Placement
 pages:
+- content/events/2013.md
 - content/events/transamerica-chicago-triathlon-2017.md
 - content/events/indianapolis-monumental-marathon.md
 - content/events/illinois-marathon-2011.md
@@ -104,4 +105,3 @@ pages:
 - content/events/2011.md
 - content/events/2010-1.md
 - content/events/2010.md
-- content/events/2013.md
