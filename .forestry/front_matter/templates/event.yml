@@ -43,6 +43,11 @@ fields:
 - name: is_time_period
   type: boolean
   label: Is Time Period
+- name: location
+  type: text
+  config:
+    required: false
+  label: Location
 - name: finish_time
   type: text
   config:
