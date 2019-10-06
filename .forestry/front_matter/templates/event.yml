@@ -64,6 +64,7 @@ fields:
     required: false
   label: Placement
 pages:
+- content/events/transamerica-chicago-triathlon-2017.md
 - content/events/indianapolis-monumental-marathon.md
 - content/events/illinois-marathon-2011.md
 - content/events/bank-of-america-chicago-marathon-2011.md
@@ -88,7 +89,6 @@ pages:
 - content/events/chicago-half-marathon-2019.md
 - content/events/chicago-marathon-2018.md
 - content/events/bank-of-america-chicago-marathon-2017.md
-- content/events/transamerica-chicago-triathlon-2017.md
 - content/events/bank-of-america-chicago-marathon-2016.md
 - content/events/bank-of-america-chicago-marathon-2015.md
 - content/events/bank-of-america-chicago-marathon-2014.md
