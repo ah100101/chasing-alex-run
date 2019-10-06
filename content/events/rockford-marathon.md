@@ -8,7 +8,7 @@ loading_image: "/images/rockford-marathon-loading.jpg"
 is_time_period: false
 location: Rockford, IL
 finish_time: '4:30:35'
-average_pace: '10:19'
+average_pace: 10:19 min/mile
 placement: 101st
 
 ---
