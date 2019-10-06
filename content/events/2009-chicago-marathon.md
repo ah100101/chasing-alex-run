@@ -7,7 +7,8 @@ background_image: "/images/2009-marathon.jpg"
 is_time_period: false
 finish_time: '4:57:55'
 placement: 24,824th
-average_pace: 11:21 min / mile
+average_pace: 11:21 min/mile
 loading_image: "/images/2009-marathon-loading-4.jpg"
+location: Chicago, IL
 
 ---
