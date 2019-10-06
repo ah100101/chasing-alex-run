@@ -64,6 +64,7 @@ fields:
     required: false
   label: Placement
 pages:
+- content/events/dances-with-dirt-devil-s-lake-marathon.md
 - content/events/holy-family-memorial-maritime-marathon.md
 - content/events/ann-arbor-marathon.md
 - content/events/rockford-marathon.md
