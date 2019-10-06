@@ -8,7 +8,7 @@ loading_image: "/images/chicago-triathlon-2017-loading.jpg"
 is_time_period: false
 location: Chicago, IL
 finish_time: '3:22:12'
-average_pace: NA
+average_pace: ''
 placement: 2,610th
 
 ---
