@@ -7,7 +7,8 @@ background_image: "/images/circular-logic-marathon.jpg"
 loading_image: "/images/circular-logic-marathon-loading.jpg"
 is_time_period: false
 finish_time: '4:33:42'
-average_pace: '10:26'
+average_pace: 10:26 min/mile
 placement: 50th
+location: West Lafayette, IN
 
 ---
