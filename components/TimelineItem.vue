@@ -4,8 +4,9 @@
       v-bind:style="this.backgroundImageStyle"
       v-bind:class="{ 'event-hover event-card': !item.isTimePeriod, 'period': item.isTimePeriod }">
         <div class="timeline-info">
-            <span 
-              v-if="!item.isTimePeriod">{{ item.date }}</span>
+            <div 
+              v-if="!item.isTimePeriod">{{ item.date }}</div>
+            <div v-if="item.location" class="is-7">{{ item.location }}</div>
         </div>
         <div 
           class="timeline-marker"></div>
@@ -14,14 +15,13 @@
               class="timeline-title subtitle is-5"
               v-if="!item.isTimePeriod">{{ item.title }}</h5>
             <h3
-              v-else 
+              v-if="item.isTimePeriod" 
               class="timeline-title subtitle is-3">{{ item.title }}</h3>
             <p 
               v-if="!item.isTimePeriod && item.description">{{ item.description }}</p>
             <div v-if="!item.isTimePeriod && !item.description">
               <h6 class="subtitle is-6">Finish Time: {{ item.finishTime }}</h6>
-              <h6 class="subtitle is-6">Pace: {{ item.avgPace }}</h6>
-              <h6 class="subtitle is-6">Overall Placement: {{ item.placement }}</h6>
+              <h6 v-if="item.avgPace" class="subtitle is-6">Pace: {{ item.avgPace }}</h6>
             </div>
             <a 
               v-if="!item.isTimePeriod && item.url"

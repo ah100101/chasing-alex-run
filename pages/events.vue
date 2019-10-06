@@ -51,7 +51,8 @@ export default {
           placement: obj.attributes['placement'],
           finishTime: obj.attributes['finish_time'],
           avgPace: obj.attributes['average_pace'],
-          loadingImage: !!obj.attributes['loading_image'] ? obj.attributes['loading_image'] : ''
+          loadingImage: !!obj.attributes['loading_image'] ? obj.attributes['loading_image'] : '',
+          location: !!obj.attributes['location'] ? obj.attributes['location'] : ''
         }
       })
   },
