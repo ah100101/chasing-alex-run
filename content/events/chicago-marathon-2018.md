@@ -1,5 +1,5 @@
 ---
-title: Chicago Marathon 2018
+title: Bank of America Chicago Marathon 2018
 date: 2018-10-07T00:00:00-05:00
 description: ''
 url: ''
