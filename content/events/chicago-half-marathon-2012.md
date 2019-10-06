@@ -7,7 +7,8 @@ background_image: "/images/chicago-half-marathon-2011.jpg"
 loading_image: "/images/chicago-half-marathon-2011-loading.jpg"
 is_time_period: false
 finish_time: '1:28:05'
-average_pace: '6:43'
-placement: "213"
+average_pace: 6:43 min/mile
+placement: 213rd
+location: Chicago, IL
 
 ---
