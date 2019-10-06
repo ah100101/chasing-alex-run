@@ -59,6 +59,7 @@ fields:
     required: false
   label: Placement
 pages:
+- content/events/bank-of-america-chicago-marathon-2012.md
 - content/events/air-force-marathon-2012.md
 - content/events/chicago-half-marathon.md
 - content/events/chicago-half-marathon-2012.md
