@@ -64,6 +64,7 @@ fields:
     required: false
   label: Placement
 pages:
+- content/events/advocate-dreyer-fox-valley-marathon.md
 - content/events/chicago-half-marathon-1.md
 - content/events/eagle-creek-trail-marathon.md
 - content/events/dances-with-dirt-devil-s-lake-marathon.md
