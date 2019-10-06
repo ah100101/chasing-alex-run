@@ -7,7 +7,8 @@ background_image: "/images/lake-geneva-marathon.jpg"
 loading_image: "/images/lake-geneva-marathon-loading.jpg"
 is_time_period: false
 finish_time: '4:09:30'
-average_pace: '8:29'
+average_pace: 8:29 min/mile
 placement: 408th
+location: Lake Geneva, WI
 
 ---
