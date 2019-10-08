@@ -4,9 +4,9 @@
       <Navigation />
       <InteriorHero
         title="Events"
-        imageSource="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3"
-        loadingImage="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3"
-        errorImage="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3"
+        imageSource="./images/hero-placeholder.jpg"
+        loadingImage="./images/hero-placeholder.jpg"
+        errorImage="./images/hero-placeholder.jpg"
          />
     </section>
 

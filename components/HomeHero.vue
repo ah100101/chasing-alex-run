@@ -1,6 +1,6 @@
 <template>
   <div class='home-hero'>
-    <section class="hero image-as-background" style="background-image: url('./images/hero-placeholder.jpg');">
+    <section class="hero image-as-background" v-bind:style="this.computedBackgroundStyle">
       <div class="hero-container">
         <p class="animate fadeInLeft delay-400">October 9th 2019</p>
         <h1 class="hero-title animate fadeInLeft delay-600">2019 Chicago Marathon Preview</h1>
@@ -11,13 +11,21 @@
 </template>
 
 <script>
+import lazyBackgroundImageMixin from '~/mixins/lazyBackgroundImageMixin.js'
+
 export default {
+  mixins: [lazyBackgroundImageMixin],
   props: {
 
   },
   data: function () {
     return {
 
+    }
+  },
+  computed: {
+    computedBackgroundStyle: function () {
+      return `background-image: url('${this.computedImageSrc}');`
     }
   }
 }

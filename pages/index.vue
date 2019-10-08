@@ -2,7 +2,11 @@
   <div class='home'>
     <section class="hero is-primary is-medium">
       <Navigation />
-      <HomeHero/>
+      <HomeHero
+        imageSource="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3"
+        loadingImage="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3"
+        errorImage="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3"
+      />
     </section>
     <StaggeredTileListing
       header="Latest Posts" 

@@ -59,7 +59,6 @@
 </template>
 
 <script>
-import HomeHero from '~/components/HomeHero'
 import PostCard from '~/components/PostCard'
 import Navigation from '~/components/Navigation'
 
