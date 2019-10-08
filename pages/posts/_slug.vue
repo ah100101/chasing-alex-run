@@ -3,19 +3,19 @@
     <section class="hero is-primary is-medium">
       <Navigation />
       <DetailHero
-        title="2019 Chicago Marathon Preview"
-        date="October 9th 2019" 
+        v-bind:title="this.post.title"
+        v-bind:date="this.computedDate" 
         imageSource="../images/hero-placeholder.jpg"
         loadingImage="../images/hero-placeholder.jpg"
         errorImage="../images/hero-placeholder.jpg" />
     </section>
 
+      <!-- v-bind:class="{ 'dark-mode': darkModeOn, 'light-mode': !darkModeOn }" -->
     <div 
-      class="column"
-      v-bind:class="{ 'dark-mode': darkModeOn, 'light-mode': !darkModeOn }">
-      <div class="field">
+      class="column">
+      <!-- <div class="field">
         <b-switch v-model="darkModeOn">{{ darkModeText }}</b-switch>
-      </div>
+      </div> -->
       <div class="container content" v-html="body">
       </div>
     </div>
@@ -23,11 +23,9 @@
 </template>
 
 <script>
+import dateFormat from 'dateformat'
 import DetailHero from '~/components/DetailHero'
 import Navigation from '~/components/Navigation'
-
-// shits broken on netlify, gotta fix it with
-// https://css-tricks.com/creating-dynamic-routes-in-a-nuxt-application/
 
 export default {
   components: {
@@ -38,6 +36,7 @@ export default {
     import(`~/content/posts/${this.$route.params.slug}.md`)
       .then((result) => {
         this.body = result.html
+        this.post = result.attributes
       })
       .catch((error) => {
         console.error(error)
@@ -57,6 +56,11 @@ export default {
         return "Light Mode"
       }
       return "Dark Mode"
+    },
+    computedDate: function () {
+      if (this.post && this.post['post_date']) {
+        return dateFormat(new Date(this.post['post_date']), 'dddd, mmmm d, yyyy')
+      }
     }
   }
 }
