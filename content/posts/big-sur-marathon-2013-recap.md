@@ -4,7 +4,7 @@ tags:
 - marathon
 slug: 4-23-2013-big-sur-marathon
 title: Big Sur Marathon 2013 Recap
-description: Big Sur Marathon Recap
+description: Big Sur Marathon Recap for 2013
 hero_image: "/images/big-sur-marathon.jpg"
 thumbnail: "/images/big-sur-marathon.jpg"
 post_date: 2013-05-05T00:00:00-05:00
