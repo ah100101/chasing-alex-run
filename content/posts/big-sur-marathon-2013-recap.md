@@ -83,11 +83,15 @@ body: "I can't even describe how much I wanted to hate this marathon. The 3:45 a
   Mudder this month to pick up the slack!"
 
 ---
-I can't even describe how much I wanted to hate this marathon. The 3:45 am shuttle time, being crammed in a bus for an hour to get to the starting line, standing around for another hour waiting for the gun to go off, climbing the hills, going down the hills, climbing the hills, thinking that you're at the top of the hill, climbing higher, then higher, and still higher. This marathon had pain roaring down every hill and agony rolling around every bend. I really wanted to hate this marathon for all of this, but this is what marathon running is all about!
+> I wanted to hate this marathon.
+
+The 3:45 am shuttle time, being crammed in a bus for an hour to get to the starting line, standing around for another hour waiting for the gun to go off, climbing the hills, going down the hills, climbing the hills, thinking that you're at the top of the hill, climbing higher, then higher, and still higher. This marathon had pain roaring down every hill and agony rolling around every bend. I really wanted to hate this marathon for all of this, but this is what marathon running is all about!
 
 The course of Big Sur is definitely unique. It takes off down California's coastal and scenic Highway 1, starting in the forests near Big Sur, and finishing in Carmel, CA. It's a point to point marathon, with peak elevation around mile 12. I have never done a point to point marathon, nor a marathon where you could turn around and see where you were six miles prior. Both gave a unique perspective on the distance that's actually covered during a marathon. Also, I'm not aware of any regular marathon that has hills comparable to Big Sur. For some perspective, below is the elevation chart for the Chicago Marathon. Chicago is basically flat as a pancake, with the overpass at Roosevelt Road being one of the biggest climbs in elevation:
 
-[![ChicagoElevationChart](http://alexalwaysrunning.files.wordpress.com/2013/05/chicagoelevationchart.png =620x194)](http://alexalwaysrunning.files.wordpress.com/2013/05/chicagoelevationchart.png)By comparison, this is Big Sur (note that the y-axis scaling is also greater):
+![](http://alexalwaysrunning.files.wordpress.com/2013/05/chicagoelevationchart.png)
+
+By comparison, this is Big Sur (note that the y-axis scaling is also greater):
 
 [![BigSurElevation](http://alexalwaysrunning.files.wordpress.com/2013/05/bigsurelevation.png =623x200)](http://alexalwaysrunning.files.wordpress.com/2013/05/bigsurelevation.png)The mile 10 to 12 stretch, a climb from near sea level to "Hurricane Point", is nothing to play around with. Actually, for the most part, none of these peaks were anything to play around with.
 
