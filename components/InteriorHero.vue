@@ -9,12 +9,11 @@
 </template>
 
 <script>
+import lazyBackgroundImageMixin from '~/mixins/lazyBackgroundImageMixin.js'
+
 export default {
+  mixins: [lazyBackgroundImageMixin],
   props: {
-    backgroundImage: {
-      type: String,
-      required: true
-    },
     title: {
       type: String,
       required: true
@@ -27,7 +26,7 @@ export default {
   },
   computed: {
     backgroundImageStyle: function () {
-      return `background-image: url('${this.backgroundImage}');`
+      return `background-image: url('${this.computedImageSrc}');`
     }
   }
 }

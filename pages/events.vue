@@ -4,7 +4,10 @@
       <Navigation />
       <InteriorHero
         title="Events"
-        backgroundImage="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3" />
+        imageSource="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3"
+        loadingImage="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3"
+        errorImage="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3"
+         />
     </section>
 
     <div class="columns is-mobile">

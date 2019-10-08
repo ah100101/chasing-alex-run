@@ -4,7 +4,10 @@
       <Navigation />
       <InteriorHero
         title="Posts"
-        backgroundImage="./images/hero-placeholder.jpg" />
+        imageSource="./images/hero-placeholder.jpg"
+        loadingImage="./images/hero-placeholder.jpg"
+        errorImage="./images/hero-placeholder.jpg" 
+        />
     </section>
 
     <div class="columns is-mobile">
