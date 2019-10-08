@@ -26,6 +26,9 @@
 import DetailHero from '~/components/DetailHero'
 import Navigation from '~/components/Navigation'
 
+// shits broken on netlify, gotta fix it with
+// https://css-tricks.com/creating-dynamic-routes-in-a-nuxt-application/
+
 export default {
   components: {
     DetailHero,
