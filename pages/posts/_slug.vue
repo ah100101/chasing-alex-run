@@ -5,7 +5,9 @@
       <DetailHero
         title="2019 Chicago Marathon Preview"
         date="October 9th 2019" 
-        backgroundImage="./images/hero-placeholder.jpg" />
+        imageSource="../images/hero-placeholder.jpg"
+        loadingImage="../images/hero-placeholder.jpg"
+        errorImage="../images/hero-placeholder.jpg" />
     </section>
 
     <div 
