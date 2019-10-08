@@ -1,5 +1,8 @@
 import { pathToFileURL } from "url";
 import path from 'path'
+import glob from 'glob'
+
+const paths = ['posts']
 
 export default {
   mode: 'spa',
@@ -63,5 +66,17 @@ export default {
         }
       )
     }
+  },
+  generate: {
+    routes: dynamicMarkdownRoutes()
   }
 }
+
+function dynamicMarkdownRoutes () {
+  return [].concat(
+    ...paths.map(mdPath => {
+      return glob.sync(`${mdPath}/*.md`, { cwd: 'content' })
+        .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}`);
+    })
+  );
+} 
