@@ -15,7 +15,7 @@
             <h1 class="title"><a href="#">{{ card.title }}</a></h1>
             <p class="text">{{ card.description }}</p>
             <a 
-              v-bind:href='card.slug' 
+              v-bind:href='card.url' 
               class="card-button">Read more</a>
           </div>
         </div>

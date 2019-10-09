@@ -2,9 +2,9 @@
   <div class='home-hero'>
     <section class="hero image-as-background" v-bind:style="this.computedBackgroundStyle">
       <div class="hero-container">
-        <p class="animate fadeInLeft delay-400">October 9th 2019</p>
-        <h1 class="hero-title animate fadeInLeft delay-600">2019 Chicago Marathon Preview</h1>
-        <a href="#" class="hero-button animate fadeInLeft delay-800" title="Click to see more">Read</a>
+        <p class="animate fadeInLeft delay-400">{{ this.post.postDate }}</p>
+        <h1 class="hero-title animate fadeInLeft delay-600">{{ this.post.title }}</h1>
+        <a v-bind:href="this.computedLink" class="hero-button animate fadeInLeft delay-800" title="Click to see more">Read</a>
       </div>
     </section>
   </div>
@@ -16,7 +16,10 @@ import lazyBackgroundImageMixin from '~/mixins/lazyBackgroundImageMixin.js'
 export default {
   mixins: [lazyBackgroundImageMixin],
   props: {
-
+    post: {
+      type: Object,
+      required: true
+    }
   },
   data: function () {
     return {
@@ -26,6 +29,9 @@ export default {
   computed: {
     computedBackgroundStyle: function () {
       return `background-image: url('${this.computedImageSrc}');`
+    },
+    computedLink: function () {
+      return `/posts/${this.post.slug}`
     }
   }
 }

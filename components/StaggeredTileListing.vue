@@ -6,13 +6,13 @@
         <h3 class="subtitle is-3">{{ header }}</h3>
 
         <div class="tile is-ancestor">
-          <div class="tile is-parent is-6">
+          <div v-if="cards[0]" class="tile is-parent is-6">
             <article class="tile is-child">
               <PostCard 
                     v-bind:card='cards[0]' />
             </article>
           </div>
-          <div class="tile is-parent is-6">
+          <div v-if="cards[1]" class="tile is-parent is-6">
             <article class="tile is-child">
               <PostCard 
                     v-bind:card='cards[1]' />
@@ -20,7 +20,7 @@
           </div>
         </div>
 
-        <div class="tile is-ancestor">
+        <div v-if="cards[2]" class="tile is-ancestor">
           <div class="tile is-parent is-12">
             <article class="tile is-child">
               <PostCard 
@@ -30,13 +30,13 @@
         </div>
 
         <div class="tile is-ancestor">
-          <div class="tile is-parent is-6">
+          <div v-if="cards[3]" class="tile is-parent is-6">
             <article class="tile is-child">
               <PostCard 
                     v-bind:card='cards[3]' />
             </article>
           </div>
-          <div class="tile is-parent is-6">
+          <div v-if="cards[4]" class="tile is-parent is-6">
             <article class="tile is-child">
               <PostCard 
                     v-bind:card='cards[4]' />
@@ -44,7 +44,7 @@
           </div>
         </div>
 
-        <div class="tile is-ancestor">
+        <div v-if="cards[5]" class="tile is-ancestor">
           <div class="tile is-parent is-12">
             <article class="tile is-child">
               <PostCard 
