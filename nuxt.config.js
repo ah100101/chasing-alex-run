@@ -5,7 +5,7 @@ import glob from 'glob'
 const paths = ['posts']
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
   /*
   ** Headers of the page
   */
