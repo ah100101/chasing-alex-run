@@ -79,6 +79,8 @@ export default {
   .columns {
     background-color: $primary;
     padding-top: 2rem;
+    width: 100%;
+    margin: 0;
   }
 }
 
