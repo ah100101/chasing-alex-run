@@ -22,11 +22,31 @@ fields:
     maxSize: 250
   label: Hero Image
   hidden: false
+- name: hero_credit
+  type: text
+  config:
+    required: false
+  label: Hero Credit
+- name: loading_hero
+  type: file
+  config:
+    maxSize: 250
+  label: Loading Hero
 - name: thumbnail
   type: file
   config:
     maxSize: 250
   label: Thumbnail
+- name: thumbnail_credit
+  type: text
+  config:
+    required: false
+  label: Thumbnail Credit
+- name: loading_thumbnail
+  type: file
+  config:
+    maxSize: 250
+  label: Loading Thumbnail
 - name: post_date
   type: datetime
   description: ''
@@ -50,5 +70,6 @@ fields:
   default: []
   label: Tags
 pages:
-- content/posts/big-sur-marathon-2013-recap.md
+- content/posts/chasing-alex-run-is-live.md
 - content/posts/2019-chicago-marathon.md
+- content/posts/big-sur-marathon-2013-recap.md
