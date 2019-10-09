@@ -1,12 +1,12 @@
 ---
 tags:
-- recap
-- marathon
+- Race Recap
+- Marathon
 slug: 4-23-2013-big-sur-marathon
 title: Big Sur Marathon 2013 Recap
 description: Big Sur Marathon Recap for 2013
 hero_image: "/images/big-sur-marathon.jpg"
-thumbnail: "/images/big-sur-marathon.jpg"
+thumbnail: "/images/big-sur-marathon-1.jpg"
 post_date: 2013-05-05T00:00:00-05:00
 event_date: 2013-04-23T00:00:00-05:00
 body: "I can't even describe how much I wanted to hate this marathon. The 3:45 am
@@ -81,6 +81,10 @@ body: "I can't even describe how much I wanted to hate this marathon. The 3:45 a
   but its increasing popularity might make registration impossible.\n\nAny marathon
   following this one has a lot to live up to. Fortunately, there are two and a Tough
   Mudder this month to pick up the slack!"
+hero_credit: Photo by Ganapathy Kumar on Unsplash
+loading_hero: "/images/big-sur-marathon-loading-1.jpg"
+thumbnail_credit: Photo by Ganapathy Kumar on Unsplash
+loading_thumbnail: "/images/big-sur-marathon-loading-2.jpg"
 
 ---
 > I wanted to hate this marathon.
