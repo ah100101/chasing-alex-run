@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import dateFormat from 'dateFormat'
+import dateFormat from 'dateformat'
 import HomeHero from '~/components/HomeHero'
 import PostCard from '~/components/PostCard'
 import Navigation from '~/components/Navigation'
