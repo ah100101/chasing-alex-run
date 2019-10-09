@@ -32,14 +32,17 @@ export default {
   data: function () {
     return {
       imageState: 'loading',
-      asyncImage: new Image()
+      asyncImage: {}
     }
   },
-  mounted: function () {
-    if (this.loadingImage) {
-      this.$nextTick(() => {
-        this.fetchImage()
-      })
+  created: function () {
+    if (process.client) {
+      this.asyncImage = new Image()
+      if (this.loadingImage) {
+        this.$nextTick(() => {
+          this.fetchImage()
+        })
+      }
     }
   },
   computed: {
