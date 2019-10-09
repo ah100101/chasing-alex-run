@@ -70,5 +70,6 @@ fields:
   default: []
   label: Tags
 pages:
+- content/posts/chasing-alex-run-is-live.md
 - content/posts/2019-chicago-marathon.md
 - content/posts/big-sur-marathon-2013-recap.md
