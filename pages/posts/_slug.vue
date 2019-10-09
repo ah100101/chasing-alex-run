@@ -5,9 +5,9 @@
       <DetailHero
         v-bind:title="this.post.title"
         v-bind:date="this.computedDate" 
-        imageSource="../images/hero-placeholder.jpg"
-        loadingImage="../images/hero-placeholder.jpg"
-        errorImage="../images/hero-placeholder.jpg" />
+        v-bind:imageSource="this.post['hero_image']"
+        v-bind:loadingImage="this.post['hero_image']"
+        v-bind:errorImage="this.post['hero_image']" />
     </section>
 
       <!-- v-bind:class="{ 'dark-mode': darkModeOn, 'light-mode': !darkModeOn }" -->
