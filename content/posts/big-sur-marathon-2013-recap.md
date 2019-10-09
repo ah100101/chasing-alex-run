@@ -85,19 +85,29 @@ body: "I can't even describe how much I wanted to hate this marathon. The 3:45 a
 ---
 > I wanted to hate this marathon.
 
-The 3:45 am shuttle time, being crammed in a bus for an hour to get to the starting line, standing around for another hour waiting for the gun to go off, climbing the hills, going down the hills, climbing the hills, thinking that you're at the top of the hill, climbing higher, then higher, and still higher. This marathon had pain roaring down every hill and agony rolling around every bend. I really wanted to hate this marathon for all of this, but this is what marathon running is all about!
+I had runner's knee. I woke up at 2:30 am for a 3:45 am shuttle. I was crammed on a bus for an hour to get to the starting line. I stood for another hour and a half at the starting line waiting for the gun to go off. I climbed and descended endless hills. This marathon had pain around every literal corner.
 
-The course of Big Sur is definitely unique. It takes off down California's coastal and scenic Highway 1, starting in the forests near Big Sur, and finishing in Carmel, CA. It's a point to point marathon, with peak elevation around mile 12. I have never done a point to point marathon, nor a marathon where you could turn around and see where you were six miles prior. Both gave a unique perspective on the distance that's actually covered during a marathon. Also, I'm not aware of any regular marathon that has hills comparable to Big Sur. For some perspective, below is the elevation chart for the Chicago Marathon. Chicago is basically flat as a pancake, with the overpass at Roosevelt Road being one of the biggest climbs in elevation:
+These are the prices you pay to run the Big Sur Marathon, but the views and experience are worth it.
 
-![](http://alexalwaysrunning.files.wordpress.com/2013/05/chicagoelevationchart.png)
+![](/images/big-sur-7.jpg)
 
-By comparison, this is Big Sur (note that the y-axis scaling is also greater):
+The course of Big Sur is unique. It takes off down California's coastal and scenic Highway 1 and starts in the forests near Big Sur and finishes in Carmel, CA. It's a point-to-point marathon with peak elevation around mile 12. 
 
-[![BigSurElevation](http://alexalwaysrunning.files.wordpress.com/2013/05/bigsurelevation.png =623x200)](http://alexalwaysrunning.files.wordpress.com/2013/05/bigsurelevation.png)The mile 10 to 12 stretch, a climb from near sea level to "Hurricane Point", is nothing to play around with. Actually, for the most part, none of these peaks were anything to play around with.
+I have never completed a point-to point-marathon, nor a marathon where you can turn around and see where you were six miles earlier. Both provided a unique perspective on the distance that's actually covered during a marathon.
+
+I know there are many marathons with more frequent and taller hills but I didn't run anything that came close to this course. For perspective, below is the elevation chart for the Chicago Marathon. Chicago is so that the overpass at Roosevelt Road is one of the biggest climbs in elevation:
+
+![A graph showing the elevation of the Chicago marathon](/images/chicago-elevation.jpg "Chicago Elevation Chart")
+
+Here is Big Sur (note that the y-axis scale is greater as well):
+
+![Charting showing the elevation of the Big Sur Marathon](/images/big-sur-elevation.jpg "Big Sur Elevation Chart")
+
+The mile 10 to 12 stretch, a climb from near sea level to Hurricane Point, is obviously the worse climb on the course.
 
 As difficult as the hills are, there is an advantage that the course provides that is absent from all other marathons:
 
-Words and pictures can't do justice to the scenery. The only way to accurately depict the landscape is to take someone there and show them. On several occasions I heard discussions between veterans of the race, where they commented about the unbelievable scenery, including a brief conversation with woman who was running her 21st consecutive Big Sur marathon, and still couldn't believe the blue color of the Pacific Ocean. I knew that the scenery was going to steal the show going into the race, but it far exceeded my expectations.
+Words and pictures can't really do justice to the scenery. The only way to accurately depict the landscape is to take someone there and show them. On several occasions I overheard veteran runners of the race commenting about the unbelievable scenery, including a brief conversation with woman who was running her 21st consecutive Big Sur marathon, and still couldn't believe the blue color of the Pacific Ocean. I knew that the scenery was going to steal the show going into the race, but it far exceeded my expectations.
 
 Despite knowing that the scenery was the focus of the marathon, there was a great amount of stress I was carrying into the race. The runner's knee in my left leg was still recovering from the March marathon, and spiked in two weeks prior to Big Sur. As a result, I took off basically all athletic activity for the two weeks leading up to this. I know there are some people who think I have a pretty inaccurate definition of "taking a day off", but with the exception of one modified WOD and jogging a quarter mile the night before the race, I did nothing to stress my legs for this marathon. As difficult as it is to describe the landscape at Big Sur, it's just as difficult to describe how frustrating it was to sit around and do nothing for those two weeks.
 
