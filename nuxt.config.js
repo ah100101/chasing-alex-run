@@ -36,7 +36,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-
+    { src: '~plugins/ga.js', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -49,6 +49,7 @@ export default {
   modules: [
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy',
+    '@nuxtjs/sitemap'
   ],
   /*
   ** Build configuration
