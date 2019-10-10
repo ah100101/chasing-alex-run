@@ -35,9 +35,9 @@ export default {
   },
   head () {
     return {
-      title: this.post.title,
+      title: this.metaTitle,
       meta: [
-        { hid: 'description', name: 'description', content: this.post.description }
+        { hid: 'description', name: 'description', content: this.metaDescription }
       ]
     }
   },
@@ -46,6 +46,8 @@ export default {
       .then((result) => {
         this.body = result.html
         this.post = result.attributes
+        this.metaTitle = this.post.title
+        this.metaDescription = this.post.description
       })
       .catch((error) => {
         console.error(error)
@@ -56,7 +58,9 @@ export default {
       darkModeOn: false,
       post: undefined,
       error: {},
-      body: ''
+      body: '',
+      metaTitle: '',
+      metaDescription: ''
     }
   },
   computed: {
