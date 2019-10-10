@@ -95,11 +95,11 @@ These are the prices you pay to run the Big Sur Marathon, but the views and expe
 
 ![](/images/big-sur-7.jpg)
 
-The course of Big Sur is unique. It takes off down California's coastal and scenic Highway 1 and starts in the forests near Big Sur and finishes in Carmel, CA. It's a point-to-point marathon with peak elevation around mile 12. 
+Big Sur's course is unique. It goes down California's coastal and scenic Highway 1 and starts in the forests near Big Sur and finishes in Carmel, CA. It's a point-to-point marathon with peak elevation around mile 12.
 
 I have never completed a point-to point-marathon, nor a marathon where you can turn around and see where you were six miles earlier. Both provided a unique perspective on the distance that's actually covered during a marathon.
 
-I know there are many marathons with more frequent and taller hills but I didn't run anything that came close to this course. For perspective, below is the elevation chart for the Chicago Marathon. Chicago is so that the overpass at Roosevelt Road is one of the biggest climbs in elevation:
+I know there are many marathons with more frequent and taller hills but this course was like nothing I completed before. For perspective, below is the elevation chart for the Chicago Marathon. Chicago is so flat that the overpass at Roosevelt Road is one of the biggest climbs in elevation:
 
 ![A graph showing the elevation of the Chicago marathon](/images/chicago-elevation.jpg "Chicago Elevation Chart")
 
@@ -107,24 +107,22 @@ Here is Big Sur (note that the y-axis scale is greater as well):
 
 ![Charting showing the elevation of the Big Sur Marathon](/images/big-sur-elevation.jpg "Big Sur Elevation Chart")
 
-The mile 10 to 12 stretch, a climb from near sea level to Hurricane Point, is obviously the worse climb on the course.
+The mile 10 to 12 stretch, a climb from near sea level to Hurricane Point, is obviously the most challenging climb on the course.
 
 As difficult as the hills are, there is an advantage that the course provides that is absent from all other marathons:
 
-Words and pictures can't really do justice to the scenery. The only way to accurately depict the landscape is to take someone there and show them. On several occasions I overheard veteran runners of the race commenting about the unbelievable scenery, including a brief conversation with woman who was running her 21st consecutive Big Sur marathon, and still couldn't believe the blue color of the Pacific Ocean. I knew that the scenery was going to steal the show going into the race, but it far exceeded my expectations.
+Words and pictures don't do justice to the scenery. The only way to accurately see the landscape is to physically be there. On several occasions I overheard veteran runners of the race commenting about the unbelievable scenery, including a brief conversation with woman who was running her 21st consecutive Big Sur Marathon, and she still couldn't believe the blue color of the Pacific Ocean. I knew that the scenery was going to steal the show going into the race, but it far exceeded my expectations.
 
-Despite knowing that the scenery was the focus of the marathon, there was a great amount of stress I was carrying into the race. The runner's knee in my left leg was still recovering from the March marathon, and spiked in two weeks prior to Big Sur. As a result, I took off basically all athletic activity for the two weeks leading up to this. I know there are some people who think I have a pretty inaccurate definition of "taking a day off", but with the exception of one modified WOD and jogging a quarter mile the night before the race, I did nothing to stress my legs for this marathon. As difficult as it is to describe the landscape at Big Sur, it's just as difficult to describe how frustrating it was to sit around and do nothing for those two weeks.
+Despite knowing that the scenery was the focus of the marathon, there was some stress going into the race. The runner's knee in my left leg was still recovering from the March marathon, and spiked two weeks prior to Big Sur. As a result, I took off basically all athletic activity for the two weeks leading up to this. I know there are some people who think I have a pretty inaccurate definition of "taking a day off", but with the exception of one modified workout and jogging a quarter mile the night before the race, I did nothing to stress my legs for this marathon. As difficult as it is to describe the landscape at Big Sur, it's just as difficult to describe how frustrating it was to sit around and do nothing for two weeks.
 
 Fortunately, my left knee didn't explode all over Highway 1 and the two weeks proved to be good enough to knock out the 26.2 miles. It wasn't until just after 13 miles that the runner's knee starting surfacing again. Interestingly, my knee felt fine during the uphill portions of the race, and not so much going downhill. If it wasn't already, this amplified the love-hate relationship with the course. I would look forward to the uphill portions because of the relief to my knee, but would hate it for setting my quads and ankles on fire. Similarly, going downhill was awesome for the relief from climbing, but then terrible as soon as my knee started protesting.
 
-Even if we were running in the middle of nowhere with nothing to look at, the hills would have been entertaining on their own. As I told one marathoner "We don't have hills in Chicago and our roads don't curve either. We run in straight lines and in one direction." I completed exactly 0.0 miles of "hill work" in preparation. Definitely overconfident from doing CrossFit and it being my 13th marathon. I wouldn't say that the hills were much tougher than I was expecting, but it was definitely Hell in several areas. The two mile climb to "Hurricane Point", the apex of the course, gets special recognition. By mile 26, I'm fairly certain there wasn't a single cell in my body that wasn't on fire and screaming in protest.
+Even if we were running in the middle of nowhere with nothing to look at, the hills would have been entertaining on their own by offering a challenge I'm not used to. I completed exactly 0.0 miles of hill training in preparation. I was definitely overconfident with this being my 13th marathon. The two mile climb to Hurricane Point, the apex of the course, was certainly the toughest two miles of any race I've done.
 
-[![At the finish.  Looking better than I felt.](http://alexalwaysrunning.files.wordpress.com/2013/05/730562-1099-0040s.jpg =384x578)](http://alexalwaysrunning.files.wordpress.com/2013/05/730562-1099-0040s.jpg)
+![Alex, close to the finish line, with knee band in place](/images/big-sur-2.jpg "Close to the finish line")
 
-Regarding the organization of the race, Big Sur was handled very well. Aside from closing off most of Highway 1 and providing the standard aid stations every couple miles, there were multiple bands and a piano player at the Bixby bridge to keep things moving down the highway. It was pretty incredible to hear the piano at least three miles away on Hurricane Peak. Normally, I would say that these things don't matter to me, but 99% of the course was closed off to spectators so any extra commotion was a good thing.
+The Big Sur Marathon was organized very well. Aside from closing off most of Highway 1 and providing the standard aid stations every couple miles, there were multiple bands and a piano player at Bixby Bridge to help keep things moving down the highway. It was pretty incredible to hear the piano when you are at least three miles away on Hurricane Peak. Normally, I would say that these things don't matter much during a large marathon, but 99% of the course was closed off to spectators so any extra commotion was welcome
 
-[![Finished!](http://alexalwaysrunning.files.wordpress.com/2013/05/730543-1022-0018s.jpg =384x578)](http://alexalwaysrunning.files.wordpress.com/2013/05/730543-1022-0018s.jpg)
+I knew long before I finished Big Sur, that this was definitely a new high point for my running career, despite it being probably my slowest marathon. It was definitely my toughest marathon to date. Hopefully, I'll be running this race again.
 
-I knew long before I finished Big Sur, that this was definitely a new high point for my running career, despite it being my slowest marathon. It was definitely my toughest marathon to date, and with my legs being less than 100% it was more of a challenge than I could have asked for. Ideally, I'll be running this race again next year, but its increasing popularity might make registration impossible.
-
-Any marathon following this one has a lot to live up to. Fortunately, there are two and a Tough Mudder this month to pick up the slack!
+![Alex with Big Sur finisher medal](/images/big-sur-3.jpg "Big Sur Finished")
