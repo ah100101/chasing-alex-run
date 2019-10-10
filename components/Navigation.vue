@@ -4,18 +4,18 @@
       <nav class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item logo">
+            <a class="navbar-item logo" href="/">
               <img src="/images/logo.png" alt="Logo">
             </a>
-            <span class="navbar-burger burger">
+            <span v-on:click="active = !active" class="navbar-burger burger">
               <span></span>
               <span></span>
               <span></span>
             </span>
           </div>
-          <div class="navbar-menu">
+          <div class="navbar-menu" v-bind:class="{ 'is-active': active }">
             <div class="navbar-end">
-              <a href="/" class="navbar-item is-active">
+              <a href="/" class="navbar-item">
                 Home
               </a>
               <a href="/posts" class="navbar-item">
@@ -37,7 +37,7 @@
 export default {
   data: function () {
     return {
-
+      active: false
     }
   }
 }
