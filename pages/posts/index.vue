@@ -51,7 +51,8 @@ export default {
         loadingThumbnail: obj.data.attributes['loading_thumbnail'],
         postDateTime: new Date(obj.data.attributes['post_date']),
         thumbnail: obj.data.attributes['thumbnail'],
-        tags: obj.data.attributes.tags
+        tags: obj.data.attributes.tags,
+        slug: obj.md[1]
       }
     })
     .map(obj => {

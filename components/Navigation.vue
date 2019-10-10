@@ -7,7 +7,7 @@
             <a class="navbar-item logo" href="/">
               <img src="/images/logo.png" alt="Logo">
             </a>
-            <span v-on:click="active = !active" class="navbar-burger burger">
+            <span v-on:click="active = !active" class="navbar-burger burger" v-bind:class="{ 'is-active': active }">
               <span></span>
               <span></span>
               <span></span>
