@@ -26,15 +26,6 @@ fields:
   config:
     maxSize: 250
   label: Hero Image
-- name: body
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Body
 pages:
 - content/pages/contributing.md
 - content/pages/events.md
