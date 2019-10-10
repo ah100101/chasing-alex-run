@@ -37,7 +37,7 @@ fields:
     required: false
   label: Hero Credit
 pages:
+- content/pages/about.md
 - content/pages/contributing.md
 - content/pages/events.md
-- content/pages/about.md
 - content/pages/home.md

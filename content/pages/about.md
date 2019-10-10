@@ -2,7 +2,9 @@
 title: About
 subtitle: ''
 description: ''
-hero_image: ''
+hero_image: "/images/chicago-l.jpg"
 body: ''
+hero_credit: Photo by Paul Griffin on Unsplash
+hero_loading: "/images/chicago-l-loading.jpg"
 
 ---
