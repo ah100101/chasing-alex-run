@@ -18,6 +18,9 @@
               <a href="/" class="navbar-item">
                 Home
               </a>
+              <a href="/roadmap" class="navbar-item">
+                Roadmap
+              </a>
               <a href="/posts" class="navbar-item">
                 Posts
               </a>
