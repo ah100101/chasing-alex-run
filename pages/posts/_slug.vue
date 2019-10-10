@@ -33,6 +33,14 @@ export default {
     DetailHero,
     Navigation
   },
+  head () {
+    return {
+      title: this.post.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.post.description }
+      ]
+    }
+  },
   mounted: function () {
     import(`~/content/posts/${this.$route.params.slug}.md`)
       .then((result) => {

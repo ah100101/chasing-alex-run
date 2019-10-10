@@ -30,6 +30,14 @@ export default {
     DetailHero,
     Navigation
   },
+  head () {
+    return {
+      title: 'About Chasing Alex Run',
+      meta: [
+        { hid: 'description', name: 'description', content: 'About the running and adventure blog, Chasing Alex Run' }
+      ]
+    }
+  },
   mounted: function () {
     import(`~/content/pages/about.md`)
       .then((result) => {

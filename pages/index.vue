@@ -32,6 +32,14 @@ export default {
     PostCard,
     StaggeredTileListing
   },
+  head () {
+    return {
+      title: 'Chasing Alex Run',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Chasing Alex Run: Running and Adventure Blog' }
+      ]
+    }
+  },
   created: function () {
     const resolve = require.context('~/content/posts/', true, /\.md$/)
     let contentPosts = resolve.keys().map((key) => {

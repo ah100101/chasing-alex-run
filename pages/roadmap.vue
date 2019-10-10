@@ -34,6 +34,14 @@ export default {
     Navigation,
     Timeline
   },
+  head () {
+    return {
+      title: 'Chasing Alex Run Event Roadmap',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Past and Future Events' }
+      ]
+    }
+  },
   mounted: function () {
     const resolve = require.context('~/content/events/', true, /\.md$/)
     const contentEvents = resolve.keys().map((key) => {
