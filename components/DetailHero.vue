@@ -4,7 +4,7 @@
       <div class="hero-container">
         <div class="title-container">
           <h1 class="hero-title animate fadeInLeft delay-600">{{ title }}</h1>
-          <p class="animate fadeInLeft delay-400">{{ date }}</p>
+          <p v-if="date" class="animate fadeInLeft delay-400">{{ date }}</p>
         </div>
       </div>
     </section>
@@ -22,8 +22,7 @@ export default {
       required: true
     },
     date: {
-      type: String,
-      required: true
+      type: String
     }
   },
   data: function () {
