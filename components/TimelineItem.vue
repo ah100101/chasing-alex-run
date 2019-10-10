@@ -90,10 +90,10 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 
   .timeline-info {
       color: $primary-accent;
-      font-family: "Roboto Condensed", sans-serif;
+      font-family: $family-monospace;
       font-size: 13px;
       font-weight: bold;
-      letter-spacing: 3px;
+      letter-spacing: 2px;
       opacity: 0.8;
       text-transform: uppercase;
       text-align: left;

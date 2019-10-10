@@ -68,6 +68,10 @@ export default {
   .subtitle {
     color: $light;
   }
+
+  .navbar-item:focus {
+    background-color: $dark !important;
+  }
 }
 
 </style>

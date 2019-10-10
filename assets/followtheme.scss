@@ -8,6 +8,8 @@ html, body {
     overflow-x: hidden;
 }
 
+[v-cloak] {display: none}
+
 $primary: #393e46;
 $dark: #222831;
 $light: #eeeeee;
@@ -16,7 +18,11 @@ $primary-invert: findColorInvert($primary);
 
 $white: #fff;
 $black: #000;
-$open-sans: 'Open Sans', sans-serif;
+
+$family-sans-serif: 'Source Sans Pro', sans-serif;
+$family-monospace: 'Fira Code', monospace;
+
+$family-primary: $family-sans-serif;
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: (

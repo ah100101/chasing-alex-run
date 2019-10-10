@@ -72,7 +72,7 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     height: 100vh;
-    font-family: $open-sans;
+    // font-family: $open-sans;
   }
 
   a {
@@ -80,7 +80,7 @@ export default {
   }
 
   h1 {
-    font-family: $open-sans;
+    // font-family: $open-sans;
     font-weight: 300;
   }
 

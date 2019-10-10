@@ -35,8 +35,9 @@ export default {
 <style lang='scss'>
 @import '~/assets/followtheme.scss';
 
-$font-sans-serif : 'Roboto Condensed', sans-serif;
-$font-serif      : 'Open Sans', sans-serif;
+// $font-sans-serif : 'Roboto Condensed', sans-serif;
+// $font-serif      : 'Open Sans', sans-serif;
+
 .home-hero {
   
   box-shadow: 0 19px 38px rgba($black, 0.1), 0 15px 12px rgba($black, 0.1);
@@ -90,7 +91,7 @@ $font-serif      : 'Open Sans', sans-serif;
 
   .hero-title {
     color: $white;
-    font-family: $font-serif;
+    // font-family: $font-serif;
     font-size: 12vw; 
     font-weight: 600;
     letter-spacing: 1px;
