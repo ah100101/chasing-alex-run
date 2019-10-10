@@ -64,14 +64,11 @@ export default {
 
     this.latestPost = contentPosts.slice(0,1)[0]
 
-    console.log(contentPosts)
-
     this.posts = contentPosts.map(obj => {
-      console.log(obj)
       return {
         transparent: true,
         type: obj.tags[0],
-        day: obj.postDateTime.getDate(),
+        day: obj.postDateTime.getDate() + 1,
         month: dateFormat(obj.postDateTime, 'mmmm'),
         year: obj.postDateTime.getFullYear(),
         title: obj.title,

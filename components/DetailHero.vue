@@ -22,7 +22,8 @@ export default {
       required: true
     },
     date: {
-      type: String
+      type: String,
+      required: true
     }
   },
   data: function () {

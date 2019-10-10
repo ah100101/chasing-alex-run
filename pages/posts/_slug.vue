@@ -2,7 +2,8 @@
   <div class='detail'>
     <section class="hero is-primary is-medium">
       <Navigation />
-      <DetailHero
+      <DetailHero 
+        v-if="this.post"
         v-bind:title="this.post.title"
         v-bind:date="this.computedDate" 
         v-bind:imageSource="this.post['hero_image']"
@@ -45,7 +46,7 @@ export default {
   data: function () {
     return {
       darkModeOn: false,
-      post: {},
+      post: undefined,
       error: {},
       body: ''
     }

@@ -12,13 +12,14 @@
 
     <div class="columns is-mobile">
       <div class="column">
-        <TwoColumnListing v-bind:cards="cards" />
+        <TwoColumnListing v-bind:cards="posts" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import dateFormat from 'dateformat'
 import InteriorHero from '~/components/InteriorHero'
 import PostCard from '~/components/PostCard'
 import Navigation from '~/components/Navigation'
@@ -34,82 +35,46 @@ export default {
   },
   mounted: function () {
     const resolve = require.context('~/content/posts/', true, /\.md$/)
-    this.posts = resolve.keys().map((key) => {
-      const [, name] = key.match(/\/(.+)\.md$/)
-      return resolve(key)
+    let contentPosts = resolve.keys()
+    .map((key) => {
+      const md = key.match(/\/(.+)\.md$/)
+      return {
+        data: resolve(key),
+        md
+      }
     })
+    .sort((a,b) => new Date(b.data.attributes['post_date']) - new Date(a.data.attributes['post_date']))
+    .map(obj => {
+      return {
+        title: obj.data.attributes.title,
+        description: obj.data.attributes.description,
+        loadingThumbnail: obj.data.attributes['loading_thumbnail'],
+        postDateTime: new Date(obj.data.attributes['post_date']),
+        thumbnail: obj.data.attributes['thumbnail'],
+        tags: obj.data.attributes.tags
+      }
+    })
+    .map(obj => {
+      return {
+        transparent: true,
+        type: obj.tags[0],
+        day: obj.postDateTime.getDate() + 1,
+        month: dateFormat(obj.postDateTime, 'mmmm'),
+        year: obj.postDateTime.getFullYear(),
+        title: obj.title,
+        description: obj.description,
+        url: `/posts/${obj.slug}`,
+        image: obj.thumbnail
+      }
+    })
+
+    for (let i = 0; i < contentPosts.length; i = i + 2) {
+      this.posts.push([contentPosts[i], i + 1 < contentPosts.length ? contentPosts[i + 1] : undefined])
+    }
   },
   data: function () {
     return {
-      posts: [],
-      cards: [
-        {
-          title:'Speed Work: You can only run faster by running faster',
-          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
-          transparent:true,
-          type:'Race Preview',
-          day:'0',
-          month:'Sep',
-          year:'2019',
-          image: './images/running-placeholder.jpg',
-          slug: '/detail/speed-work'
-        },
-        {
-          title:'Lorem Ipsum Delor Sedet Verberat Baculo',
-          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
-          transparent:false,
-          type:'Race Preview',
-          day:'1',
-          month:'Sep',
-          year:'2019',
-          image: './images/running-placeholder.jpg',
-          slug: '/detail/speed-work'
-        },
-        {
-          title:'Lorem Ipsum Delor Sedet Verberat Baculo 2',
-          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
-          transparent:false,
-          type:'Race Preview',
-          day:'2',
-          month:'Sep',
-          year:'2019',
-          image: './images/running-placeholder.jpg',
-          slug: '/detail/speed-work'
-        },
-        {
-          title:'Lorem Ipsum Delor Sedet Verberat Baculo 3',
-          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
-          transparent:false,
-          type:'Race Preview',
-          day:'3',
-          month:'Sep',
-          year:'2019',
-          image: './images/running-placeholder.jpg',
-          slug: '/detail/speed-work'
-        },
-        {
-          title:'Lorem Ipsum Delor Sedet Verberat Baculo 4',
-          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
-          transparent:false,
-          type:'Race Preview',
-          day:'4',
-          month:'Sep',
-          year:'2019',
-          image: './images/running-placeholder.jpg',
-          slug: '/detail/speed-work'
-        },
-        {
-          title:'Lorem Ipsum Delor Sedet Verberat Baculo 4',
-          description:'Lorem ipsum dolor sedet verberat baculo. Puella sub arbore sedet slavum getum.',
-          transparent:false,
-          type:'Race Preview',
-          day:'6',
-          month:'Sep',
-          year:'2019',
-          image: './images/running-placeholder.jpg',
-          slug: '/detail/speed-work'
-        }
-      ]
+      posts: []
     }
   }
 }
