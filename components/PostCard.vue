@@ -147,7 +147,7 @@ export default {
 
     .type {
       left: 0;
-      font-size: 12px;
+      font-size: 16px;
       background-color: $primary-accent;
     }
 

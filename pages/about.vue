@@ -16,7 +16,7 @@
       <div class="container content" v-html="body">
       </div>
     </div>
-
+    <Footer></Footer>
   </div>
 </template>
 
@@ -24,11 +24,13 @@
 import dateFormat from 'dateformat'
 import DetailHero from '~/components/DetailHero'
 import Navigation from '~/components/Navigation'
+import Footer from '~/components/Footer'
 
 export default {
   components: {
     DetailHero,
-    Navigation
+    Navigation,
+    Footer
   },
   head () {
     return {

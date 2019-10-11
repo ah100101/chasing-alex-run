@@ -13,6 +13,7 @@
     <StaggeredTileListing
       header="Latest Posts" 
       v-bind:cards="posts" />
+    <Footer></Footer>
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import HomeHero from '~/components/HomeHero'
 import PostCard from '~/components/PostCard'
 import Navigation from '~/components/Navigation'
 import StaggeredTileListing from '~/components/StaggeredTileListing.vue'
+import Footer from '~/components/Footer'
 
 export default {
   layout: 'home',
@@ -30,7 +32,8 @@ export default {
     HomeHero,
     Navigation,
     PostCard,
-    StaggeredTileListing
+    StaggeredTileListing,
+    Footer
   },
   head () {
     return {

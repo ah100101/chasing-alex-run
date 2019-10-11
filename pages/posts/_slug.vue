@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class='detail'>
     <section class="hero is-primary is-medium">
       <Navigation />
@@ -21,17 +22,22 @@
       </div>
     </div>
   </div>
+    <Footer></Footer>
+
+</div>
 </template>
 
 <script>
 import dateFormat from 'dateformat'
 import DetailHero from '~/components/DetailHero'
 import Navigation from '~/components/Navigation'
+import Footer from '~/components/Footer'
 
 export default {
   components: {
     DetailHero,
-    Navigation
+    Navigation,
+    Footer
   },
   head () {
     return {
@@ -83,6 +89,13 @@ export default {
 @import '~/assets/followtheme.scss';
 
 .detail {
+
+  img {
+    max-height: 30rem;
+    display: block;
+    margin: 0 auto;
+  }
+
   .navbar-item {
     img {
       max-height: 4.5rem;

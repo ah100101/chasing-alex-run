@@ -18,6 +18,7 @@
         </div>
       </div>
     </div>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -26,13 +27,15 @@ import dateFormat from 'dateformat'
 import InteriorHero from '~/components/InteriorHero'
 import Navigation from '~/components/Navigation'
 import Timeline from '~/components/Timeline'
+import Footer from '~/components/Footer'
 
 export default {
   name: 'Events',
   components: {
     InteriorHero,
     Navigation,
-    Timeline
+    Timeline,
+    Footer
   },
   head () {
     return {

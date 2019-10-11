@@ -110,8 +110,8 @@ export default {
 
   .hero-title {
     color: white;
-    font-size: 4em; 
-    font-weight: 400;
+    font-size: 3.5em; 
+    font-weight: 800;
     letter-spacing: 1px;
     line-height: 1.1;
     margin: 5px 0;
@@ -126,7 +126,7 @@ export default {
     background-color: rgba(34, 40, 49, .9);
     padding: 2em;
     width: fit-content;
-    margin: 2em 0;
+    margin: 2em auto;
 
     @media screen and (max-width:640px) {
       padding: 1em;

@@ -8,6 +8,7 @@ html, body {
     overflow-x: hidden;
 }
 
+
 [v-cloak] {display: none}
 
 $primary: #393e46;
@@ -35,12 +36,16 @@ $colors: (
     "success": ($success, $success-invert),
     "warning": ($warning, $warning-invert),
     "danger": ($danger, $danger-invert)
-);
+    );
 
 // Links
 $link: $primary;
 $link-invert: $primary-invert;
 $link-focus-border: $primary;
+
+.main-content {
+    background-color: $primary;
+}
 
 // Import Bulma and Buefy styles
 @import "~bulma";

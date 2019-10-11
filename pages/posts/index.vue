@@ -15,6 +15,7 @@
         <TwoColumnListing v-bind:cards="posts" />
       </div>
     </div>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -24,6 +25,7 @@ import InteriorHero from '~/components/InteriorHero'
 import PostCard from '~/components/PostCard'
 import Navigation from '~/components/Navigation'
 import TwoColumnListing from '~/components/TwoColumnListing'
+import Footer from '~/components/Footer'
 
 export default {
   name: 'Posts',
@@ -31,7 +33,8 @@ export default {
     InteriorHero,
     PostCard,
     Navigation,
-    TwoColumnListing
+    TwoColumnListing,
+    Footer
   },
   mounted: function () {
     const resolve = require.context('~/content/posts/', true, /\.md$/)
