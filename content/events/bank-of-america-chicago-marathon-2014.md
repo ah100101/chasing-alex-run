@@ -3,8 +3,8 @@ title: Bank of America Chicago Marathon 2014
 date: 2014-10-09T00:00:00-05:00
 description: ''
 url: ''
-background_image: "/images/chicago-marathon-2014.jpg"
-loading_image: "/images/chicago-marathon-2014-loading.jpg"
+background_image: "/images/chicago-marathon-2014.webp"
+loading_image: "/images/chicago-marathon-2014-loading.webp"
 is_time_period: false
 location: Chicago, IL
 finish_time: '4:17:31'

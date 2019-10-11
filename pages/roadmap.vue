@@ -4,9 +4,9 @@
       <Navigation />
       <InteriorHero
         title="Events"
-        imageSource="./images/hero-placeholder.jpg"
-        loadingImage="./images/hero-placeholder.jpg"
-        errorImage="./images/hero-placeholder.jpg"
+        imageSource="./images/track.webp"
+        loadingImage="./images/track-loading.webp"
+        errorImage="./images/track-loading.webp"
          />
     </section>
 

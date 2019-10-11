@@ -1,19 +1,21 @@
 <template>
-  <div v-show="ready" class='detail'>
-    <section class="hero is-primary is-medium">
-      <Navigation />
-      <DetailHero 
-        date="" 
-        v-if="this.post"
-        v-bind:title="this.post.title"
-        v-bind:imageSource="this.post['hero_image']"
-        v-bind:loadingImage="this.post['hero_image']"
-        v-bind:errorImage="this.post['hero_image']" />
-    </section>
+  <div v-show="ready">
+    <div class='detail'>
+      <section class="hero is-primary is-medium">
+        <Navigation />
+        <DetailHero 
+          date="" 
+          v-if="this.post"
+          v-bind:title="this.post.title"
+          v-bind:imageSource="this.post['hero_image']"
+          v-bind:loadingImage="this.post['hero_image']"
+          v-bind:errorImage="this.post['hero_image']" />
+      </section>
 
-    <div 
-      class="column">
-      <div class="container content" v-html="body">
+      <div 
+        class="column">
+        <div class="container content" v-html="body">
+        </div>
       </div>
     </div>
     <Footer></Footer>

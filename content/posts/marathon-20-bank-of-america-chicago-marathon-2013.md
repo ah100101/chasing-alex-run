@@ -4,12 +4,12 @@ tags:
 - Marathon
 title: 'Marathon #20: Bank of America Chicago Marathon 2013'
 description: Recap of my fastest marathon to date.
-hero_image: "/images/chicago-marathon-2013-recap.jpg"
+hero_image: "/images/chicago-marathon-2013-recap.webp"
 hero_credit: ''
-loading_hero: "/images/chicago-marathon-2013-recap-loading.jpg"
-thumbnail: "/images/chicago-marathon-2013-recap-1.jpg"
+loading_hero: "/images/chicago-marathon-2013-recap-loading.webp"
+thumbnail: "/images/chicago-marathon-2013-recap-1.webp"
 thumbnail_credit: ''
-loading_thumbnail: "/images/chicago-marathon-2013-recap-loading-1.jpg"
+loading_thumbnail: "/images/chicago-marathon-2013-recap-loading-1.webp"
 post_date: 2013-10-13T00:00:00-05:00
 event_date: 2013-10-13T00:00:00-05:00
 
