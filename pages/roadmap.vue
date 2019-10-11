@@ -1,5 +1,5 @@
 <template>
-  <div class='events'>
+  <div v-show="ready" class='events'>
     <section class="hero is-primary is-medium">
       <Navigation />
       <InteriorHero
@@ -69,9 +69,11 @@ export default {
           location: !!obj.attributes['location'] ? obj.attributes['location'] : ''
         }
       })
+    this.ready = true
   },
   data: function () {
     return {
+      ready: false,
       events: []
     }
   }

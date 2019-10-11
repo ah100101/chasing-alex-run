@@ -58,6 +58,7 @@ export default {
       })
       .catch((error) => {
         console.error(error)
+        this.ready = true
       })
   },
   data: function () {

@@ -1,5 +1,5 @@
 <template>
-  <div class='detail'>
+  <div v-show="ready" class='detail'>
     <section class="hero is-primary is-medium">
       <Navigation />
       <DetailHero 
@@ -43,15 +43,18 @@ export default {
   mounted: function () {
     import(`~/content/pages/about.md`)
       .then((result) => {
+        this.ready = true
         this.body = result.html
         this.post = result.attributes
       })
       .catch((error) => {
         console.error(error)
+        this.ready = true
       })
   },
   data: function () {
     return {
+      ready: false,
       post: undefined,
       error: {},
       body: ''

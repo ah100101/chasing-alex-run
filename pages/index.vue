@@ -1,5 +1,5 @@
 <template>
-  <div class='home'>
+  <div v-show="ready" class='home'>
     <section class="hero is-primary is-medium">
       <Navigation />
         <HomeHero
@@ -89,9 +89,12 @@ export default {
       }
     })
     this.posts.splice(0,1)
+
+    this.ready = true
   },
   data: function () {
     return {
+      ready: false,
       latestPost: {},
       posts: []
     }
