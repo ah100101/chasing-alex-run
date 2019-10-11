@@ -4,7 +4,7 @@ tags:
 - Marathon
 slug: 4-23-2013-big-sur-marathon
 title: Big Sur Marathon 2013 Recap
-description: The recap for the marathon trades speed for hill work and spectators
+description: The recap for the marathon that trades speed for hill work and spectators
   for scenery
 hero_image: "/images/big-sur-marathon.jpg"
 thumbnail: "/images/big-sur-marathon-1.jpg"
