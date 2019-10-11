@@ -46,7 +46,7 @@ export default {
     // needed to prevent janky scrolling in Safari
     backface-visibility: hidden;
     //100% height of the viewport minus the header
-    height: 15vw;
+    height: 20vw;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -70,14 +70,15 @@ export default {
 
   .hero-container {
     box-sizing: border-box;
-    height: auto;
-    padding: 15px 50px;
+    // height: auto;
+    // padding: 15px 50px;
+    margin: auto;
     position: relative;
     z-index: 2;
     left: 0;
     
     @media screen and (min-width:640px) {
-      height: 100%;
+      // height: 100%;
     }
 
     @media screen and (min-width:1344px) {

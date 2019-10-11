@@ -47,6 +47,10 @@ $link-focus-border: $primary;
     background-color: $primary;
 }
 
+html {
+    background-color: $primary !important;
+}
+
 // Import Bulma and Buefy styles
 @import "~bulma";
 @import "~buefy/src/scss/buefy";

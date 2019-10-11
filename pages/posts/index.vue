@@ -1,5 +1,5 @@
 <template>
-  <div class='posts'>
+  <div v-show="ready" class='posts'>
     <section class="hero is-primary is-medium">
       <Navigation />
       <InteriorHero
@@ -75,9 +75,12 @@ export default {
     for (let i = 0; i < contentPosts.length; i = i + 2) {
       this.posts.push([contentPosts[i], i + 1 < contentPosts.length ? contentPosts[i + 1] : undefined])
     }
+
+    this.ready = true
   },
   data: function () {
     return {
+      ready: false,
       posts: []
     }
   }

@@ -1,5 +1,5 @@
 <template>
-<div>
+<div v-show="ready">
   <div class='detail'>
     <section class="hero is-primary is-medium">
       <Navigation />
@@ -12,11 +12,11 @@
         v-bind:errorImage="this.post['hero_image']" />
     </section>
 
-      <!-- v-bind:class="{ 'dark-mode': darkModeOn, 'light-mode': !darkModeOn }" -->
     <div 
+      v-bind:class="{ 'dark-mode': darkModeOn, 'light-mode': !darkModeOn }"
       class="column">
       <!-- <div class="field">
-        <b-switch v-model="darkModeOn">{{ darkModeText }}</b-switch>
+        <b-switch v-model="darkModeOn"></b-switch>
       </div> -->
       <div class="container content" v-html="body">
       </div>
@@ -54,6 +54,7 @@ export default {
         this.post = result.attributes
         this.metaTitle = this.post.title
         this.metaDescription = this.post.description
+        this.ready = true
       })
       .catch((error) => {
         console.error(error)
@@ -61,6 +62,7 @@ export default {
   },
   data: function () {
     return {
+      ready: false,
       darkModeOn: false,
       post: undefined,
       error: {},
@@ -132,6 +134,7 @@ export default {
 
   .content {
     max-width: 800px;
+    margin-top: 3em;
   }
 
   .dark-mode {
