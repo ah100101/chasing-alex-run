@@ -3,10 +3,10 @@
     <section class="hero is-primary is-medium">
       <Navigation />
       <InteriorHero
-        title="Events"
-        imageSource="../images/track.webp"
-        loadingImage="../images/track-loading.webp"
-        errorImage="../images/track-loading.webp"
+        title="Roadmap"
+        imageSource="../images/track.jpg"
+        loadingImage="../images/track-loading.jpg"
+        errorImage="../images/track-loading.jpg"
          />
     </section>
 

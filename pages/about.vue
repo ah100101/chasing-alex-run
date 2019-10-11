@@ -1,5 +1,5 @@
 <template>
-  <div v-show="ready">
+  <div v-show="ready" >
     <div class='detail'>
       <section class="hero is-primary is-medium">
         <Navigation />
