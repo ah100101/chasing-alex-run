@@ -22,7 +22,7 @@ export default {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap' }
     ],
     script: [
-      { src: '/js/webpjs-0.0.2.min.js' }
+      
     ]
   },
   /*
