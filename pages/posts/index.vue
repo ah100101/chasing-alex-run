@@ -4,9 +4,9 @@
       <Navigation />
       <InteriorHero
         title="Posts"
-        imageSource="./images/lake.webp"
-        loadingImage="./images/lake.webp"
-        errorImage="./images/lake.webp" 
+        imageSource="../images/lake.webp"
+        loadingImage="../images/lake.webp"
+        errorImage="../images/lake.webp" 
         />
     </section>
 
