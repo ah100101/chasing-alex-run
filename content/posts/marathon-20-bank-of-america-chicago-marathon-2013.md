@@ -2,8 +2,8 @@
 tags:
 - Race Recap
 - Marathon
-title: 'Marathon #20: Bank of America Chicago Marathon 2013'
-description: Recap of my fastest marathon to date.
+title: 2013 Chicago Marathon
+description: The 2013 Chicago Marathon had highs and lows while I sprinted for a PR
 hero_image: "/images/chicago-marathon-2013-recap.jpg"
 hero_credit: ''
 loading_hero: "/images/chicago-marathon-2013-recap-loading.jpg"
@@ -14,15 +14,23 @@ post_date: 2013-10-13T00:00:00-05:00
 event_date: 2013-10-13T00:00:00-05:00
 
 ---
-You would think that, after 19 marathons, I wouldn't be nervous, anxious, and getting goosebumps in the starting corral before Chicago. But there I was feeling like it was marathon number one.
+_Note: this post was originally published October 13th, 2013 on a previous running blog_
 
-[![Ready to go](http://alexalwaysrunning.files.wordpress.com/2013/10/wp_20131013_002.jpg?w=640 =640x360)](http://alexalwaysrunning.files.wordpress.com/2013/10/wp_20131013_002.jpg)There was something about Chicago that wasn't present in any of the other marathons that I have finished this year. The other marathons were 26.2 mile runs and I hoped for a good time. Chicago this year was a race. PR or die. Getting a good time wasn't an option, it was required. Being with 40,000+ runners makes you want to perform at your very best and leave nothing on the course by the time you cross the finish line. I'm happy to say (my legs are not happy to say) that I was able to show up with my best marathon performance this year.
+I never thought that after 19 marathons I would still be nervous, anxious, and getting goosebumps at the starting corral in Chicago.
+
+![runners waiting at the starting line at the Chicago Marathon](/images/chicago-marathon-2013-post.jpg "Waiting at the start of the 2013 Chicago Marathon")
+
+There was something about Chicago that wasn't present in any of the other marathons that I finished this year. The other marathons were 26.2 mile runs and I hoped for a good time. Chicago this year was a race.
+
+> PR or die.
+
+Getting a good time wasn't optional it was a requirement. Being with 40,000+ runners this year pushed me to leave nothing on the course. I'm happy to say (my legs, not so much) that I was able to execute my best marathon performance this year.
 
 I actually didn't have a set game-plan until after the race had started and I was around mile three. I still didn't feel quite 100% after Fox Valley and still hadn't answered the question: "Do I want to enjoy the Chicago Marathon? Or do I want to hate every second of it and try for a PR?". I started the race aiming to keep myself in a good position in-case I decided to take off. Just before mile four, I gave myself the green light to take off.
 
 My race preparation wasn't too much different than usual. Moderate carb-loading the day before with lots of hydration. I picked up my race packet and made sure my gear was in order the night before. Nothing different there.
 
-[![Road gear](http://alexalwaysrunning.files.wordpress.com/2013/10/wp_20131012_005.jpg?w=169 =169x300)](http://alexalwaysrunning.files.wordpress.com/2013/10/wp_20131012_005.jpg)I arrived in Grant Park around 6 am for the 7:30 start. A noticeable increase in race security was immediately apparent. Garbage cans were scarce, required security checks on all gear bags, and policemen everywhere. Plow trucks and cement barricades were present at all major entry ways to the park. No one was going to be there that wasn't supposed to be there. As far as I know (I was there pretty early) this didn't cause too much of a commotion with runners getting to their assigned corrals, nor did it detract from the gorgeous weather that we had in store for the race. Energy was high.
+[!\[Road gear\](http://alexalwaysrunning.files.wordpress.com/2013/10/wp_20131012_005.jpg?w=169 =169x300)](http://alexalwaysrunning.files.wordpress.com/2013/10/wp_20131012_005.jpg)I arrived in Grant Park around 6 am for the 7:30 start. A noticeable increase in race security was immediately apparent. Garbage cans were scarce, required security checks on all gear bags, and policemen everywhere. Plow trucks and cement barricades were present at all major entry ways to the park. No one was going to be there that wasn't supposed to be there. As far as I know (I was there pretty early) this didn't cause too much of a commotion with runners getting to their assigned corrals, nor did it detract from the gorgeous weather that we had in store for the race. Energy was high.
 
 I think all of these precautions, coupled with a moment of silence for Boston, made for one of the most memorable moments I have experienced at any race. When they had the singing of the national anthem, the loud-speakers kept cutting out for a couple seconds. But what could have ruined the anthem, actually enhanced because all the runners (and I'm assuming any non-runners) proceeded to sing the anthem without any pause from the speakers dying out. I'm sure everyone went out the starting gate too fast after that.
 
@@ -34,13 +42,13 @@ Up until mile 17 I had the same thought echoing in my head. "You are in for a wo
 
 By the time I reached Michigan my 7:50ish minute miles had fallen to 8:30 minute miles. It had gotten ugly.
 
-\[caption id="attachment_207" align="aligncenter" width="300"\][![This summarizes the end of the race pretty nicely!](http://alexalwaysrunning.files.wordpress.com/2013/10/screenshot-from-2013-10-15-203950.png?w=300 =300x255)](http://alexalwaysrunning.files.wordpress.com/2013/10/screenshot-from-2013-10-15-203950.png) This summarizes the end of the race pretty nicely!\[/caption\]
+\[caption id="attachment_207" align="aligncenter" width="300"\][!\[This summarizes the end of the race pretty nicely!\](http://alexalwaysrunning.files.wordpress.com/2013/10/screenshot-from-2013-10-15-203950.png?w=300 =300x255)](http://alexalwaysrunning.files.wordpress.com/2013/10/screenshot-from-2013-10-15-203950.png) This summarizes the end of the race pretty nicely!\[/caption\]
 
 Right around mile 25 I looked at the clock, saw "3:22" and realized I was going to have to run one hell of a mile +.2 on a cramping set of legs if I was going to have a shot at a PR. If there was anything good about how I was feeling at that moment, it was that at least all the pain was confined to my right calf, right knee, and right hamstring. I wasn't dehydrated or nauseous, I just had to make sure that every time my right leg ceased for a moment, that I didn't fall flat on my face.
 
 3:28 was the goal. It took me around 2 minutes (wasn't quite sure) to get across the starting line at the beginning of the race so I was looking for 3:30 when I crossed. I crossed after 3:31. Bummer.
 
-\[caption id="attachment_209" align="aligncenter" width="409"\][![Reaction to a failed PR attempt...or was it!?](http://alexalwaysrunning.files.wordpress.com/2013/10/img_1064.jpg?w=640 =409x546)](http://alexalwaysrunning.files.wordpress.com/2013/10/img_1064.jpg) Reaction to a failed PR attempt...or was it!?\[/caption\]
+\[caption id="attachment_209" align="aligncenter" width="409"\][!\[Reaction to a failed PR attempt...or was it!?\](http://alexalwaysrunning.files.wordpress.com/2013/10/img_1064.jpg?w=640 =409x546)](http://alexalwaysrunning.files.wordpress.com/2013/10/img_1064.jpg) Reaction to a failed PR attempt...or was it!?\[/caption\]
 
 But my PRs have been a tricky thing. Starting in 2009, it took me two years to hit my PR plateau and I haven't budged since. Back in 2011 I ran a 3:34 at the Christie Clinic Marathon in Champaign. Later that year, I tried running Chicago with a Boston qualifying pace as long as I could, managing to complete \~8 miles with a 6:50 average pace. Later I collapsed, resulting in a still respectable 3:32 marathon. Then there was the United States Air Force Marathon in September 2012. I was in peak shape for that race. I have never been that fast again. On a hilly marathon course my Garmin clocked me with a 3:28:58 marathon time. My official Chicago Marathon 2013 time? 3:29:34. 36 seconds away.
 
