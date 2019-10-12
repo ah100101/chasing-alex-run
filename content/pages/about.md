@@ -39,16 +39,14 @@ When I'm not running - I'm usually building websites.
 
 6 years ago I had a running blog on a cookie cutter Wordpress site for when I ran 12 marathons in a year. Never again.
 
-...to having a boring vanilla blog
+...to having a boring cookie-cutter blog
 
-This site was built from the ground up by me. More specifically, it's built on
+This site was designed and built by me from the ground up on [Nuxt.js](https://nuxtjs.org/ "Nuxt.js")![](https://www.netlify.com/img/press/logos/full-logo-light.png)
 
-![Nuxt.js logo](https://nuxtjs.org/logos/nuxtjs-typo.svg "Nuxt.js")
+Netlify does much more than just static site (websites that are just html, javascript, and css) hosting, but for this blog it seamlessly builds and deploys my code updates to the live site without making me jump through any hoops, for free.
 
-which is an open source Vue.js framework for creating awesome websites and applications. Nuxt.js is also great for generating static websites which pairs nicely with
+Static sites aren't worth very much if you can't update them with new content which is where [Forestry](https://forestry.io "Forestry.io") comes in.
 
-![](https://www.netlify.com/img/press/logos/full-logo-light.png)
+![Forestry.io logo](/images/forestry.jpg "Forestry")
 
-for static site hosting (websites that are just html, javascript, and css). Netlify does much more than just static site hosting, but for this blog it seamlessly builds and deploys my code updates to the live site without making me jump through any hoops, for free. 
-
-Static sites are worth very much if you can't update them with new content which is where [Forestry](https://forestry.io "Forestry.io") comes in.![Forestry.io logo](/images/forestry.jpg "Forestry")Forestry is a CMS that _commits_ its content through a repository instead of through a database. 
+Forestry is a CMS that _commits_ its content through a repository instead of through a database. No database hosting costs so no headaches.
