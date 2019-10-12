@@ -81,10 +81,6 @@ export default {
     max-width: 20rem;
   }
 
-  a, a:hover {
-    text-decoration: underline;
-  }
-
   .navbar-item {
     img {
       max-height: 4.5rem;
@@ -123,6 +119,10 @@ export default {
   .content {
     max-width: 500px;
     margin-top: 1rem;
+
+      a, a:hover {
+        text-decoration: underline;
+      }
   }
 
   .dark-mode {
