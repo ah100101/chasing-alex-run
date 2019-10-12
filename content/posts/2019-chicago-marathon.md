@@ -17,6 +17,10 @@ loading_thumbnail: "/images/chicago-marathon-preview-2019-loading-1.jpg"
 ---
 ### Marathon Details
 
+* The 2019 Chicago Marathon will be the 42nd annual iteration
+* The runner field is typically capped at 45,000 runners 
+* In 2014 the marathon started to use a lottery system for random selecting runners to run the marathon
+
 ### Previous Experiences
 
 ### Race Plan
