@@ -39,14 +39,24 @@ When I'm not running - I'm usually building websites.
 
 6 years ago I had a running blog on a cookie cutter Wordpress site for when I ran 12 marathons in a year. Never again.
 
-...to having a boring cookie-cutter blog
+...to having a boring vanilla blog
 
-This site was designed and built by me from the ground up on [Nuxt.js](https://nuxtjs.org/ "Nuxt.js")![](https://www.netlify.com/img/press/logos/full-logo-light.png)
+This site was designed and built by me from the ground up on [Nuxt.js](https://nuxtjs.org/ "Nuxt.js")
 
-Netlify does much more than just static site (websites that are just html, javascript, and css) hosting, but for this blog it seamlessly builds and deploys my code updates to the live site without making me jump through any hoops, for free.
+![](https://nuxtjs.org/logos/nuxt-icon-white.png)
+
+Nuxt.js is an open source Vue.js framework for building awesome web applications and websites. Nuxt is also great at generating static websites, which pairs great with [netlify](https://netlify.com "Netlify")
+
+![](https://www.netlify.com/img/press/logos/full-logo-light.png)
+
+Netlify does much more than just static site (websites that are just html, javascript, and css) hosting. For this blog it seamlessly builds and deploys my code updates to the live site without making me jump through hoops. It also does this for free.
 
 Static sites aren't worth very much if you can't update them with new content which is where [Forestry](https://forestry.io "Forestry.io") comes in.
 
 ![Forestry.io logo](/images/forestry.jpg "Forestry")
 
 Forestry is a CMS that _commits_ its content through a repository instead of through a database. No database hosting costs so no headaches.
+
+Lastly, my code is on [GitHub](https://github.com/ah100101/chasing-alex-run "GitHub") and contributors are welcome 😁 This site was rushed to live in about a month so I'm sure there will shortly be a ton of bugs
+
+If you are interested in web development, technology in general or want to discuss the stack that powers this site, hit me up at [alex@hawley.tech](mailto:alex@hawley.tech)
