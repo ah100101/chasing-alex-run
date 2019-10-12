@@ -74,11 +74,15 @@ export default {
 .about {
 
   img {
-    max-height: 30rem;
+    max-height: 10rem;
     display: block;
     margin: 0 auto;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3), 0 5px 20px rgba(0, 0, 0, 0.2);
     max-width: 20rem;
+  }
+
+  a, a:hover {
+    text-decoration: underline;
   }
 
   .navbar-item {
