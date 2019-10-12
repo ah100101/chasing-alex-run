@@ -92,7 +92,7 @@ export default {
       color: $primary-accent;
       font-size: 13px;
       font-weight: bold;
-      letter-spacing: 6px;
+      letter-spacing: 4px;
       opacity: 0.8;
       text-transform: uppercase;
       text-align: left;
