@@ -118,7 +118,7 @@ export default {
 
   .hero-title {
     color: white;
-    font-size: 7rem; 
+    font-size: 6rem; 
     font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.1;
