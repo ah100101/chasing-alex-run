@@ -56,6 +56,10 @@ export default {
   .email {
     text-decoration: underline;
   }
+
+  .email:hover {
+    color: $white;
+  }
 }
 
 </style>

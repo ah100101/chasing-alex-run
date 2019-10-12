@@ -97,6 +97,7 @@ export default {
     max-height: 30rem;
     display: block;
     margin: 0 auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3), 0 5px 20px rgba(0, 0, 0, 0.2);
   }
 
   .navbar-item {
@@ -116,6 +117,7 @@ export default {
   .column {
     background-color: $light;
     padding-top: 2rem;
+    padding-bottom: 3rem;
   }
 
   .column.dark-mode {
@@ -135,7 +137,7 @@ export default {
 
   .content {
     max-width: 800px;
-    margin-top: 3em;
+    margin-top: 1rem;
   }
 
   .dark-mode {
