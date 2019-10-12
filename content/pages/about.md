@@ -8,11 +8,9 @@ hero_credit: Photo by Paul Griffin on Unsplash
 hero_loading: "/images/chicago-l-loading.jpg"
 
 ---
-## About Me
+> I don't run very fast but I can run pretty far
 
 ![](/images/about-photo-1.jpg)
-
-> I don't run very fast but I can run pretty far
 
 My running career started in 2009 when I completed my first Bank of America Chicago Marathon. 10 years later and I've completed over 25 marathons with most of them across the Midwest.
 
@@ -43,10 +41,14 @@ When I'm not running - I'm usually building websites.
 
 ...to having a boring vanilla blog
 
-This site was built from the ground up by me.
-
-More specifically, it's built on
+This site was built from the ground up by me. More specifically, it's built on
 
 ![Nuxt.js logo](https://nuxtjs.org/logos/nuxtjs-typo.svg "Nuxt.js")
 
 which is an open source Vue.js framework for creating awesome websites and applications. Nuxt.js is also great for generating static websites which pairs nicely with
+
+![](https://www.netlify.com/img/press/logos/full-logo-light.png)
+
+for static site hosting (websites that are just html, javascript, and css). Netlify does much more than just static site hosting, but for this blog it seamlessly builds and deploys my code updates to the live site without making me jump through any hoops, for free. 
+
+Static sites are worth very much if you can't update them with new content which is where [Forestry](https://forestry.io "Forestry.io") comes in.![Forestry.io logo](/images/forestry.jpg "Forestry")Forestry is a CMS that _commits_ its content through a repository instead of through a database. 
