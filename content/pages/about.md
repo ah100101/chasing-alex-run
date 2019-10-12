@@ -25,7 +25,6 @@ This site serves 2 purposes
 * Hold me accountable
 
   I've found that a good way to make sure I do something is to tell a bunch of other people that I'm doing something.
-
 * Catalog future marathons and other endurance events
 
   _Run_ may be part of the domain and title of this site but I expect many other types of activities to be covered here. I hope the site generates discussion around particular endurance events and the training / preparation required for them.
@@ -36,11 +35,11 @@ When I'm not running - I'm usually building websites.
 
 6 years ago I had a running blog on a cookie cutter Wordpress site for when I ran 12 marathons in a year. Everything is going to be different with this one.
 
-chasingalex.run is designed and built by me from the ground up on:  and 
+chasingalex.run is designed and built by me from the ground up on:
 
-* [Nuxt.js](https://nuxtjs.org/ "Nuxt.js") is an open source Vue.js framework for building awesome web applications and websites. Nuxt is responsible for many things but mostly importantly handles static site generation (taking all my code and mark up and spitting out only html, javascript, and css).
+* [Nuxt.js](https://nuxtjs.org/ "Nuxt.js") is an open source Vue.js framework for building awesome web applications and websites. Nuxt is responsible for many things but most importantly handles static site generation (taking all my code and markup and spitting out only html, javascript, and css).
 * [netlify](https://netlify.com "Netlify") is a hosting service that does much more than just static site hosting, but for this blog it seamlessly builds and deploys any of my code updates to the live site without making me jump through hoops. It also does this for free.
 * Static sites aren't worth very much if you can't update them with new content. [Forestry](https://forestry.io "Forestry.io") is a CMS that _commits_ its content through a repository instead of through a database.
 * Lastly, my code is open source on [GitHub](https://github.com/ah100101/chasing-alex-run "GitHub") and contributors are welcome 😁 I will confess that my skills are not typically in the front-end space so I expect there will be bugs entered in GitHub shortly.
 
-If you are interested in running, web development or want to discuss the stack this site is on, hit me up at [alex@hawley.tech](mailto:alex@hawley.tech) also feel free to follow me on [Instagram]() or [Twitter]()
+If you are interested in running, web development or want to discuss the stack this site is on, hit me up at [alex@hawley.tech](mailto:alex@hawley.tech) and feel free to follow me on [Instagram]() or [Twitter]()
