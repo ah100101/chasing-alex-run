@@ -81,7 +81,7 @@ export default {
     },
     computedDate: function () {
       if (this.post && this.post['post_date']) {
-        return dateFormat(new Date(this.post['post_date']), 'dddd, mmmm d, yyyy')
+        return dateFormat(new Date(this.post['post_date']), 'dddd, mmm d, yyyy')
       }
     }
   }
