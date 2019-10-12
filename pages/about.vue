@@ -74,7 +74,7 @@ export default {
 .about {
 
   img {
-    max-height: 10rem;
+    max-height: 20rem;
     display: block;
     margin: 0 auto;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3), 0 5px 20px rgba(0, 0, 0, 0.2);
