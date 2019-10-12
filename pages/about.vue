@@ -121,7 +121,7 @@ export default {
   }
 
   .content {
-    max-width: 800px;
+    max-width: 500px;
     margin-top: 1rem;
   }
 
