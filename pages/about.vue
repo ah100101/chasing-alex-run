@@ -72,6 +72,14 @@ export default {
 @import '~/assets/followtheme.scss';
 
 .detail {
+
+  img {
+    max-height: 30rem;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3), 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+
   .navbar-item {
     img {
       max-height: 4.5rem;
@@ -89,10 +97,42 @@ export default {
   .column {
     background-color: $light;
     padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .column.dark-mode {
+    background-color: $primary;
+    color: $light;
+
+    h1, h2, h3, strong {
+      color: $light;
+    }
+  }
+
+  .light-mode {
+    .switch input[type=checkbox] + .check {
+      background-color: $primary;
+    }
   }
 
   .content {
     max-width: 800px;
+    margin-top: 1rem;
+  }
+
+  .dark-mode {
+    .switch input[type=checkbox] + .check {
+      background-color: #ffcd94;
+    }
+  }
+
+  .switch {
+    float: right;
+
+    input.checkbox {
+      width: 100%;
+      height: 100%;
+    }
   }
 
 }
