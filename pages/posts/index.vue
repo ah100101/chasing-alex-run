@@ -62,7 +62,7 @@ export default {
       return {
         transparent: true,
         type: obj.tags[0],
-        day: obj.postDateTime.getDate() - 1,
+        day: obj.postDateTime.getDate(),
         month: dateFormat(obj.postDateTime, 'mmmm'),
         year: obj.postDateTime.getFullYear(),
         title: obj.title,

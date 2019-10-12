@@ -142,7 +142,8 @@ export default {
     a {
       text-decoration: underline;
     }
-
+  }
+  
   .dark-mode {
     .switch input[type=checkbox] + .check {
       background-color: #ffcd94;
@@ -157,7 +158,6 @@ export default {
       height: 100%;
     }
   }
-
 }
 
 </style>
