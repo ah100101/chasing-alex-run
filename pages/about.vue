@@ -1,6 +1,6 @@
 <template>
   <div v-show="ready" >
-    <div class='detail'>
+    <div class='about'>
       <section class="hero is-primary is-medium">
         <Navigation />
         <DetailHero 
@@ -71,13 +71,14 @@ export default {
 <style lang="scss">
 @import '~/assets/followtheme.scss';
 
-.detail {
+.about {
 
   img {
     max-height: 30rem;
     display: block;
     margin: 0 auto;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3), 0 5px 20px rgba(0, 0, 0, 0.2);
+    max-width: 20rem;
   }
 
   .navbar-item {
