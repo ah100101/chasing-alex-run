@@ -21,3 +21,32 @@ Most people probably see that marathon count and think _that guy really really l
 I find that there is a very particular sense of triumph when you can go to a new city, environment, park or trail and then explore it in detail on your own two feet. No one has to run to do this, but the further you run the more you see.
 
 As a Chicagoan, I'm lucky to live in a city which such high explorability between its diverse neighborhoods, lakefront, and numerous parks. It's not a coincidence that I've ran its marathon 10 times.
+
+## About this site
+
+This site serves 2 purposes
+
+1. Hold me accountable
+
+   I've found that a good way to make sure I do something is to tell a bunch of other people that I'm doing something.
+2. Catalog future marathons and other endurance events
+
+   _Run_ may be part of the domain and title but I expect many other types of activities to be covered here.
+
+   My also hope for this site to generate discussion around particular endurance events and the training / preparation required for them.
+
+### #NerdAlert
+
+When I'm not running - I'm usually building websites.
+
+6 years ago I had a running blog on a cookie cutter Wordpress site for when I ran 12 marathons in a year. Never again.
+
+...to having a boring vanilla blog
+
+This site was built from the ground up by me.
+
+More specifically, it's built on
+
+![Nuxt.js logo](https://nuxtjs.org/logos/nuxtjs-typo.svg "Nuxt.js")
+
+which is an open source Vue.js framework for creating awesome websites and applications. Nuxt.js is also great for generating static websites which pairs nicely with
