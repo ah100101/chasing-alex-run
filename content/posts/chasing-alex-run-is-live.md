@@ -18,6 +18,6 @@ Some visitors may remember that in 2013 I had a running blog documenting my atte
 
 I plan on using this site in a similar way for documenting endurance events and also as a way to discuss the topics revolving around them. For more details on myself, this site and how it was built check out the [about](https://chasingalex.run/about/ "About") page.
 
-Most updates will obvious appear on the [Home](https://chasingalex.run/ "Home") and [Posts](https://chasingalex.run/posts/ "Posts") pages and be sure to check out the [Roadmap](https://chasingalex.run/roadmap/ "Roadmap") page for a full timeline of all my major events.
+Most updates will appear on the [Home](https://chasingalex.run/ "Home") and [Posts](https://chasingalex.run/posts/ "Posts") pages but be sure to check out the [Roadmap](https://chasingalex.run/roadmap/ "Roadmap") page for a full timeline of all my major events.
 
 🏃‍♂️
