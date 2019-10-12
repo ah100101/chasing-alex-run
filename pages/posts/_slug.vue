@@ -138,7 +138,10 @@ export default {
       margin: 0 auto;
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3), 0 5px 20px rgba(0, 0, 0, 0.2);
     }
-  }
+    
+    a {
+      text-decoration: underline;
+    }
 
   .dark-mode {
     .switch input[type=checkbox] + .check {
