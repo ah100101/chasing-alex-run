@@ -10,9 +10,7 @@ hero_loading: "/images/chicago-l-loading.jpg"
 ---
 ![](/images/about-photo-1.jpg)
 
-My running career started in 2009 when I completed my first Bank of America Chicago Marathon. 10 years later and I've completed over 25 marathons with most of them across the Midwest.
-
-I don't run fast, so I try to run far
+My running career started in 2009 when I completed my first Bank of America Chicago Marathon. 10 years later and I've completed over 25 marathons with most of them across the Midwest. I not a very fast runner so I've focused on running far instead.
 
 Most people probably see that marathon count and think _that guy really really likes to run_. Part of that is definitely true, but I still insist that I'm not crazy about the physical activity of running.  It's not a particularly well-rounded workout, requires a lot of time to get good at and as I mentioned earlier, I'm not a very fast runner. However, one thing I do love about running is the exploration it enables.
 
