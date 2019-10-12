@@ -8,7 +8,7 @@ hero_credit: Photo by Paul Griffin on Unsplash
 hero_loading: "/images/chicago-l-loading.jpg"
 
 ---
-> I don't run very fast but I can run pretty far
+> I don't run fast, so I try to run far
 
 ![](/images/about-photo-1.jpg)
 
@@ -18,7 +18,7 @@ Most people probably see that marathon count and think _that guy really really l
 
 I find that there is a very particular sense of triumph when you can go to a new city, environment, park or trail and then explore it in detail on your own two feet. No one has to run to do this, but the further you run the more you see.
 
-As a Chicagoan, I'm lucky to live in a city which such high explorability between its diverse neighborhoods, lakefront, and numerous parks. It's not a coincidence that I've ran its marathon 10 times. 
+As a Chicagoan, I'm lucky to live in a city which such high explorability between its diverse neighborhoods, lakefront, and numerous parks. It's not a coincidence that I've ran its marathon 10 times.
 
 ## About this site
 
@@ -51,11 +51,7 @@ Nuxt.js is an open source Vue.js framework for building awesome web applications
 
 Netlify does much more than just static site (websites that are just html, javascript, and css) hosting. For this blog it seamlessly builds and deploys my code updates to the live site without making me jump through hoops. It also does this for free.
 
-Static sites aren't worth very much if you can't update them with new content which is where [Forestry](https://forestry.io "Forestry.io") comes in.
-
-![Forestry.io logo](/images/forestry.jpg "Forestry")
-
-Forestry is a CMS that _commits_ its content through a repository instead of through a database. No database hosting costs so no headaches.
+Static sites aren't worth very much if you can't update them with new content which is where [Forestry](https://forestry.io "Forestry.io") comes in. Forestry is a CMS that _commits_ its content through a repository instead of through a database. No database hosting costs so no headaches.
 
 Lastly, my code is on [GitHub](https://github.com/ah100101/chasing-alex-run "GitHub") and contributors are welcome 😁 This site was rushed to live in about a month so I'm sure there will shortly be a ton of bugs
 
