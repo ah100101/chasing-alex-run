@@ -18,7 +18,7 @@ Most people probably see that marathon count and think _that guy really really l
 
 I find that there is a very particular sense of triumph when you can go to a new city, environment, park or trail and then explore it in detail on your own two feet. No one has to run to do this, but the further you run the more you see.
 
-As a Chicagoan, I'm lucky to live in a city which such high explorability between its diverse neighborhoods, lakefront, and numerous parks. It's not a coincidence that I've ran its marathon 10 times.
+As a Chicagoan, I'm lucky to live in a city which such high explorability between its diverse neighborhoods, lakefront, and numerous parks. It's not a coincidence that I've ran its marathon 10 times. 
 
 ## About this site
 
