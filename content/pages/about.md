@@ -22,35 +22,25 @@ As a Chicagoan, I'm lucky to live in a city which such high explorability betwee
 
 This site serves 2 purposes
 
-1. Hold me accountable
+* Hold me accountable
 
-   I've found that a good way to make sure I do something is to tell a bunch of other people that I'm doing something.
-2. Catalog future marathons and other endurance events
+  I've found that a good way to make sure I do something is to tell a bunch of other people that I'm doing something.
 
-   _Run_ may be part of the domain and title but I expect many other types of activities to be covered here.
+* Catalog future marathons and other endurance events
 
-   My also hope for this site to generate discussion around particular endurance events and the training / preparation required for them.
+  _Run_ may be part of the domain and title of this site but I expect many other types of activities to be covered here. I hope the site generates discussion around particular endurance events and the training / preparation required for them.
 
 ### #NerdAlert
 
 When I'm not running - I'm usually building websites.
 
-6 years ago I had a running blog on a cookie cutter Wordpress site for when I ran 12 marathons in a year. Never again.
+6 years ago I had a running blog on a cookie cutter Wordpress site for when I ran 12 marathons in a year. Everything is going to be different with this one.
 
-...to having a boring vanilla blog
+chasingalex.run is designed and built by me from the ground up on:  and 
 
-This site was designed and built by me from the ground up on [Nuxt.js](https://nuxtjs.org/ "Nuxt.js")
+* [Nuxt.js](https://nuxtjs.org/ "Nuxt.js") is an open source Vue.js framework for building awesome web applications and websites. Nuxt is responsible for many things but mostly importantly handles static site generation (taking all my code and mark up and spitting out only html, javascript, and css).
+* [netlify](https://netlify.com "Netlify") is a hosting service that does much more than just static site hosting, but for this blog it seamlessly builds and deploys any of my code updates to the live site without making me jump through hoops. It also does this for free.
+* Static sites aren't worth very much if you can't update them with new content. [Forestry](https://forestry.io "Forestry.io") is a CMS that _commits_ its content through a repository instead of through a database.
+* Lastly, my code is open source on [GitHub](https://github.com/ah100101/chasing-alex-run "GitHub") and contributors are welcome 😁 I will confess that my skills are not typically in the front-end space so I expect there will be bugs entered in GitHub shortly.
 
-![](https://nuxtjs.org/logos/nuxt-icon-white.png)
-
-Nuxt.js is an open source Vue.js framework for building awesome web applications and websites. Nuxt is also great at generating static websites, which pairs great with [netlify](https://netlify.com "Netlify")
-
-![](https://www.netlify.com/img/press/logos/full-logo-light.png)
-
-Netlify does much more than just static site (websites that are just html, javascript, and css) hosting. For this blog it seamlessly builds and deploys my code updates to the live site without making me jump through hoops. It also does this for free.
-
-Static sites aren't worth very much if you can't update them with new content which is where [Forestry](https://forestry.io "Forestry.io") comes in. Forestry is a CMS that _commits_ its content through a repository instead of through a database. No database hosting costs so no headaches.
-
-Lastly, my code is on [GitHub](https://github.com/ah100101/chasing-alex-run "GitHub") and contributors are welcome 😁 This site was rushed to live in about a month so I'm sure there will shortly be a ton of bugs
-
-If you are interested in web development, technology in general or want to discuss the stack that powers this site, hit me up at [alex@hawley.tech](mailto:alex@hawley.tech)
+If you are interested in running, web development or want to discuss the stack this site is on, hit me up at [alex@hawley.tech](mailto:alex@hawley.tech) also feel free to follow me on [Instagram]() or [Twitter]()
