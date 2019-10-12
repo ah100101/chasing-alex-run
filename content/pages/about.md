@@ -8,8 +8,6 @@ hero_credit: Photo by Paul Griffin on Unsplash
 hero_loading: "/images/chicago-l-loading.jpg"
 
 ---
-### About Me
-
 ![](/images/about-photo-1.jpg)
 
 My running career started in 2009 when I completed my first Bank of America Chicago Marathon. 10 years later and I've completed over 25 marathons with most of them across the Midwest.
