@@ -27,8 +27,6 @@ This site serves 2 purposes
 1. Hold me accountable
 
    I've found that a good way to make sure I do something is to tell a bunch of other people that I'm doing something.
-
-    
 2. Catalog future marathons and other endurance events
 
    _Run_ may be part of the domain and title but I expect many other types of activities to be covered here.
