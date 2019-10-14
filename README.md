@@ -10,7 +10,7 @@ The website is built on Nuxt.js and is hosted as a static site on Netlify. Conte
 
 ``` bash
 # install dependencies
-$ npm run install
+$ npm install
 
 # serve with hot reload at localhost:3000
 $ npm run dev

@@ -12,7 +12,7 @@
         </div>
         <div class="preview-text">
           <div class="card-content">
-            <h1 class="title"><a href="#">{{ card.title }}</a></h1>
+            <h1 class="title"><a v-bind:href='card.url'>{{ card.title }}</a></h1>
             <p class="text">{{ card.description }}</p>
             <a 
               v-bind:href='card.url' 
