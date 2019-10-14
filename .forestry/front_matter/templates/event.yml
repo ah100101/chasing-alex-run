@@ -64,6 +64,7 @@ fields:
     required: false
   label: Placement
 pages:
+- content/events/bank-of-america-chicago-marathon-2019.md
 - content/events/2017.md
 - content/events/2016.md
 - content/events/2015.md
