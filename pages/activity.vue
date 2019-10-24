@@ -32,7 +32,9 @@ export default {
     Footer
   },
   created: function () {
-    this.text = this.text + "if this updated at " + new Date()
+    if (!this.nuxtState) {
+      this.text = this.text + "if this updated at " + new Date()
+    }
   },
   mounted: function () {
     this.ready = true
