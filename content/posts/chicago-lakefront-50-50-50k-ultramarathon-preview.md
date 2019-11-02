@@ -18,7 +18,7 @@ This year is the 20th Annual Chicago Lakefront 50/50 (50k and 50 miler) and I'll
 
 With over 10 years of running marathons, and never attempting an ultra, I think I'm due for one.
 
-To be honest, I'm excited for the nostalgia after 26.21 miles when I can say "This is the _new_ longest distance I have ran" which I haven't said since 2009. Of course, there's also the fact that I'll be hopefully hitting both a time PR tomorrow for a 50k and an overall distance PR 😃
+To be honest, I'm excited for the nostalgia at 26.21 miles when I can say "This is the _new_ longest distance I have ran" which I haven't said since 2009. Of course, there's also the fact that I'll be hopefully hitting both a time PR tomorrow for a 50k and an overall distance PR 😃
 
 Unlike marathons, ultramarathons aren't tied to any specific distance. It only needs to be a race longer than 26.2 miles. There are ultras longer than 26.2 miles, 50 miles, 100 miles, and yes, even 200 miles. In comparison to many of these, a 31 mile 50k is probably one of the _easier_ (that's strange to say) ways to call myself an ultramarathoner. I should also note that the course is nearly completely flat. Nevertheless, standard marathons have given me plenty of problems in the past so I'm anxious to see what 31 miles throws my way.
 
