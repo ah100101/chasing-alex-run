@@ -2,7 +2,7 @@
 tags:
 - Race Preview
 - Ultramarathon
-title: Chicago Lakefront 50/50 (50k) Ultramarathon Preview
+title: Chicago Lakefront 50/50 Preview
 description: The preview for my first attempt at running more than 26.2 miles
 hero_image: "/images/chicago-lakefront-5050.jpg"
 hero_credit: Photo by Bryan Rodriguez on Unsplash
@@ -14,9 +14,9 @@ post_date: 2019-11-01T00:00:00-05:00
 event_date: 2019-11-02T00:00:00-05:00
 
 ---
-This year is the 20th Annual Chicago Lakefront 50/50 (50k and 50 miler). The ultramarathon starts at Foster Avenue Beach and runs south down the lakefront to North Avenue Beach. From there runners head back to Foster Avenue Beach. The 50k does this \~10 mile loop 3 times and the 50 miler does a similar 12.5 mile loop 4 times. The course has a 7-hour time limit.
+This year is the 20th Annual Chicago Lakefront 50/50 (50k and 50 miler). I'll be running the 50k. The ultramarathon starts at Foster Avenue Beach and runs south down the lakefront to North Avenue Beach. From there runners head back to Foster Avenue Beach. The 50k does this \~10 mile loop 3 times and the 50 miler does a similar 12.5 mile loop 4 times. The course has a 7-hour time limit.
 
-I have over 10 years of running marathons, but I've never ran more than 26.2 miles. I'm overdue. 
+I have over 10 years of running marathons, but I've never ran more than 26.2 miles. I'm overdue.
 
 To be honest, it's going to be nice to say at mile 26.21 "This is the longest distance I have ran" which I haven't said to myself since 2009. I'm also (hopefully) going to hit both a time PR tomorrow for a 50k and an overall distance PR 😃
 
