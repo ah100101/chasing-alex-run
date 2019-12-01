@@ -70,6 +70,7 @@ fields:
   default: []
   label: Tags
 pages:
+- content/posts/chicago-lakefront-50-50-50k-recap.md
 - content/posts/chicago-lakefront-50-50-50k-ultramarathon-preview.md
 - content/posts/2019-chicago-marathon-recap.md
 - content/posts/2019-chicago-marathon.md
