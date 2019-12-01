@@ -1,7 +1,7 @@
 ---
 title: Chicago Lakefront 50/50 50k
 date: 2019-11-02T00:00:00-05:00
-description: My first shot at an ultra marathon distance
+description: ''
 url: ''
 background_image: "/images/50k-recap-after-large.jpg"
 loading_image: "/images/50k-recap-after-loading.jpg"
