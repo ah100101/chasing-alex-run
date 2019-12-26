@@ -53,9 +53,9 @@ export default {
     width: 100%;
     box-shadow: 0 19px 38px rgba($black, 0.1), 0 15px 12px rgba($black, 0.1);
 
-    @media screen and (min-width:640px) {
-      background-position: 50% 0;
-    }
+    // @media screen and (min-width:640px) {
+    //   background-position: 50% 0;
+    // }
 
     // overlay
     &:after {
