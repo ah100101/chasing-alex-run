@@ -54,9 +54,9 @@ export default {
     position: relative;
     width: 100%;
     
-    @media screen and (min-width:640px) {
-      background-position: 50% 0;
-    }
+    // @media screen and (min-width:640px) {
+    //  background-position: 50% 0;
+    // }
 
     // overlay
     &:after {
