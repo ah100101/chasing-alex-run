@@ -1,7 +1,7 @@
 {
-  "name": "followalexrun",
+  "name": "Chasing Alex Run",
   "version": "1.0.0",
-  "description": "Alexs running blog",
+  "description": "A Running and Adventure Blog",
   "author": "ah100101",
   "private": true,
   "scripts": {
