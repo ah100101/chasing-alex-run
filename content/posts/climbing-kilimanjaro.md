@@ -16,13 +16,17 @@ post_date: 2019-12-26T00:00:00-06:00
 event_date: 2020-02-02T00:00:00-06:00
 
 ---
-Deciding and planning to climb to the roof of Africa has not been a small task and I have discussed only this goal with a few people over several years. 
+Deciding and planning a climb to the roof of Africa has not been a small task and I have discussed this goal with only a few people over several years.
 
-Technically, my initial research into climbing Kilimanjaro was back in Spring 2013 when I received an REI Adventures promotion. The promotion came at a time when I was looking for another big challenge and something outside of running. It ticked a lot of the right boxes.
+My initial research into climbing Kilimanjaro started way back in Spring 2013 when I received an REI Adventures promotion. The promotion came at a time when I was looking for another big challenge and something outside of running. It ticked a lot of the right boxes.
 
-Unfortunately, at the time, while my general fitness level was not a limitation for the adventure but justifying the time and funds for the trip was. Additionally, finding / convincing a group of people willing to spend over a week not showering and hiking through frigid temps and thin air seemed very unlikely. Thus, Kilimanjaro sat on the back-burner for years as something _I would like to do_ but something that could never be a priority. It remained that way until a few months ago when my wife brought it up out of the blue. A close friend of ours mentioned that she was going to be traveling to South Africa and Kilimanjaro was a possible excursion for her. While the timing was not the greatest nor was traveling to Africa in our top five destinations we had queued to see, it seemed obvious that if we ever wanted to climb Kili, this was the best chance.
+> Kilimanjaro sat on the back-burner for years as something _I would like to do_
 
-The decision was made and my wife with three of our friends began researching and pouring over the details for what was needed to climb one of the Seven Summits. 10 minutes of googling "Planning a Kilimanjaro trek" will net a vast range of blogs and articles about mountaineer training, gear lists, travel companies, Everest horror stories, and Kilimanjaro statistics. There will, without a doubt, be future posts about these topics but for this introductory write-up I will stick to the core facts about Kilimanjaro itself.
+Unfortunately, at the time, my general fitness level was not a limitation for the adventure but justifying the time and funds for the trip was. Additionally, finding / convincing a group of people willing to spend over a week not showering and hiking through frigid temps and thin air seemed very unlikely. Thus, Kilimanjaro sat on the back-burner for years as something _I would like to do_ but an adventure that could never be a priority. 
+
+It remained on the back-burner until a few months ago when my wife brought it up out of the blue. A close friend of ours mentioned that she was going to be traveling to South Africa and Kilimanjaro was a possible excursion. While the timing was not the greatest, nor was traveling to Africa in our top five destinations in the travel queue, it seemed obvious that it was now or never.
+
+The decision was made and my wife with three of our friends began researching and pouring over the details for what was needed to climb one of the Seven Summits. 10 minutes of googling "Planning a Kilimanjaro trek" will net a vast range of blogs and articles about mountaineer training, gear lists, travel companies, Everest horror stories, and Kilimanjaro statistics. There will, without a doubt, be future posts about these topics, but for this introductory write-up I will stick to the core facts about Kilimanjaro.
 
 As I mentioned, Kilimanjaro is one of the Seven Summits (the tallest mountain on each continent). There are several definitions of the list depending on Europe and Oceania criteria, but you will typically see the following peaks included:
 
