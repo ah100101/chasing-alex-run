@@ -70,10 +70,10 @@ fields:
   default: []
   label: Tags
 pages:
-- content/posts/chicago-lakefront-50-50-50k-recap.md
-- content/posts/chicago-lakefront-50-50-50k-ultramarathon-preview.md
 - content/posts/2019-chicago-marathon-recap.md
 - content/posts/2019-chicago-marathon.md
-- content/posts/chasing-alex-run-is-live.md
-- content/posts/marathon-20-bank-of-america-chicago-marathon-2013.md
 - content/posts/big-sur-marathon-2013-recap.md
+- content/posts/chasing-alex-run-is-live.md
+- content/posts/chicago-lakefront-50-50-50k-recap.md
+- content/posts/chicago-lakefront-50-50-50k-ultramarathon-preview.md
+- content/posts/marathon-20-bank-of-america-chicago-marathon-2013.md
