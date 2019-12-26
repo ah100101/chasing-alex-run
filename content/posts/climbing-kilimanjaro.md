@@ -3,7 +3,7 @@ tags:
 - Preview
 - Hiking
 - Mountaineering
-title: Climbing Kilimanjaro
+title: Trekking to the Top of Kilimanjaro!
 description: Starting on February 2nd 2020 my friends and I will be hiking to the
   top of Kilimanjaro in Tanzania!
 hero_image: "/images/kili-1-hero.jpg"
