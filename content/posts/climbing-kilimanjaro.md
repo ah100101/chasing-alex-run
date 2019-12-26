@@ -48,7 +48,7 @@ Puncak Jaya (Australia): 4,884 meters / 16,024 feet
 
 Climbing Kilimanjaro is a non-technical climb (i.e. you don't need crampons or ropes tethering you to the mountain) but it is the fourth highest of the Seven Summits. The high altitude (particularly for lifetime sea-level Chicago-land natives) will be a significant factor.
 
-Additionally, Kilimanjaro is the tallest free standing mountain (not part of a mountain range) in the world, as well as, a dormant volcano. The top is capped with glaciers with summit temperatures that vary between 20 and -20 degrees Fahrenheit. Individuals that climb to the summit of Kilimanjaro will pass through five distinct climates:
+Additionally, Kilimanjaro is the tallest free standing mountain (not part of a mountain range) in the world and a dormant volcano. The top is capped with glaciers with summit temperatures varying between 20 and -20 degrees Fahrenheit. Individuals that climb to the summit of Kilimanjaro will pass through five distinct climates:
 
 * Bushland
 * Rainforest
@@ -72,10 +72,10 @@ Marangu Route: \~5 days
 
 Umbwe Route: \~5 days
 
-Our group will be taking the Lemosho route which has a reputation of being the most scenic with a high summit success rate due to an extended amount of acclimatization time. Our climb will span 8 days with our summit climb beginning at midnight on the 7th day.
+Our group will be taking the Lemosho route which has a reputation of being the most scenic with a high summit success rate due to an extended amount of acclimatization time. Our climb will span 8 days with our summit climb beginning at midnight on the seventh day.
 
-The Lemosho Route
+The Lemosho Route:
 
 ![](/images/lemosho-google-route.png)
 
-I plan on having several follow up posts about the preparation for the hike and _hopefully_ a live tracker of some kind for when we are on the mountain. Our trek begins February 2nd 2020!
+I plan on having several follow up posts about the preparation for the hike and _hopefully_ a live tracker of some kind for when we are on the mountain. Our trek officially begins February 2nd 2020!
