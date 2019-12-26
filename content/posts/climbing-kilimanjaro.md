@@ -26,7 +26,7 @@ Unfortunately, at the time, my general fitness level was not a limitation for th
 
 It remained on the back-burner until a few months ago when my wife brought it up out of the blue. A close friend of ours mentioned that she was going to be traveling to South Africa and Kilimanjaro was a possible excursion. While the timing was not the greatest, nor was traveling to Africa in our top five destinations in the travel queue, it seemed obvious that it was now or never.
 
-The decision was made and my wife with three of our friends began researching and pouring over the details for what was needed to climb one of the Seven Summits. 10 minutes of googling "Planning a Kilimanjaro trek" will net a vast range of blogs and articles about mountaineer training, gear lists, travel companies, Everest horror stories, and Kilimanjaro statistics. There will, without a doubt, be future posts about these topics, but for this introductory write-up I will stick to the core facts about Kilimanjaro.
+The decision was made and my wife with three of our friends began researching and pouring over the requirements for climbing one of the Seven Summits. 10 minutes of googling "Planning a Kilimanjaro trek" will net a vast range of blogs and articles about mountaineer training, gear lists, travel companies, Everest horror stories, and Kilimanjaro statistics. There will, without a doubt, be future posts about these topics, but for this introductory write-up I will stick to the core facts about Kilimanjaro.
 
 As I mentioned, Kilimanjaro is one of the Seven Summits (the tallest mountain on each continent). There are several definitions of the list depending on Europe and Oceania criteria, but you will typically see the following peaks included:
 
