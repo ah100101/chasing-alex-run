@@ -22,7 +22,7 @@ My initial research into climbing Kilimanjaro started way back in Spring 2013 wh
 
 > Kilimanjaro sat on the back-burner for years as something _I would like to do_
 
-Unfortunately, at the time, my general fitness level was not a limitation for the adventure but justifying the time and funds for the trip was. Additionally, finding / convincing a group of people willing to spend over a week not showering and hiking through frigid temps and thin air seemed very unlikely. Thus, Kilimanjaro sat on the back-burner for years as something _I would like to do_ but an adventure that could never be a priority. 
+Unfortunately, at the time, my general fitness level was not a limitation for the adventure but justifying the time and funds for the trip was. Additionally, finding / convincing a group of people willing to spend over a week not showering and hiking through frigid temps and thin air seemed very unlikely. Thus, Kilimanjaro sat on the back-burner for years as something _I would like to do_ but an adventure that could never be a priority.
 
 It remained on the back-burner until a few months ago when my wife brought it up out of the blue. A close friend of ours mentioned that she was going to be traveling to South Africa and Kilimanjaro was a possible excursion. While the timing was not the greatest, nor was traveling to Africa in our top five destinations in the travel queue, it seemed obvious that it was now or never.
 
@@ -30,19 +30,13 @@ The decision was made and my wife with three of our friends began researching an
 
 As I mentioned, Kilimanjaro is one of the Seven Summits (the tallest mountain on each continent). There are several definitions of the list depending on Europe and Oceania criteria, but you will typically see the following peaks included:
 
-Mount Everest (Asia): 8,848 meters / 29,029 feet
-
-Aconcagua (South America): 6,961 meters / 22,838 feet
-
-Denali (North America): 6,194 meters / 20,322 feet
-
-Kilimanjaro (Africa): 5,895 meters / 19,341 feet
-
-Mount Elbrus (Europe): 5,642 meters / 18,510 feet
-
-Mount Vinson (Antarctica): 4,892 meters / 16,050 feet
-
-Puncak Jaya (Australia): 4,884 meters / 16,024 feet
+* Mount Everest (Asia): 8,848 meters / 29,029 feet
+* Aconcagua (South America): 6,961 meters / 22,838 feet
+* Denali (North America): 6,194 meters / 20,322 feet
+* Kilimanjaro (Africa): 5,895 meters / 19,341 feet
+* Mount Elbrus (Europe): 5,642 meters / 18,510 feet
+* Mount Vinson (Antarctica): 4,892 meters / 16,050 feet
+* Puncak Jaya (Australia): 4,884 meters / 16,024 feet
 
 ![](/images/seven-summits.png)
 
@@ -58,19 +52,13 @@ Additionally, Kilimanjaro is the tallest free standing mountain (not part of a m
 
 There are many routes up to the summit that vary in length, difficulty, scenery, and popularity:
 
-Northern Circuit: \~9 days
-
-Lemosho Route: \~7 days
-
-Rongai Route: \~6 days
-
-Machame Route: \~6 days
-
-Shira Route: \~6 days
-
-Marangu Route: \~5 days
-
-Umbwe Route: \~5 days
+* Northern Circuit: \~9 days
+* Lemosho Route: \~7 days
+* Rongai Route: \~6 days
+* Machame Route: \~6 days
+* Shira Route: \~6 days
+* Marangu Route: \~5 days
+* Umbwe Route: \~5 days
 
 Our group will be taking the Lemosho route which has a reputation of being the most scenic with a high summit success rate due to an extended amount of acclimatization time. Our climb will span 8 days with our summit climb beginning at midnight on the seventh day.
 
