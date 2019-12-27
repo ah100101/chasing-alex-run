@@ -83,7 +83,7 @@ function dynamicMarkdownRoutes () {
   return [].concat(
     ...paths.map(mdPath => {
       return glob.sync(`${mdPath}/*.md`, { cwd: 'content' })
-        .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}`);
+        .map(filepath => `https://chasingalex.run/${path.basename(filepath, '.md')}`);
     })
   );
 } 
