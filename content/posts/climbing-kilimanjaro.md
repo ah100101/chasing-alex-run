@@ -3,7 +3,7 @@ tags:
 - Preview
 - Hiking
 - Mountaineering
-title: Trekking to the Summit of Kilimanjaro!
+title: Hiking to the Summit of Kilimanjaro!
 description: My friends and I will be hiking to the Roof of Africa on February 2nd
   2020!
 hero_image: "/images/kili-1-hero.jpg"
