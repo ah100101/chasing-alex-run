@@ -4,7 +4,7 @@ tags:
 - Hiking
 - Mountaineering
 title: Hiking to the Summit of Kilimanjaro!
-description: My friends and I will be hiking to the Roof of Africa on February 2nd
+description: My friends and I will be hiking to the Roof of Africa on February 3rd
   2020!
 hero_image: "/images/kili-1-hero.jpg"
 hero_credit: Photo by Sergey Pesterev on Unsplash
@@ -13,7 +13,7 @@ thumbnail: "/images/kili-1-hero-1.jpg"
 thumbnail_credit: Photo by Sergey Pesterev on Unsplash
 loading_thumbnail: "/images/kili-1-hero-loading-1.jpg"
 post_date: 2019-12-26T00:00:00-06:00
-event_date: 2020-02-02T00:00:00-06:00
+event_date: 2020-02-03T00:00:00-06:00
 
 ---
 Deciding and planning a climb to the roof of Africa has not been a small task and I have discussed this goal with only a few people over several years.
