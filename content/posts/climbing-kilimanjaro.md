@@ -66,4 +66,4 @@ The Lemosho Route:
 
 ![](/images/lemosho-google-route.png)
 
-I plan on having several follow up posts about the preparation for the hike and _hopefully_ a live tracker of some kind for when we are on the mountain. Our trek officially begins February 2nd 2020!
+I plan on having several follow up posts about the preparation for the hike and _hopefully_ a live tracker of some kind for when we are on the mountain. Our trek officially begins February 3rd 2020!
