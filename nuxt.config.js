@@ -52,7 +52,7 @@ export default {
   modules: [
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy',
-    '@nuxtjs/sitemap',
+    // '@nuxtjs/sitemap',
     ['@nuxtjs/google-analytics', {
       id: 'UA-149760552-1'
     }]
