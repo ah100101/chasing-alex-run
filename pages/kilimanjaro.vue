@@ -14,7 +14,8 @@
 
       <div 
         class="column dark-mode">
-        <div class="container content" v-html="body">
+          <div id="map"></div>
+          <div class="container content" v-html="body">
         </div>
       </div>
     </div>
@@ -27,6 +28,7 @@ import dateFormat from 'dateformat'
 import DetailHero from '~/components/DetailHero'
 import Navigation from '~/components/Navigation'
 import Footer from '~/components/Footer'
+import mapData from '~/data/kilimanjaro/route.json'
 
 export default {
   components: {
@@ -43,6 +45,7 @@ export default {
     }
   },
   mounted: function () {
+    console.log(mapData)
     import(`~/content/pages/about.md`)
       .then((result) => {
         this.ready = true
@@ -53,13 +56,23 @@ export default {
         console.error(error)
         this.ready = true
       })
+    this.map = this.createMap()
   },
   data: function () {
     return {
       ready: false,
       post: undefined,
       error: {},
-      body: ''
+      body: '',
+      map: {}
+    }
+  },
+  methods: {
+    createMap: function () {
+      return new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 42.61291, lng: -88.0402219 },
+        zoom: 9
+      })
     }
   },
   computed: {
