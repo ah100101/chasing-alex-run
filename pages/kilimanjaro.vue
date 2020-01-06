@@ -29,22 +29,7 @@ import DetailHero from '~/components/DetailHero'
 import Navigation from '~/components/Navigation'
 import Footer from '~/components/Footer'
 import mapData from '~/data/kilimanjaro/route.json'
-
-const distanceFrom = function(oldLatLng, newLatLng) {
-  var EarthRadiusMeters = 6378137.0; // meters
-  var lat1 = oldLatLng.lat();
-  var lon1 = oldLatLng.lng();
-  var lat2 = newLatLng.lat();
-  var lon2 = newLatLng.lng();
-  var dLat = (lat2-lat1) * Math.PI / 180;
-  var dLon = (lon2-lon1) * Math.PI / 180;
-  var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-    Math.cos(lat1 * Math.PI / 180 ) * Math.cos(lat2 * Math.PI / 180 ) *
-    Math.sin(dLon/2) * Math.sin(dLon/2);
-  var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-  var d = EarthRadiusMeters * c;
-  return d;
-}
+import mapFunctions from '~/functions/maps.js'
 
 export default {
   components: {
@@ -75,6 +60,7 @@ export default {
     this.map = this.createMap()
     this.plotRoute()
     this.plotCheckpoints()
+    console.log(this.checkpoints)
   },
   data: function () {
     return {
@@ -83,7 +69,8 @@ export default {
       error: {},
       body: '',
       map: {},
-      route: {}
+      route: {},
+      checkpoints: []
     }
   },
   methods: {
@@ -104,16 +91,24 @@ export default {
 
       if (!!this.route) {
         this.polyline = this.route.setMap(this.map)
-        // console.log(route)
       }
     },
-    plotCheckpoints: function () {  
-      // console.log(this.polyline)
-      var km_points = this.getPointsAtDistance(2000);
-      for (var i = 0; i < km_points.length; i++) {
-          let infoWindowContent = "marker "+i/2000+" of "+Math.floor(this.route.Distance()/2000)+"<br>kilometer "+i/1000+" of "+(this.route.Distance()/1000).toFixed(2);
-          let checkpoint = this.createMarker(km_points[i], infoWindowContent);
-          checkpoint.setMap(this.map)
+    plotCheckpoints: function () {
+      // plot a checkpoint every 8th of a mile
+      var checkpoints = mapFunctions.getPointsAtDistance(201.168, this.route)
+      
+      let distance = 0
+      for (var i = 0; i < checkpoints.length; i++) {
+        distance = distance + 201.168
+        let checkpoint = this.createMarker(checkpoints[i]);
+        checkpoint.setMap(this.map)
+        this.checkpoints.push({
+          // marker: checkpoint,
+          distance,
+          lat: checkpoints[i].lat(),
+          lng: checkpoints[i].lng()
+          // latlng: checkpoints[i]
+        })
       }
     },
     createMarker: function (point) {
@@ -123,27 +118,6 @@ export default {
         title: 'Checkpoint',
         zIndex: Math.round(point.lat()*-100000)<<5
       })
-    },
-    getPointsAtDistance: function(metres) {
-      var next = metres;
-      var points = [];
-      // some awkward special cases
-      if (metres <= 0) return points;
-      var dist=0;
-      var olddist=0;
-      for (var i=1; (i < this.route.getPath().getLength()); i++) {
-        olddist = dist;
-        dist += distanceFrom(this.route.getPath().getAt(i), this.route.getPath().getAt(i-1))
-        // dist += this.route.getPath().getAt(i).distanceFrom(this.route.getPath().getAt(i-1));
-        while (dist > next) {
-          var p1= this.route.getPath().getAt(i-1);
-          var p2= this.route.getPath().getAt(i);
-          var m = (next-olddist)/(dist-olddist);
-          points.push(new google.maps.LatLng( p1.lat() + (p2.lat()-p1.lat())*m, p1.lng() + (p2.lng()-p1.lng())*m));
-          next += metres;    
-        }
-      }
-      return points;
     }
   },
   computed: {

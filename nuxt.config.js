@@ -22,8 +22,7 @@ export default {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap' }
     ],
     script: [
-      { src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA1UdBtY13Eej7mtoAKEMWNg8mv7fCAHtY' },
-      { src: '/scripts/epoly.js' }
+      { src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA1UdBtY13Eej7mtoAKEMWNg8mv7fCAHtY' }
     ]
   },
   /*
