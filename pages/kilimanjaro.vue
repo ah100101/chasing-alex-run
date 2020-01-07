@@ -46,7 +46,6 @@ export default {
     }
   },
   mounted: function () {
-    console.log(mapData)
     import(`~/content/pages/about.md`)
       .then((result) => {
         this.ready = true
@@ -60,7 +59,7 @@ export default {
     this.map = this.createMap()
     this.plotRoute()
     this.plotCheckpoints()
-    console.log(this.checkpoints)
+    this.plotCamps()
   },
   data: function () {
     return {
@@ -93,7 +92,24 @@ export default {
         this.polyline = this.route.setMap(this.map)
       }
     },
+    plotMarkers: function (coordArray, icon) {
+      console.log(icon)
+      for (var i = 0; i < coordArray.length; i++) {
+        let marker = this.createMarker({
+          lat: coordArray[i].lat,
+          lng: coordArray[i].lng
+        }, icon)
+
+        marker.setMap(this.map)
+      }
+    },
+    plotCamps: function () {
+      this.plotMarkers(mapData.camps, 'http://maps.google.com/mapfiles/ms/micons/blue-dot.png')
+    },
     plotCheckpoints: function () {
+      this.plotMarkers(mapData.checkpoints, 'http://maps.google.com/mapfiles/ms/icons/ltblue-dot.png')
+    },
+    plotCalculatedCheckpoints: function () {
       // plot a checkpoint every 8th of a mile
       var checkpoints = mapFunctions.getPointsAtDistance(201.168, this.route)
       
@@ -103,20 +119,19 @@ export default {
         let checkpoint = this.createMarker(checkpoints[i]);
         checkpoint.setMap(this.map)
         this.checkpoints.push({
-          // marker: checkpoint,
           distance,
           lat: checkpoints[i].lat(),
           lng: checkpoints[i].lng()
-          // latlng: checkpoints[i]
         })
       }
     },
-    createMarker: function (point) {
+    createMarker: function (point, icon) {
       return new google.maps.Marker({
         position: point,
         map: this.map,
         title: 'Checkpoint',
-        zIndex: Math.round(point.lat()*-100000)<<5
+        icon: !!icon ? icon : 'http://maps.google.com/mapfiles/ms/icons/ltblue-dot.png',
+        zIndex: Math.round(point.lat * -100000) << 5
       })
     }
   },
