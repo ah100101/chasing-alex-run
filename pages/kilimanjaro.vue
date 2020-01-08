@@ -14,6 +14,32 @@
 
       <div 
         class="column dark-mode">
+        <nav class="level">
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="heading">Next Stop</p>
+              <p class="title">Barranco Camp</p>
+            </div>
+          </div>
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="heading">Distance Traveled</p>
+              <p class="title">13 miles</p>
+            </div>
+          </div>
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="heading">Current Elevation</p>
+              <p class="title">10,000 Ft</p>
+            </div>
+          </div>
+          <div class="level-item has-text-centered">
+            <div>
+              <p class="heading">Elapsed Hiking Time</p>
+              <p class="title">03:51:39</p>
+            </div>
+          </div>
+        </nav>
           <div id="map" class="map"></div>
           <div class="container content" v-html="body">
         </div>
@@ -58,7 +84,7 @@ export default {
       })
     this.map = this.createMap()
     this.plotRoute()
-    this.plotCheckpoints()
+    // this.plotCheckpoints()
     this.plotCamps()
   },
   data: function () {
@@ -93,12 +119,13 @@ export default {
       }
     },
     plotMarkers: function (coordArray, icon) {
-      console.log(icon)
       for (var i = 0; i < coordArray.length; i++) {
         let marker = this.createMarker({
           lat: coordArray[i].lat,
-          lng: coordArray[i].lng
-        }, icon)
+          lng: coordArray[i].lng,
+          title: coordArray[i].distance.toString(),
+          icon
+        })
 
         marker.setMap(this.map)
       }
@@ -109,29 +136,13 @@ export default {
     plotCheckpoints: function () {
       this.plotMarkers(mapData.checkpoints, 'http://maps.google.com/mapfiles/ms/icons/ltblue-dot.png')
     },
-    plotCalculatedCheckpoints: function () {
-      // plot a checkpoint every 8th of a mile
-      var checkpoints = mapFunctions.getPointsAtDistance(201.168, this.route)
-      
-      let distance = 0
-      for (var i = 0; i < checkpoints.length; i++) {
-        distance = distance + 201.168
-        let checkpoint = this.createMarker(checkpoints[i]);
-        checkpoint.setMap(this.map)
-        this.checkpoints.push({
-          distance,
-          lat: checkpoints[i].lat(),
-          lng: checkpoints[i].lng()
-        })
-      }
-    },
-    createMarker: function (point, icon) {
+    createMarker: function (checkpoint) {
       return new google.maps.Marker({
-        position: point,
+        position: { lat: checkpoint.lat, lng: checkpoint.lng },
         map: this.map,
-        title: 'Checkpoint',
-        icon: !!icon ? icon : 'http://maps.google.com/mapfiles/ms/icons/ltblue-dot.png',
-        zIndex: Math.round(point.lat * -100000) << 5
+        title: checkpoint.title,
+        icon: checkpoint && checkpoint.icon ? checkpoint.icon : 'http://maps.google.com/mapfiles/ms/icons/ltblue-dot.png',
+        zIndex: Math.round(checkpoint.lat * -100000) << 5
       })
     }
   },
@@ -149,6 +160,12 @@ export default {
   .map {
     width: 100%;
     height: 90vh;
+  }
+
+  .level {
+    .title, .heading {
+      color: $light;
+    }
   }
 
   .navbar-item {

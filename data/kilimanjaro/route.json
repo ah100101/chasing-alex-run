@@ -4055,10 +4055,6 @@
     { 
       "lat": -3.07633,
       "lng": 37.35416
-    },
-    { 
-      "lat": -3.0763,
-      "lng": 37.35404
     }
   ],
   "checkpoints": [
@@ -5116,64 +5112,68 @@
       "distance": 42446.448,
       "lat": -3.077313297587112,
       "lng": 37.355131386989115
-    },
-    {
-      "distance": 42647.615999999995,
-      "lat": -3.076149792819053,
-      "lng": 37.353790548788766
     }
   ],
   "camps": [
     {
       "name": "Lemosho Glades",
       "description": "",
+      "distance": 0,
       "lat": -3.0010273,
       "lng": 37.1342611
     },
     {
       "name": "Big Tree Camp",
+      "distance": 4325.028,
       "description": "",
       "lat": -2.9963559,
       "lng": 37.1659327
     },
     {
       "name": "Shira Camp One",
+      "distance": 12673.584,
       "description": "",
       "lat": -3.0130056,
       "lng": 37.2292864
     },
     {
       "name": "Shira Camp Two",
+      "distance": 20118.8,
       "description": "",
       "lat": -3.054686,
       "lng": 37.2762855
     },
     {
       "name": "Lava Tower",
+      "distance": 26355.008,
       "description": "",
       "lat": -3.0683956,
       "lng": 37.3266989
     },
     {
       "name": "Barranco Camp",
+      "distance": 30575.536,
       "description": "",
       "lat": -3.0942338,
       "lng": 37.3286951
     },
     {
       "name": "Karanga Camp",
+      "distance": 35000.232,
       "description": "",
       "lat": -3.1121667,
       "lng": 37.3545133
     },
     {
       "name": "Barafu Camp",
+      "distance": 38423.089,
       "description": "",
       "lat": -3.0993088,
       "lng": 37.3780096
     },
     {
       "name": "Uhuru Peak",
+      "distance": 42647.616,
       "description": "",
       "lat": -3.075671,
       "lng": 37.355684
