@@ -40,9 +40,10 @@
             </div>
           </div>
         </nav>
-          <div id="map" class="map"></div>
-          <div class="container content" v-html="body">
+        <div id="map" class="map"></div>
+          <div class="container content">
         </div>
+        <KiliAccordion />
       </div>
     </div>
     <Footer></Footer>
@@ -54,6 +55,7 @@ import dateFormat from 'dateformat'
 import DetailHero from '~/components/DetailHero'
 import Navigation from '~/components/Navigation'
 import Footer from '~/components/Footer'
+import KiliAccordion from '~/components/kilimanjaro/Accordion'
 import mapData from '~/data/kilimanjaro/route.json'
 import mapFunctions from '~/functions/maps.js'
 
@@ -61,6 +63,7 @@ export default {
   components: {
     DetailHero,
     Navigation,
+    KiliAccordion,
     Footer
   },
   head () {
@@ -84,7 +87,6 @@ export default {
       })
     this.map = this.createMap()
     this.plotRoute()
-    // this.plotCheckpoints()
     this.plotCamps()
   },
   data: function () {
