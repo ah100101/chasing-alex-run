@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class='kili-accordion'>
     <b-collapse
       class="card"
       v-for="(collapse, index) of collapses"
@@ -12,7 +12,12 @@
           class="card-header"
           role="button">
           <p class="card-header-title">
-              {{ collapse.title }}
+              <span class='leg-title'>
+                {{ collapse.title }}
+              </span>
+              <span class='leg-description'>
+                {{ collapse.description }}
+              </span>
           </p>
           <a class="card-header-icon">
               <b-icon
@@ -44,35 +49,43 @@ export default {
       isOpen: -1,
       collapses: [
         {
-            title: 'Day 1 - Destination: Big Tree Camp',
+            title: 'Day 1',
+            description: 'Destination: Big Tree Camp',
             text: 'Text 1'
         },
         {
-            title: 'Day 2 - Destination: Shira Camp One',
+            title: 'Day 2',
+            description: 'Destination: Shira Camp One',
             text: 'Text 2'
         },
         {
-            title: 'Day 3 - Destination: Shira Camp Two',
+            title: 'Day 3',
+            description: 'Destination: Shira Camp Two',
             text: 'Text 3'
         },
         {
-            title: 'Day 4 - Destination: Lava Tower',
+            title: 'Day 4',
+            description: 'Destination: Lava Tower',
             text: 'Text 3'
         },
         {
-            title: 'Day 5 - Destination: Barranco Camp',
+            title: 'Day 5',
+            description: 'Destination: Barranco Camp',
             text: 'Text 3'
         },
         {
-            title: 'Day 6 - Destination: Karanga Camp',
+            title: 'Day 6',
+            description: 'Destination: Karanga Camp',
             text: 'Text 3'
         },
         {
-            title: 'Day 7 - Destination: Barafu Camp',
+            title: 'Day 7',
+            description: 'Destination: Barafu Camp',
             text: 'Text 3'
         },
         {
-            title: 'Day 8 - Destination: Uhuru Peak',
+            title: 'Day 8',
+            description: 'Destination: Uhuru Peak',
             text: 'Text 3'
         }
       ]
@@ -90,8 +103,17 @@ export default {
 <style lang="scss">
 @import '~/assets/followtheme.scss';
 
-.kilimanjaro {
-
+.kili-accordion {
+  .card-header-title {
+    padding: 0;
+    background-color: $light;
+  }
+  .leg-title {
+    padding: 0 2em;
+  }
+  .leg-description {
+    padding: 0 1em;
+  }
 }
 
 </style>
