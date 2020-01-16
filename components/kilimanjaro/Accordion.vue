@@ -104,9 +104,11 @@ export default {
 @import '~/assets/followtheme.scss';
 
 .kili-accordion {
+  .collapse.card, .card-header-title, .card-header-icon, .card-content {
+    background-color: $light;
+  }
   .card-header-title {
     padding: 0;
-    background-color: $light;
   }
   .leg-title {
     padding: 0 2em;
