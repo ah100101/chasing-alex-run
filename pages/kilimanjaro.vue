@@ -35,8 +35,8 @@
           </div>
           <div class="level-item has-text-centered">
             <div>
-              <p class="heading">Elapsed Hiking Time</p>
-              <p class="title">03:51:39</p>
+              <p class="heading">Local Tanzanian Time</p>
+              <p class="title">{{ tzTime.format('h:mm:ss A') }}</p>
             </div>
           </div>
         </nav>
@@ -58,6 +58,7 @@ import Footer from '~/components/Footer'
 import KiliAccordion from '~/components/kilimanjaro/Accordion'
 import mapData from '~/data/kilimanjaro/route.json'
 import mapFunctions from '~/functions/maps.js'
+import moment from 'moment-timezone'
 
 export default {
   components: {
@@ -97,7 +98,8 @@ export default {
       body: '',
       map: {},
       route: {},
-      checkpoints: []
+      checkpoints: [],
+      tzTime: moment().tz("Africa/Nairobi")
     }
   },
   methods: {
