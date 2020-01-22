@@ -60,6 +60,12 @@ import mapData from '~/data/kilimanjaro/route.json'
 import mapFunctions from '~/functions/maps.js'
 import moment from 'moment-timezone'
 
+const mockTime = moment.tz('2020-02-04T19:00:00+03:00', 'Africa/Nairobi')
+
+function getTzMoment (time) {
+  return moment.tz(time, 'Africa/Nairobi')
+}
+
 export default {
   components: {
     DetailHero,
@@ -76,8 +82,17 @@ export default {
     }
   },
   mounted: function () {
+    // debugging
     console.log(this.tzTime.format())
     console.log(moment.tz(mapData.movement[0].start, "Africa/Nairobi").format())
+    console.log(this.legs)
+    console.log(this.currentlyHiking)
+    console.log(this.previousLegs)
+    console.log(this.futureLegs)
+    console.log(this.successfullyClimbedMountKilimanjaro)
+    console.log(this.currentDistance)
+    // debugging
+
     import(`~/content/pages/about.md`)
       .then((result) => {
         this.ready = true
@@ -101,7 +116,7 @@ export default {
       map: {},
       route: {},
       checkpoints: [],
-      tzTime: moment().tz("Africa/Nairobi")
+      tzTime: mockTime ? mockTime : moment().tz("Africa/Nairobi")
     }
   },
   methods: {
@@ -380,7 +395,39 @@ export default {
     }
   },
   computed: {
+    legs: function () {
+      return mapData.movement.map(leg => {
+        let finishTime = getTzMoment(leg.start).add(leg.duration, 'minutes')
+        return {
+          leg,
+          minToStart: moment.duration(getTzMoment(leg.start).diff(this.tzTime)).asMinutes(),
+          estFinish: finishTime,
+          hiking: this.tzTime.isAfter(leg.start) && finishTime.isAfter(this.tzTime)
+        }
+      })
+    },
+    currentlyHiking: function () {
+      let hikingLegs = this.legs.filter(leg => leg.hiking)
 
+      if (hikingLegs.length <= 0) return false
+
+      return hikingLegs[0]
+    },
+    previousLegs: function () {
+      return this.legs.filter(leg => !leg.hiking && leg.minToStart <= 0)
+    },
+    futureLegs: function () {
+      return this.legs.filter(leg => !leg.hiking && leg.minToStart > 0)
+    },
+    // todo: update to look at route
+    currentDistance: function () {
+      if (this.previousLegs.length <= 0) return 0
+
+      return this.previousLegs[this.previousLegs.length - 1].leg.distance
+    },
+    successfullyClimbedMountKilimanjaro: function () {
+      return this.futureLegs.length == 0 && !this.currentlyHiking
+    }
   }
 }
 </script>

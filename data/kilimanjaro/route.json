@@ -1,36 +1,53 @@
 {
+  "finishedDate": "2020-02-10T19:00:00+03:00",
   "movement": [
-    { 
+    {
+      "leg": 1,
       "start": "2020-02-03T07:00:00+03:00",
-      "pace": 0
+      "duration": 240,
+      "distance": 4325.028
     },
-    { 
+    {
+      "leg": 2,
       "start": "2020-02-04T07:00:00+03:00",
-      "pace": 0
+      "duration": 420,
+      "distance": 12673.584
     },
     { 
+      "leg": 3,
       "start": "2020-02-05T07:00:00+03:00",
-      "pace": 0
+      "duration": 420,
+      "distance": 20118.8
     },
     { 
+      "leg": 4,
       "start": "2020-02-06T07:00:00+03:00",
-      "pace": 0
+      "duration": 480,
+      "distance": 26355.008
     },
     { 
+      "leg": 5,
       "start": "2020-02-07T07:00:00+03:00",
-      "pace": 0
+      "duration": 480,
+      "distance": 30575.536
     },
     { 
+      "leg": 6,
       "start": "2020-02-08T07:00:00+03:00",
-      "pace": 0
+      "duration": 480,
+      "distance": 35000.232
     },
     { 
+      "leg": 7,
       "start": "2020-02-09T07:00:00+03:00",
-      "pace": 0
+      "duration": 480,
+      "distance": 38423.089
     },
     { 
+      "leg": 8,
       "start": "2020-02-10T07:00:00+03:00",
-      "pace": 0
+      "duration": 720,
+      "distance": 42647.616
     }
   ],
   "route": [
