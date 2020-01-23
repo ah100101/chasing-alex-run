@@ -5,49 +5,65 @@
       "leg": 1,
       "start": "2020-02-03T07:00:00+03:00",
       "duration": 240,
-      "distance": 4325.028
+      "distance": 4325.028,
+      "startCamp": 0,
+      "endCamp": 1
     },
     {
       "leg": 2,
       "start": "2020-02-04T07:00:00+03:00",
       "duration": 420,
-      "distance": 12673.584
+      "distance": 12673.584,
+      "startCamp": 1,
+      "endCamp": 2
     },
     { 
       "leg": 3,
       "start": "2020-02-05T07:00:00+03:00",
       "duration": 420,
-      "distance": 20118.8
+      "distance": 20118.8,
+      "startCamp": 2,
+      "endCamp": 3
     },
     { 
       "leg": 4,
       "start": "2020-02-06T07:00:00+03:00",
       "duration": 480,
-      "distance": 26355.008
+      "distance": 26355.008,
+      "startCamp": 3,
+      "endCamp": 4
     },
     { 
       "leg": 5,
       "start": "2020-02-07T07:00:00+03:00",
       "duration": 480,
-      "distance": 30575.536
+      "distance": 30575.536,
+      "startCamp": 4,
+      "endCamp": 5
     },
     { 
       "leg": 6,
       "start": "2020-02-08T07:00:00+03:00",
       "duration": 480,
-      "distance": 35000.232
+      "distance": 35000.232,
+      "startCamp": 5,
+      "endCamp": 6
     },
     { 
       "leg": 7,
       "start": "2020-02-09T07:00:00+03:00",
       "duration": 480,
-      "distance": 38423.089
+      "distance": 38423.089,
+      "startCamp": 6,
+      "endCamp": 7
     },
     { 
       "leg": 8,
       "start": "2020-02-10T07:00:00+03:00",
       "duration": 720,
-      "distance": 42647.616
+      "distance": 42647.616,
+      "startCamp": 7,
+      "endCamp": 8
     }
   ],
   "route": [

@@ -60,7 +60,7 @@ import mapData from '~/data/kilimanjaro/route.json'
 import mapFunctions from '~/functions/maps.js'
 import moment from 'moment-timezone'
 
-const mockTime = moment.tz('2020-02-04T19:00:00+03:00', 'Africa/Nairobi')
+const mockTime = moment.tz('2020-02-04T10:00:00+03:00', 'Africa/Nairobi')
 
 function getTzMoment (time) {
   return moment.tz(time, 'Africa/Nairobi')
@@ -85,12 +85,13 @@ export default {
     // debugging
     console.log(this.tzTime.format())
     console.log(moment.tz(mapData.movement[0].start, "Africa/Nairobi").format())
-    console.log(this.legs)
+    // console.log(this.legs)
     console.log(this.currentlyHiking)
     console.log(this.previousLegs)
     console.log(this.futureLegs)
-    console.log(this.successfullyClimbedMountKilimanjaro)
-    console.log(this.currentDistance)
+    console.log(this.currentLocation)
+    // console.log(this.successfullyClimbedMountKilimanjaro)
+    // console.log(this.currentDistance)
     // debugging
 
     import(`~/content/pages/about.md`)
@@ -418,6 +419,38 @@ export default {
     },
     futureLegs: function () {
       return this.legs.filter(leg => !leg.hiking && leg.minToStart > 0)
+    },
+    currentLocation: function () {
+      // if we haven't started yet
+      if (this.previousLegs.length === 0) return undefined
+
+      // if we are not currently hiking, get the last camp
+      if (!this.currentlyHiking) {
+        return mapData.camps[this.previousLegs[this.previousLegs.length - 1].leg.endCamp]
+      }
+
+      // if currently hiking, get the distance to the starting camp
+      let startingCamp = mapData.camps[this.currentlyHiking.leg.startCamp]
+
+      // get the starting distance
+      let startingDistance = startingCamp.distance
+
+      // get the minute difference between now and the starting time      
+      let minuteDifference = moment.duration(this.tzTime.diff(getTzMoment(this.currentlyHiking.leg.start))).asMinutes()
+
+      // calculate the current distance given the amount of time moving and the pace
+      let currentDistance = startingDistance + (minuteDifference * (this.currentlyHiking.leg.distance / this.currentlyHiking.leg.duration))
+
+      // return the first checkpoint that is a greater distance
+      let found = false
+      return mapData.checkpoints.filter(cp => {
+        if (!found && cp.distance >= currentDistance) {
+          found = true
+          return cp
+        }
+      })[0]
+
+      return undefined
     },
     // todo: update to look at route
     currentDistance: function () {
