@@ -36,7 +36,7 @@
           <div class="level-item has-text-centered">
             <div>
               <p class="heading">Local Tanzanian Time</p>
-              <p class="title">{{ tzTime.format('h:mm:ss A') }}</p>
+              <p class="title">{{ tzDisplayTime.format('h:mm:ss A') }}</p>
             </div>
           </div>
         </nav>
@@ -86,9 +86,9 @@ export default {
     console.log(this.tzTime.format())
     console.log(moment.tz(mapData.movement[0].start, "Africa/Nairobi").format())
     // console.log(this.legs)
-    console.log(this.currentlyHiking)
-    console.log(this.previousLegs)
-    console.log(this.futureLegs)
+    // console.log(this.currentlyHiking)
+    // console.log(this.previousLegs)
+    // console.log(this.futureLegs)
     console.log(this.currentLocation)
     // console.log(this.successfullyClimbedMountKilimanjaro)
     // console.log(this.currentDistance)
@@ -107,6 +107,8 @@ export default {
     this.map = this.createMap()
     this.plotRoute()
     this.plotCamps()
+    this.plotAlex()
+    this.setTimers()
   },
   data: function () {
     return {
@@ -117,7 +119,9 @@ export default {
       map: {},
       route: {},
       checkpoints: [],
-      tzTime: mockTime ? mockTime : moment().tz("Africa/Nairobi")
+      tzDisplayTime: moment().tz('Africa/Nairobi'),
+      tzTime: mockTime ? mockTime : moment().tz("Africa/Nairobi"),
+      alexMarker: undefined
     }
   },
   methods: {
@@ -354,6 +358,33 @@ export default {
         ]
       })
     },
+    setTimers: function () {
+      // for the local tz time ticking
+      setInterval(() => { this.tzDisplayTime = moment().tz('Africa/Nairobi')}, 1000)
+      // for the time used to calculate current location
+      setInterval(() => { 
+        // this.tzTime = moment().tz('Africa/Nairobi')
+
+        this.tzTime.add(10, 'minutes')
+
+        this.plotAlex()
+      }, 2000)
+    },
+    plotAlex: function () {
+      // remove existing marker
+      if (this.alexMarker) this.alexMarker.setMap(null)
+
+      if (this.currentLocation) {
+        this.alexMarker = this.plotMarker({
+          lat: this.currentLocation.lat,
+          lng: this.currentLocation.lng,
+          title: "Alex"
+        }, {
+          url: '/images/map/alex-marker.svg',
+          scaledSize: new google.maps.Size(64, 64)
+        })
+      }
+    },
     plotRoute: function () {
       this.route = new google.maps.Polyline({
         path: mapData.route,
@@ -369,21 +400,94 @@ export default {
     },
     plotMarkers: function (coordArray, icon) {
       for (var i = 0; i < coordArray.length; i++) {
-        let marker = this.createMarker({
+        this.plotMarker({
           lat: coordArray[i].lat,
           lng: coordArray[i].lng,
-          title: coordArray[i].distance.toString(),
+          title: 0
+        }, icon)
+      }
+    },
+    plotMarker: function (point, icon) {
+      let marker = this.createMarker({
+          lat: point.lat,
+          lng: point.lng,
+          title: point.title,
           icon
         })
 
-        marker.setMap(this.map)
-      }
+      marker.setMap(this.map)
+
+      return marker
     },
     plotCamps: function () {
-      this.plotMarkers(mapData.camps, 'http://maps.google.com/mapfiles/ms/micons/blue-dot.png')
-    },
-    plotCheckpoints: function () {
-      this.plotMarkers(mapData.checkpoints, 'http://maps.google.com/mapfiles/ms/icons/ltblue-dot.png')
+      let homeIcon = {
+        url: '/images/map/start-marker.svg',
+        scaledSize: new google.maps.Size(32, 32)
+      }
+
+      let campIcon = {
+        url: '/images/map/camp-marker.svg',
+        scaledSize: new google.maps.Size(32, 32)
+      }
+
+      let summitIcon = {
+        url: '/images/map/summit-marker.svg',
+        scaledSize: new google.maps.Size(48, 48)
+      }
+
+      this.plotMarker({
+        lat: mapData.camps[0].lat,
+        lng: mapData.camps[0].lng,
+        title: mapData.camps[0].name
+      }, homeIcon)
+
+      this.plotMarker({
+        lat: mapData.camps[1].lat,
+        lng: mapData.camps[1].lng,
+        title: mapData.camps[1].name
+      }, campIcon)
+
+      this.plotMarker({
+        lat: mapData.camps[2].lat,
+        lng: mapData.camps[2].lng,
+        title: mapData.camps[2].name
+      }, campIcon)
+
+      this.plotMarker({
+        lat: mapData.camps[3].lat,
+        lng: mapData.camps[3].lng,
+        title: mapData.camps[3].name
+      }, campIcon)
+
+      this.plotMarker({
+        lat: mapData.camps[4].lat,
+        lng: mapData.camps[4].lng,
+        title: mapData.camps[4].name
+      }, campIcon)
+
+      this.plotMarker({
+        lat: mapData.camps[5].lat,
+        lng: mapData.camps[5].lng,
+        title: mapData.camps[5].name
+      }, campIcon)
+
+      this.plotMarker({
+        lat: mapData.camps[6].lat,
+        lng: mapData.camps[6].lng,
+        title: mapData.camps[6].name
+      }, campIcon)
+
+      this.plotMarker({
+        lat: mapData.camps[7].lat,
+        lng: mapData.camps[7].lng,
+        title: mapData.camps[7].name
+      }, campIcon)
+
+      this.plotMarker({
+        lat: mapData.camps[8].lat,
+        lng: mapData.camps[8].lng,
+        title: mapData.camps[8].name
+      }, summitIcon)
     },
     createMarker: function (checkpoint) {
       return new google.maps.Marker({
@@ -422,7 +526,7 @@ export default {
     },
     currentLocation: function () {
       // if we haven't started yet
-      if (this.previousLegs.length === 0) return undefined
+      if (this.previousLegs.length === 0) return 0
 
       // if we are not currently hiking, get the last camp
       if (!this.currentlyHiking) {
