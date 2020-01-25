@@ -127,7 +127,7 @@ export default {
   methods: {
     createMap: function () {
       return new google.maps.Map(document.getElementById('map'), {
-        center: { lat: -3.06888, lng: 37.34895 },
+        center: { lat: -3.0010273, lng: 37.1342611 },
         zoom: 11,
         mapTypeId: google.maps.MapTypeId.TERRAIN,
         disableDefaultUI: true,
