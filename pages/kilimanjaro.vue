@@ -102,7 +102,6 @@ export default {
     this.plotCamps()
     this.plotAlex()
     this.setTimers()
-    this.map.panBy(0, 0);
 
     if (this.alexMarker && this.alexMarker.position) {
       this.moveToLocation(this.alexMarker.position.lat(), this.alexMarker.position.lng())
@@ -367,7 +366,11 @@ export default {
     },
     setTimers: function () {
       // for the local tz time ticking
-      setInterval(() => { this.tzDisplayTime = moment().tz('Africa/Nairobi')}, 1000)
+      setInterval(() => { 
+        this.tzDisplayTime = moment().tz('Africa/Nairobi')
+        // horrible hack to stop map from blanking
+        this.map.panBy(0, 0)
+      }, 1000)
       
       // for the time used to calculate current location
       setInterval(() => { 
