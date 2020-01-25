@@ -60,7 +60,7 @@ import mapData from '~/data/kilimanjaro/route.json'
 import mapFunctions from '~/functions/maps.js'
 import moment from 'moment-timezone'
 
-const mockTime = moment.tz('2020-02-04T01:00:00+03:00', 'Africa/Nairobi')
+// const mockTime = moment.tz('2020-02-04T07:00:00+03:00', 'Africa/Nairobi')
 
 function getTzMoment (time) {
   return moment.tz(time, 'Africa/Nairobi')
@@ -79,14 +79,14 @@ export default {
   },
   head () {
     return {
-      title: 'About Chasing Alex Run',
+      title: 'Kilimanjaro Climb Tracker',
       meta: [
-        { hid: 'description', name: 'description', content: 'About the running and adventure blog, Chasing Alex Run' }
+        { hid: 'description', name: 'description', content: 'Live track Alex and friends to the top of Mount Kilimanjaro' }
       ]
     }
   },
   mounted: function () {
-    import(`~/content/pages/about.md`)
+    import(`~/content/pages/kili-tracker.md`)
       .then((result) => {
         this.ready = true
         this.body = result.html
@@ -117,11 +117,11 @@ export default {
       route: {},
       checkpoints: [],
       tzDisplayTime: moment().tz('Africa/Nairobi'),
-      tzTime: mockTime ? mockTime : moment().tz("Africa/Nairobi"),
+      tzTime: moment().tz("Africa/Nairobi"),
       alexMarker: undefined,
       currentElevation: '0 ft',
       distanceTraveled: '0 miles',
-      currentActivity: '',
+      currentActivity: 'Preparing for the trip',
     }
   },
   methods: {
@@ -362,7 +362,7 @@ export default {
     moveToLocation: function (lat, lng){
       const center = new google.maps.LatLng(lat, lng)
       this.map.panTo(center)
-      this.map.setZoom(13)
+      this.map.setZoom(12)
     },
     setTimers: function () {
       // for the local tz time ticking
@@ -370,19 +370,14 @@ export default {
       
       // for the time used to calculate current location
       setInterval(() => { 
-        // this.tzTime = moment().tz('Africa/Nairobi')
-        // this.tzTime.add(1, 'hours')
+        this.tzTime = moment().tz('Africa/Nairobi')
+        // this.tzTime.add(10, 'minutes')
 
         this.plotAlex()
         this.currentElevation = formatNumber(this.getEstimatedElevation() * 3) + ' ft'
         this.distanceTraveled = (this.getCurrentDistance() / 1609.344).toFixed(2) + ' miles'
         this.currentActivity = this.getCurrentActivity()
-      }, 1000)
-
-      // toggle stats
-      setInterval(() => {
-        this.showDistance = !this.showDistance
-      }, 5000)
+      }, 60000)
     },
     plotAlex: function () {
       let currentLocation = this.getCurrentLocation()
@@ -399,7 +394,8 @@ export default {
       this.alexMarker = this.plotMarker({
         lat: currentLocation.lat,
         lng: currentLocation.lng,
-        title: "Alex"
+        title: "Alex",
+        description: ""
       }, {
         url: '/images/map/alex-marker.svg',
         scaledSize: new google.maps.Size(64, 64)
@@ -422,9 +418,18 @@ export default {
       let marker = this.createMarker({
           lat: point.lat,
           lng: point.lng,
-          title: point.title,
           icon
         })
+
+      var infowindow = new google.maps.InfoWindow({
+          content: `
+          <h2 style="color: black">${point.title}</h2>
+          <div style="color: black">${point.description}</div>`
+      })
+
+      marker.addListener('click', function() {
+        infowindow.open(map, marker)
+      })
 
       marker.setMap(this.map)
 
@@ -449,55 +454,64 @@ export default {
       this.plotMarker({
         lat: mapData.camps[0].lat,
         lng: mapData.camps[0].lng,
-        title: mapData.camps[0].name
+        title: mapData.camps[0].name,
+        description: mapData.camps[0].description
       }, homeIcon)
 
       this.plotMarker({
         lat: mapData.camps[1].lat,
         lng: mapData.camps[1].lng,
-        title: mapData.camps[1].name
+        title: mapData.camps[1].name,
+        description: mapData.camps[1].description
       }, campIcon)
 
       this.plotMarker({
         lat: mapData.camps[2].lat,
         lng: mapData.camps[2].lng,
-        title: mapData.camps[2].name
+        title: mapData.camps[2].name,
+        description: mapData.camps[2].description
       }, campIcon)
 
       this.plotMarker({
         lat: mapData.camps[3].lat,
         lng: mapData.camps[3].lng,
-        title: mapData.camps[3].name
+        title: mapData.camps[3].name,
+        description: mapData.camps[3].description
       }, campIcon)
 
       this.plotMarker({
         lat: mapData.camps[4].lat,
         lng: mapData.camps[4].lng,
-        title: mapData.camps[4].name
+        title: mapData.camps[4].name,
+        description: mapData.camps[4].description
       }, campIcon)
 
       this.plotMarker({
         lat: mapData.camps[5].lat,
         lng: mapData.camps[5].lng,
-        title: mapData.camps[5].name
+        title: mapData.camps[5].name,
+        description: mapData.camps[5].description
       }, campIcon)
 
       this.plotMarker({
         lat: mapData.camps[6].lat,
         lng: mapData.camps[6].lng,
-        title: mapData.camps[6].name
+        title: mapData.camps[6].name,
+        description: mapData.camps[6].description
       }, campIcon)
 
       this.plotMarker({
         lat: mapData.camps[7].lat,
         lng: mapData.camps[7].lng,
-        title: mapData.camps[7].name
+        title: mapData.camps[7].name,
+        description: mapData.camps[7].description
       }, campIcon)
 
       this.plotMarker({
         lat: mapData.camps[8].lat,
         lng: mapData.camps[8].lng,
-        title: mapData.camps[8].name
+        title: mapData.camps[8].name,
+        description: mapData.camps[8].description
       }, summitIcon)
     },
     createMarker: function (checkpoint) {
@@ -601,6 +615,8 @@ export default {
     },
     getCurrentLocation: function () {
       let currentDistance = this.getCurrentDistance()
+
+      if (currentDistance === 0) return undefined
 
       // return the first checkpoint that is a greater distance
       let found = false
