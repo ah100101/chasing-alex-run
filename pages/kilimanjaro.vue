@@ -79,7 +79,7 @@ export default {
   },
   head () {
     return {
-      title: 'Kilimanjaro Climb Tracker',
+      title: 'Kilimanjaro Live Tracker',
       meta: [
         { hid: 'description', name: 'description', content: 'Live track Alex and friends to the top of Mount Kilimanjaro' }
       ]
