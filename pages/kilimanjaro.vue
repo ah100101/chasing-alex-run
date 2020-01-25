@@ -102,6 +102,7 @@ export default {
     this.plotCamps()
     this.plotAlex()
     this.setTimers()
+    this.map.panBy(0, 0);
 
     if (this.alexMarker && this.alexMarker.position) {
       this.moveToLocation(this.alexMarker.position.lat(), this.alexMarker.position.lng())
