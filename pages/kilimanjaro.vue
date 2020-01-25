@@ -17,26 +17,26 @@
         <nav class="level">
           <div class="level-item has-text-centered">
             <div>
-              <p class="heading">Next Stop</p>
-              <p class="title">Barranco Camp</p>
+              <p class="heading">Local Tanzanian Time</p>
+              <p class="title">{{ tzDisplayTime.format('h:mm:ss A') }}</p>
+            </div>
+          </div>
+          <div v-if="currentActivity" class="level-item has-text-centered">
+            <div>
+              <p class="heading">Currently</p>
+              <p class="title">{{ currentActivity }}</p>
             </div>
           </div>
           <div class="level-item has-text-centered">
             <div>
-              <p class="heading">Distance Traveled</p>
-              <p class="title">13 miles</p>
+              <p class="heading">Distance Hiked</p>
+              <p class="title">{{ distanceTraveled }}</p>
             </div>
           </div>
           <div class="level-item has-text-centered">
             <div>
               <p class="heading">Current Elevation</p>
-              <p class="title">10,000 Ft</p>
-            </div>
-          </div>
-          <div class="level-item has-text-centered">
-            <div>
-              <p class="heading">Local Tanzanian Time</p>
-              <p class="title">{{ tzDisplayTime.format('h:mm:ss A') }}</p>
+              <p class="title">{{ currentElevation }}</p>
             </div>
           </div>
         </nav>
@@ -60,10 +60,14 @@ import mapData from '~/data/kilimanjaro/route.json'
 import mapFunctions from '~/functions/maps.js'
 import moment from 'moment-timezone'
 
-const mockTime = moment.tz('2020-02-03T07:00:00+03:00', 'Africa/Nairobi')
+const mockTime = moment.tz('2020-02-04T01:00:00+03:00', 'Africa/Nairobi')
 
 function getTzMoment (time) {
   return moment.tz(time, 'Africa/Nairobi')
+}
+
+function formatNumber (number) {
+  return number.toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 }
 
 export default {
@@ -92,11 +96,16 @@ export default {
         console.error(error)
         this.ready = true
       })
+
     this.map = this.createMap()
     this.plotRoute()
     this.plotCamps()
     this.plotAlex()
     this.setTimers()
+
+    if (this.alexMarker && this.alexMarker.position) {
+      this.moveToLocation(this.alexMarker.position.lat(), this.alexMarker.position.lng())
+    }
   },
   data: function () {
     return {
@@ -109,7 +118,10 @@ export default {
       checkpoints: [],
       tzDisplayTime: moment().tz('Africa/Nairobi'),
       tzTime: mockTime ? mockTime : moment().tz("Africa/Nairobi"),
-      alexMarker: undefined
+      alexMarker: undefined,
+      currentElevation: '0 ft',
+      distanceTraveled: '0 miles',
+      currentActivity: '',
     }
   },
   methods: {
@@ -118,6 +130,7 @@ export default {
         center: { lat: -3.06888, lng: 37.34895 },
         zoom: 11,
         mapTypeId: google.maps.MapTypeId.TERRAIN,
+        disableDefaultUI: true,
         styles: [
           {
             "elementType": "geometry",
@@ -346,43 +359,57 @@ export default {
         ]
       })
     },
+    moveToLocation: function (lat, lng){
+      const center = new google.maps.LatLng(lat, lng)
+      this.map.panTo(center)
+      this.map.setZoom(13)
+    },
     setTimers: function () {
       // for the local tz time ticking
       setInterval(() => { this.tzDisplayTime = moment().tz('Africa/Nairobi')}, 1000)
+      
       // for the time used to calculate current location
       setInterval(() => { 
-        this.tzTime = moment().tz('Africa/Nairobi')
-
+        // this.tzTime = moment().tz('Africa/Nairobi')
         // this.tzTime.add(1, 'hours')
 
         this.plotAlex()
-      }, 60000)
-    },
-    plotCheckpoints: function () {
-      this.plotMarkers(mapData.checkpoints, 'http://maps.google.com/mapfiles/ms/icons/ltblue-dot.png')
+        this.currentElevation = formatNumber(this.getEstimatedElevation() * 3) + ' ft'
+        this.distanceTraveled = (this.getCurrentDistance() / 1609.344).toFixed(2) + ' miles'
+        this.currentActivity = this.getCurrentActivity()
+      }, 1000)
+
+      // toggle stats
+      setInterval(() => {
+        this.showDistance = !this.showDistance
+      }, 5000)
     },
     plotAlex: function () {
+      let currentLocation = this.getCurrentLocation()
+      
+      if (!currentLocation) return
+
+      if (this.alexMarker && 
+        currentLocation.lat === this.alexMarker.position.lat() &&
+        currentLocation.lng === this.alexMarker.position.lng()) return
+        
       // remove existing marker
       if (this.alexMarker) this.alexMarker.setMap(null)
-
-      let currentLocation = this.getCurrentLocation()
-
-      if (currentLocation) {
-        this.alexMarker = this.plotMarker({
-          lat: currentLocation.lat,
-          lng: currentLocation.lng,
-          title: "Alex"
-        }, {
-          url: '/images/map/alex-marker.svg',
-          scaledSize: new google.maps.Size(64, 64)
-        })
-      }
+      
+      this.alexMarker = this.plotMarker({
+        lat: currentLocation.lat,
+        lng: currentLocation.lng,
+        title: "Alex"
+      }, {
+        url: '/images/map/alex-marker.svg',
+        scaledSize: new google.maps.Size(64, 64)
+      })
     },
     plotRoute: function () {
       this.route = new google.maps.Polyline({
         path: mapData.route,
         geodesic: true,
-        strokeColor: '#FF0000',
+        strokeColor: '#222831',
         strokeOpacity: 1.0,
         strokeWeight: 2
       })
@@ -511,7 +538,6 @@ export default {
     },
     getEstimatedElevation: function () {
       let previousLegs = this.getPreviousLegs()
-
       let currentlyHiking = this.getCurrentlyHiking()
 
       // if we haven't started yet
@@ -523,27 +549,27 @@ export default {
       }
 
       // if currently hiking, get the start camp and end camp
-      let startingCamp = mapData.camps[currentlyHiking.leg.startCamp]
+      let startingCampElevation = mapData.camps[currentlyHiking.leg.startCamp].elevation
+      let endCampElevation = mapData.camps[currentlyHiking.leg.endCamp].elevation
 
       // get the elevation gain for this leg
+      let totalGain = endCampElevation - startingCampElevation
 
-      // calculate, based on duration walked how far we are into leg
+      // get the starting time
+      let timeHiking = moment.duration(this.tzTime.diff(getTzMoment(currentlyHiking.leg.start))).asMinutes()
 
-      // % complete x elevation gain == current estimated elevation
-      
-      return 0
+      return startingCampElevation + (totalGain * (timeHiking / currentlyHiking.leg.duration))
     },
-    getCurrentLocation: function () {
+    getCurrentDistance: function () {
       let previousLegs = this.getPreviousLegs()
-
       let currentlyHiking = this.getCurrentlyHiking()
 
       // if we haven't started yet
-      if (previousLegs.length === 0 && !currentlyHiking) return false
+      if (previousLegs.length === 0 && !currentlyHiking) return 0
 
       // if we are not currently hiking, get the last camp
       if (!currentlyHiking) {
-        return mapData.camps[previousLegs[previousLegs.length - 1].leg.endCamp]
+        return mapData.camps[previousLegs[previousLegs.length - 1].leg.endCamp].distance
       }
 
       // if currently hiking, get the distance to the starting camp
@@ -556,42 +582,39 @@ export default {
       let minuteDifference = moment.duration(this.tzTime.diff(getTzMoment(currentlyHiking.leg.start))).asMinutes()
 
       // calculate the current distance given the amount of time moving and the pace
-      let currentDistance = startingDistance + (minuteDifference * ((currentlyHiking.leg.distance - startingDistance) / currentlyHiking.leg.duration))
+      return (startingDistance + (minuteDifference * ((currentlyHiking.leg.distance - startingDistance) / currentlyHiking.leg.duration)))
+    },
+    getCurrentActivity: function () {
+      let previousLegs = this.getPreviousLegs()
+      let currentlyHiking = this.getCurrentlyHiking()
+
+      // if we haven't started yet
+      if (previousLegs.length === 0 && !currentlyHiking) return 'Preparing to climb!'
+
+      // if we are not currently hiking, get the last camp activity
+      if (!currentlyHiking) {
+        return mapData.camps[previousLegs[previousLegs.length - 1].leg.endCamp].campingActivity
+      }
+
+      // if currently hiking, get the hiking activity
+      return mapData.camps[currentlyHiking.leg.startCamp].hikingActivity
+    },
+    getCurrentLocation: function () {
+      let currentDistance = this.getCurrentDistance()
 
       // return the first checkpoint that is a greater distance
       let found = false
-      return mapData.checkpoints.filter(cp => {
+      let checkPoint = mapData.checkpoints.filter(cp => {
         if (!found && cp.distance >= currentDistance) {
           found = true
           return cp
         }
       })[0]
 
-      return undefined
+      return checkPoint ? checkPoint : mapData.checkpoints[mapData.checkpoints.length - 1]
     }
   },
   computed: {
-    // legs: function () {
-    //   console.log('computing')
-    //   return mapData.movement.map(leg => {
-    //     let finishTime = getTzMoment(leg.start).add(leg.duration, 'minutes')
-    //     return {
-    //       leg,
-    //       minToStart: moment.duration(getTzMoment(leg.start).diff(this.tzTime)).asMinutes(),
-    //       estFinish: finishTime,
-    //       hiking: this.tzTime.isAfter(leg.start) && finishTime.isAfter(this.tzTime)
-    //     }
-    //   })
-    // },
-    
-    // todo: update to look at route
-    currentDistance: function () {
-      let previousLegs = this.getPreviousLegs()
-      
-      if (previousLegs.length <= 0) return 0
-
-      return previousLegs[previousLegs.length - 1].leg.distance
-    },
     successfullyClimbedMountKilimanjaro: function () {
       return this.getFutureLegs().length == 0 && !this.getCurrentlyHiking()
     }
@@ -645,9 +668,6 @@ export default {
   }
 
   .content {
-    max-width: 500px;
-    margin-top: 1rem;
-
       a, a:hover {
         text-decoration: underline;
       }

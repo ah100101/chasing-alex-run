@@ -56,6 +56,14 @@
       "distance": 38423.089,
       "startCamp": 6,
       "endCamp": 7
+    },
+    {
+      "leg": 8,
+      "start": "2020-02-10T00:00:00+03:00",
+      "duration": 480,
+      "distance": 42647.616,
+      "startCamp": 7,
+      "endCamp": 8
     }
   ],
   "route": [
@@ -5177,6 +5185,8 @@
     {
       "name": "Lemosho Glades",
       "elevation": 2200,
+      "campingActivity": "Resting",
+      "hikingActivity": "Hiking to Big Tree Camp",
       "description": "",
       "distance": 0,
       "lat": -3.0010273,
@@ -5185,6 +5195,8 @@
     {
       "name": "Big Tree Camp",
       "elevation": 2680,
+      "campingActivity": "Resting",
+      "hikingActivity": "Trekking to Shira Camp One",
       "distance": 4325.028,
       "description": "",
       "lat": -2.9963559,
@@ -5193,6 +5205,8 @@
     {
       "name": "Shira Camp One",
       "elevation": 3680,
+      "campingActivity": "Resting",
+      "hikingActivity": "Trekking to Shira Camp Two",
       "distance": 12673.584,
       "description": "",
       "lat": -3.0130056,
@@ -5201,6 +5215,8 @@
     {
       "name": "Shira Camp Two",
       "elevation": 3880,
+      "campingActivity": "Resting",
+      "hikingActivity": "Climbing to Lava Tower",
       "distance": 20118.8,
       "description": "",
       "lat": -3.054686,
@@ -5209,6 +5225,8 @@
     {
       "name": "Lava Tower",
       "elevation": 4600,
+      "campingActivity": "Resting",
+      "hikingActivity": "Hiking to Barranco Camp",
       "distance": 26355.008,
       "description": "",
       "lat": -3.0683956,
@@ -5217,6 +5235,8 @@
     {
       "name": "Barranco Camp",
       "elevation": 4000,
+      "campingActivity": "Resting",
+      "hikingActivity": "Hiking to Karanga Camp",
       "distance": 30575.536,
       "description": "",
       "lat": -3.0942338,
@@ -5225,6 +5245,8 @@
     {
       "name": "Karanga Camp",
       "elevation": 4040,
+      "campingActivity": "Resting",
+      "hikingActivity": "Hiking to Barafu Camp",
       "distance": 35000.232,
       "description": "",
       "lat": -3.1121667,
@@ -5233,6 +5255,8 @@
     {
       "name": "Barafu Camp",
       "elevation": 4680,
+      "campingActivity": "Preparing for the summit!",
+      "hikingActivity": "Pushing to Uhuru Peak!",
       "distance": 38423.089,
       "description": "",
       "lat": -3.0993088,
@@ -5241,6 +5265,8 @@
     {
       "name": "Uhuru Peak",
       "elevation": 5895,
+      "campingActivity": "Celebrating!",
+      "hikingActivity": "",
       "distance": 42647.616,
       "description": "",
       "lat": -3.075671,
