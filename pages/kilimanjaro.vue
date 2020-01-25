@@ -60,7 +60,7 @@ import mapData from '~/data/kilimanjaro/route.json'
 import mapFunctions from '~/functions/maps.js'
 import moment from 'moment-timezone'
 
-const mockTime = moment.tz('2020-02-03T06:00:00+03:00', 'Africa/Nairobi')
+const mockTime = moment.tz('2020-02-03T07:00:00+03:00', 'Africa/Nairobi')
 
 function getTzMoment (time) {
   return moment.tz(time, 'Africa/Nairobi')
@@ -97,9 +97,6 @@ export default {
     this.plotCamps()
     this.plotAlex()
     this.setTimers()
-
-    console.log(this.tzTime.format())
-    console.log(this.getLegs())
   },
   data: function () {
     return {
@@ -354,22 +351,19 @@ export default {
       setInterval(() => { this.tzDisplayTime = moment().tz('Africa/Nairobi')}, 1000)
       // for the time used to calculate current location
       setInterval(() => { 
-        // this.tzTime = moment().tz('Africa/Nairobi')
+        this.tzTime = moment().tz('Africa/Nairobi')
 
-        this.tzTime.add(1, 'hours')
-
-        console.log(this.tzTime.format())
-        console.log(this.getLegs())
+        // this.tzTime.add(1, 'hours')
 
         this.plotAlex()
-      }, 2000)
+      }, 60000)
+    },
+    plotCheckpoints: function () {
+      this.plotMarkers(mapData.checkpoints, 'http://maps.google.com/mapfiles/ms/icons/ltblue-dot.png')
     },
     plotAlex: function () {
       // remove existing marker
       if (this.alexMarker) this.alexMarker.setMap(null)
-
-      console.log('currentlocation: ' + this.getCurrentLocation())
-      console.log('currentlyhiking: ' + this.getCurrentlyHiking())
 
       let currentLocation = this.getCurrentLocation()
 
@@ -395,15 +389,6 @@ export default {
 
       if (!!this.route) {
         this.polyline = this.route.setMap(this.map)
-      }
-    },
-    plotMarkers: function (coordArray, icon) {
-      for (var i = 0; i < coordArray.length; i++) {
-        this.plotMarker({
-          lat: coordArray[i].lat,
-          lng: coordArray[i].lng,
-          title: 0
-        }, icon)
       }
     },
     plotMarker: function (point, icon) {
@@ -524,32 +509,54 @@ export default {
     getFutureLegs: function () {
       return this.getLegs().filter(leg => !leg.hiking && leg.minToStart > 0)
     },
+    getEstimatedElevation: function () {
+      let previousLegs = this.getPreviousLegs()
+
+      let currentlyHiking = this.getCurrentlyHiking()
+
+      // if we haven't started yet
+      if (previousLegs.length === 0 && !currentlyHiking) return 0
+
+      // if we are not currently hiking, get the last camp
+      if (!currentlyHiking) {
+        return mapData.camps[previousLegs[previousLegs.length - 1].leg.endCamp].elevation
+      }
+
+      // if currently hiking, get the start camp and end camp
+      let startingCamp = mapData.camps[currentlyHiking.leg.startCamp]
+
+      // get the elevation gain for this leg
+
+      // calculate, based on duration walked how far we are into leg
+
+      // % complete x elevation gain == current estimated elevation
+      
+      return 0
+    },
     getCurrentLocation: function () {
       let previousLegs = this.getPreviousLegs()
 
-      // if we haven't started yet
-      if (previousLegs.length === 0 && !this.getCurrentlyHiking()) return false
+      let currentlyHiking = this.getCurrentlyHiking()
 
-      // if not currently hiking and at first camp
-      console.log('previous legs: ')
-      console.log(previousLegs)
+      // if we haven't started yet
+      if (previousLegs.length === 0 && !currentlyHiking) return false
 
       // if we are not currently hiking, get the last camp
-      if (!this.getCurrentlyHiking()) {
+      if (!currentlyHiking) {
         return mapData.camps[previousLegs[previousLegs.length - 1].leg.endCamp]
       }
 
       // if currently hiking, get the distance to the starting camp
-      let startingCamp = mapData.camps[this.getCurrentlyHiking().leg.startCamp]
+      let startingCamp = mapData.camps[currentlyHiking.leg.startCamp]
 
       // get the starting distance
       let startingDistance = startingCamp.distance
 
       // get the minute difference between now and the starting time      
-      let minuteDifference = moment.duration(this.tzTime.diff(getTzMoment(this.getCurrentlyHiking().leg.start))).asMinutes()
+      let minuteDifference = moment.duration(this.tzTime.diff(getTzMoment(currentlyHiking.leg.start))).asMinutes()
 
       // calculate the current distance given the amount of time moving and the pace
-      let currentDistance = startingDistance + (minuteDifference * (this.getCurrentlyHiking().leg.distance / this.getCurrentlyHiking().leg.duration))
+      let currentDistance = startingDistance + (minuteDifference * ((currentlyHiking.leg.distance - startingDistance) / currentlyHiking.leg.duration))
 
       // return the first checkpoint that is a greater distance
       let found = false

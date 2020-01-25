@@ -4,7 +4,7 @@
     {
       "leg": 1,
       "start": "2020-02-03T07:00:00+03:00",
-      "duration": 240,
+      "duration": 180,
       "distance": 4325.028,
       "startCamp": 0,
       "endCamp": 1
@@ -12,58 +12,50 @@
     {
       "leg": 2,
       "start": "2020-02-04T07:00:00+03:00",
-      "duration": 420,
+      "duration": 300,
       "distance": 12673.584,
       "startCamp": 1,
       "endCamp": 2
     },
-    { 
+    {
       "leg": 3,
       "start": "2020-02-05T07:00:00+03:00",
-      "duration": 420,
+      "duration": 180,
       "distance": 20118.8,
       "startCamp": 2,
       "endCamp": 3
     },
-    { 
+    {
       "leg": 4,
       "start": "2020-02-06T07:00:00+03:00",
-      "duration": 480,
+      "duration": 420,
       "distance": 26355.008,
       "startCamp": 3,
       "endCamp": 4
     },
-    { 
+    {
       "leg": 5,
       "start": "2020-02-07T07:00:00+03:00",
-      "duration": 480,
+      "duration": 300,
       "distance": 30575.536,
       "startCamp": 4,
       "endCamp": 5
     },
-    { 
+    {
       "leg": 6,
       "start": "2020-02-08T07:00:00+03:00",
-      "duration": 480,
+      "duration": 240,
       "distance": 35000.232,
       "startCamp": 5,
       "endCamp": 6
     },
-    { 
+    {
       "leg": 7,
       "start": "2020-02-09T07:00:00+03:00",
       "duration": 480,
       "distance": 38423.089,
       "startCamp": 6,
       "endCamp": 7
-    },
-    { 
-      "leg": 8,
-      "start": "2020-02-10T07:00:00+03:00",
-      "duration": 720,
-      "distance": 42647.616,
-      "startCamp": 7,
-      "endCamp": 8
     }
   ],
   "route": [
@@ -5184,6 +5176,7 @@
   "camps": [
     {
       "name": "Lemosho Glades",
+      "elevation": 2200,
       "description": "",
       "distance": 0,
       "lat": -3.0010273,
@@ -5191,6 +5184,7 @@
     },
     {
       "name": "Big Tree Camp",
+      "elevation": 2680,
       "distance": 4325.028,
       "description": "",
       "lat": -2.9963559,
@@ -5198,6 +5192,7 @@
     },
     {
       "name": "Shira Camp One",
+      "elevation": 3680,
       "distance": 12673.584,
       "description": "",
       "lat": -3.0130056,
@@ -5205,6 +5200,7 @@
     },
     {
       "name": "Shira Camp Two",
+      "elevation": 3880,
       "distance": 20118.8,
       "description": "",
       "lat": -3.054686,
@@ -5212,6 +5208,7 @@
     },
     {
       "name": "Lava Tower",
+      "elevation": 4600,
       "distance": 26355.008,
       "description": "",
       "lat": -3.0683956,
@@ -5219,6 +5216,7 @@
     },
     {
       "name": "Barranco Camp",
+      "elevation": 4000,
       "distance": 30575.536,
       "description": "",
       "lat": -3.0942338,
@@ -5226,6 +5224,7 @@
     },
     {
       "name": "Karanga Camp",
+      "elevation": 4040,
       "distance": 35000.232,
       "description": "",
       "lat": -3.1121667,
@@ -5233,6 +5232,7 @@
     },
     {
       "name": "Barafu Camp",
+      "elevation": 4680,
       "distance": 38423.089,
       "description": "",
       "lat": -3.0993088,
@@ -5240,6 +5240,7 @@
     },
     {
       "name": "Uhuru Peak",
+      "elevation": 5895,
       "distance": 42647.616,
       "description": "",
       "lat": -3.075671,
