@@ -9,9 +9,12 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "optimize-images": "imagemin static/full-images --out-dir=static/images --plugin=jpegtran"
+    "optimize-images": "imagemin static/full-images --out-dir=static/images --plugin=jpegtran",
+    "dev-debug": "node --debug node_modules/.bin/nuxt"
   },
   "dependencies": {
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.27",
     "nuxt": "^2.0.0",
     "nuxt-buefy": "^0.3.2"
   },
