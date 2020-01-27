@@ -1,5 +1,6 @@
 <template>
   <div v-show="ready" class='home'>
+    <KiliAlert></KiliAlert>
     <section class="hero is-primary is-medium">
       <Navigation />
         <HomeHero
@@ -24,6 +25,7 @@ import PostCard from '~/components/PostCard'
 import Navigation from '~/components/Navigation'
 import StaggeredTileListing from '~/components/StaggeredTileListing.vue'
 import Footer from '~/components/Footer'
+import KiliAlert from '~/components/kilimanjaro/Alert.vue'
 
 export default {
   layout: 'home',
@@ -33,7 +35,8 @@ export default {
     Navigation,
     PostCard,
     StaggeredTileListing,
-    Footer
+    Footer,
+    KiliAlert
   },
   head () {
     return {
@@ -98,6 +101,9 @@ export default {
       latestPost: {},
       posts: []
     }
+  },
+  methods: {
+    
   }
 }
 </script>
