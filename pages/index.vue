@@ -69,6 +69,7 @@ export default {
         postDateTime: new Date(obj.data.attributes['post_date']),
         thumbnail: obj.data.attributes['thumbnail'],
         thumbnailCredit: obj.data.attributes['thumbnail_credit'],
+        url: obj.data.attributes['url'],
         tags: obj.data.attributes.tags
       }
     })
