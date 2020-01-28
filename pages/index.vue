@@ -85,7 +85,7 @@ export default {
         year: obj.postDateTime.getFullYear(),
         title: obj.title,
         description: obj.description,
-        url: `/posts/${obj.slug}`,
+        url: obj.url ? obj.url : `/posts/${obj.slug}`,
         image: obj.thumbnail
       }
     })
