@@ -31,7 +31,7 @@ export default {
       return `background-image: url('${this.computedImageSrc}');`
     },
     computedLink: function () {
-      return `/posts/${this.post.slug}`
+      return this.post.url ? this.post.url : `/posts/${this.post.slug}`
     }
   }
 }
