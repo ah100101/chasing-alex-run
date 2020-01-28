@@ -1,5 +1,5 @@
 ---
-title: Kilimanjaro 2020 Live Tracker
+title: Kilimanjaro Live Tracker
 subtitle: ''
 description: ''
 hero_image: "/images/kili-tracker-hero.jpg"
