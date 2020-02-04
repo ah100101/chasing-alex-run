@@ -210,6 +210,7 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
     .timeline-title {
         margin: 0;
         line-height: 1em !important;
+        font-weight: bold;
     }
 
     @media (min-width: 992px) {
