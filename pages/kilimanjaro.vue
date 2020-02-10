@@ -24,7 +24,7 @@
           <div v-if="currentActivity" class="level-item has-text-centered">
             <div>
               <p class="heading">Currently</p>
-              <p class="title">{{ currentActivity }}</p>
+              <p class="title">Descended and celebrating!</p>
             </div>
           </div>
           <div class="level-item has-text-centered">
