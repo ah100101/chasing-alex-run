@@ -92,6 +92,10 @@ export default {
 @import '~/assets/followtheme.scss';
 
 .detail {
+  iframe {
+    height: 340px;
+    width: 100%;
+  }
 
   .navbar-item {
     img {
