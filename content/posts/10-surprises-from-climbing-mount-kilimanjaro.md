@@ -2,7 +2,7 @@
 tags:
 - Kilimanjaro
 - Hiking
-title: 10 Surprises From Mount Kilimanjaro
+title: 10 Surprises From Climbing Kilimanjaro
 description: 10 experiences, including one animal, that surprised me when climbing
   to the roof of Africa
 hero_image: "/images/kilimanjaro-surprises.jpg"
@@ -18,7 +18,7 @@ url: ''
 ---
 I'll admit, it has been difficult putting together a summary of the Kilimanjaro climb. There were countless things that happened on the eight day hike. I need at least ten posts to even approach accurately depicting the experience. I debated making this post about my exercise metrics that I recorded during every day of the hike or a day-by-day analysis of how challenging every leg of the hike was. Honestly, both didn't seem particularly interesting to write about.
 
-However, when discussing the trek with others, I talk mostly about the surprises on the mountain that did not quite align with my research prior to the trip. Instead of a summary for this post, I'll be summarizing ten experiences, decisions or animals that completed surprised me when climbing Mount Kilimanjaro.
+However, when discussing the trek with others, I talk mostly about the surprises on the mountain that did not quite align with my research prior to the trip. Instead of a summary for this post, I'll be summarizing ten experiences, decisions or animals that surprised me when climbing Mount Kilimanjaro.
 
 Granted, there were many breathtaking views and amazing encounters on the climb (e.g. Barranco Wall, first views of the summit, the great food, reaching the summit, jungle wild life) that I won't detail here. Those items are called out in countless other blogs and our group knew a lot of high points to anticipate. Having said all that, there were many surprises I could have planned better for and many situations I could have worried about less.
 
@@ -113,3 +113,5 @@ Everything changed after hitting Stella Point. The Sun came out and we also foun
 Our group was very fortunate and all of us made it to the summit without any health issues. We had a stellar group of guides and porters from [Pristine Trails](https://pristinetrails.com/ "Pristine Trail") that guided us safely and successfully to the summit. The positive experience I associate with Kilimanjaro is tightly associated with the crew that Pristine Trails provided. They kept us laughing the entire way up the mountain and made sure that we were safe every day.
 
 ![](/images/kili-crew.jpg)
+
+I think it's safe to say that as a city dweller that lives at sea level, it will be hard for me to top the summit of Kilimanjaro. Though I hope to top the satisfaction and adventure of the trek in coming years.
