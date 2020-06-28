@@ -106,7 +106,7 @@ The push to the summit started around midnight and it took us over _seven and a 
 
 Everything changed after hitting Stella Point. The sun came out and we also found ourselves in the ice and snow on top of the mountain and were hiking at a much flatter incline to Uhuru Peak.
 
-\[image of us walk to the summit\]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hCEWgyxnHng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Our group was very fortunate and all of us made it to the summit without any health issues. We had a stellar group of guides and porters from Pristine Trails \[link\] that guided us safely and successfully to the summit. The positive experience I associate with Kilimanjaro is tightly associated with the crew that Pristine Trails provided. They kept us laughing the entire way up the mountain and made sure that we were safe every day.
 
