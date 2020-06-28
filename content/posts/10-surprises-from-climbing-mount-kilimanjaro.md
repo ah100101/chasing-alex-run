@@ -36,7 +36,7 @@ Naturally, when I was stuck sweating in the tent trying to rest for summit night
 
 #### 4. There really isn't that much downtime
 
-Eight days is a lot of time. It's particularly a lot of time when you're not going to have access to internet. We brought a few card games and I considered bringing more than one book. I didn't touch the one book I did bring and I think our group played cards three or four times for an hour or two max. Even though we didn't cover a ton of mileage during the hikes, by the time we got to camp we were usually exhausted and ready to sleep. The daily schedule ran something along the lines of:
+Eight days is a lot of time. It's particularly a lot of time when you're not going to have access to internet. We brought a few card games and I considered bringing more than one book. I didn't touch the one book I did bring and I think our group played cards three or four times for an hour or two max. Even though we didn't cover a ton of mileage during the hikes, by the time we got to camp we were usually exhausted and ready to sleep. The daily schedule was along the lines of:
 
 * 4 - 5 am - Summon mental willpower to get out of sleeping bag
 * 6 am - Coffee and breakfast
@@ -90,7 +90,7 @@ Spending 4 - 5 hours a day on your feet for more than a week requires fuel and I
 
 #### 10. The summit climb was TOUGH
 
-I'm writing this post from a comfortable couch and the air conditioning is on. I don't _truly remember_ how miserable that summit climb was. Just like marathon running, the body forgets pain shortly after it subsides. I read countless articles stating how tough the summit climb was and how it's the toughest thing you'll ever do, bla bla. I never actually understood how rough it was until we were in the middle of it.
+I'm writing this post from a comfortable couch and the air conditioning is on. I don't _truly remember_ how miserable that summit climb was. Just like marathon running, the body forgets pain shortly after it subsides. I read countless articles stating how tough the summit climb was and how it's the toughest thing you'll ever do, bla bla. I never actually understood just how rough it was until we were in the middle of it.
 
 As a marathoner, naturally I tried to draw some kind of simplified comparison of the summit hike to running an endurance race. Nothing appropriate came to mind for months. Now that it has been nearly five months since the trek I am able to make some comparisons, probably because I don't remember the agony quite as vividly:
 
