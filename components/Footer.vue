@@ -5,7 +5,7 @@
         <strong>Chasing Alex Run</strong> designed and built by <a class="email" href="mailto:alex@hawley.tech">Alex Hawley</a>
       </p>
       <p class="text-with-image">
-        MIT licensed | Copyright (c) 2019 Alex Hawley
+        MIT licensed | Copyright (c) 2022 Alex Hawley
       </p>
       <p>
         <a href="https://github.com/ah100101/chasing-alex-run">
