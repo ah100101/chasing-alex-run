@@ -24,9 +24,6 @@
               <a href="/posts" class="navbar-item">
                 Posts
               </a>
-              <a href="/kilimanjaro" class="navbar-item">
-                Kilimanjaro
-              </a>
               <a href="/about" class="navbar-item">
                 About
               </a>
