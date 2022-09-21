@@ -11,7 +11,7 @@
         <a href="https://github.com/ah100101/chasing-alex-run">
           <img class="github" src="/images/site/GitHub-Mark-Light-64px.png"/>
         </a> 
-        <a href="https://www.netlify.com">
+        <a href="https://vercel.com">
           <img class="vercel" src="/images/site/vercel-logotype-light.png"/>
         </a>
       </p>
