@@ -12,7 +12,7 @@
           <img class="github" src="/images/site/GitHub-Mark-Light-64px.png"/>
         </a> 
         <a href="https://www.netlify.com">
-          <img src="https://www.netlify.com/img/global/badges/netlify-light.svg"/>
+          <img class="vercel" src="/images/site/vercel-logotype-light.png"/>
         </a>
       </p>
     </div>
@@ -44,9 +44,9 @@ export default {
     justify-content: center;
   }
 
-  .github {
+  .github, .vercel {
     height: 50px;
-    margin: 0 6px;
+    margin: 0 10px;
   }
 
   .nuxt {
